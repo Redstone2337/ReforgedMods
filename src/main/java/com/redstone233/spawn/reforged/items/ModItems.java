@@ -1,6 +1,7 @@
 package com.redstone233.spawn.reforged.items;
 
 import com.redstone233.spawn.reforged.ReforgeSpawnMod;
+import com.redstone233.spawn.reforged.items.custom.Prospectetor;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
@@ -15,6 +16,9 @@ public class ModItems {
 
     public static final Item REFORGED_ITEM = registerItems("regeforged_item", 
         new Item(new FabricItemSettings()));
+        
+    public static final Item PROSPECTOR = registerItems("prospector", 
+        new Prospectetor(new FabricItemSettings().maxDamage(64)));
 
     private static void addItemsToIG(FabricItemGroupEntries fabricItemGroupEntries) {
         fabricItemGroupEntries.add(REFORGED_ITEM);

@@ -1,3 +1,9 @@
 {
-    "item.trsm.reforged_item": "重铸物品"
+    "item.trsm.reforged_item": "重铸物品",
+    "item.trsm.prospector": "探矿器",
+
+    "block.trsm.reforged_block": "重铸方块",
+    "block.trsm.reforged_block1": "二级重铸方块",
+
+    "itemGroup.trsm_group": "重铸模组"
 }

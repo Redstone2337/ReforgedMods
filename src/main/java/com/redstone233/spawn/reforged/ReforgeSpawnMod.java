@@ -5,6 +5,7 @@ import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.redstone233.spawn.reforged.block.ModBlocks;
 import com.redstone233.spawn.reforged.items.ModItemGroup;
 import com.redstone233.spawn.reforged.items.ModItems;
 
@@ -24,5 +25,6 @@ public class ReforgeSpawnMod implements ModInitializer {
 		LOGGER.info("Hello Fabric world!");
 		ModItems.registerModItems();
 		ModItemGroup.registerModItemGroup();
+		ModBlocks.registerModBlocks();
 	}
 }

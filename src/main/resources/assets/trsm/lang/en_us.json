@@ -1,3 +1,9 @@
 {
-    "item.trsm.reforged_item": "Reforged Item"
+    "item.trsm.reforged_item": "Reforged Item",
+    "item.trsm.prospector": "Prospector",
+
+    "block.trsm.reforged_block": "Reforged Block",
+    "block.trsm.reforged_block1": "2 Reforged Block",
+
+    "itemGroup.trsm_group": "Reforged Group"
 }
