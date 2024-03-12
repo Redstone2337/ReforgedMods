@@ -12,17 +12,17 @@ import net.minecraft.util.Identifier;
 
 public class ModItemGroup {
 
-    public static final ItemGroup REFORGED_GROUP =
-        Registry.register(Registries.ITEM_GROUP,
-            new Identifier(ReforgeSpawnMod.MOD_ID, "trsm_item_group"), 
-                FabricItemGroup
-                    .builder()
-                    .displayName(Text.translatable("itemGroup.trsm_item_group"))
-                    .icon(() -> 
-                        new ItemStack(ModItems.REFORGED_ITEM))
-                        .entries((displayContext,entries) -> {
-                            entries.add(ModItems.REFORGED_ITEM)
-                        }));
+    @SuppressWarnings("unused")
+    private static final ItemGroup ITEM_GROUP = 
+        Registry.register(Registries.ITEM_GROUP, 
+        new Identifier(ReforgeSpawnMod.MOD_ID, "trsm_group"), 
+            FabricItemGroup.builder()
+                .icon(() -> new ItemStack(ModItems.REFORGED_ITEM))
+                .displayName(Text.translatable("itemGroup.trsm_group"))
+                .entries((context, entries) -> {
+                    entries.add(ModItems.REFORGED_ITEM);
+                })
+                .build());
 
     public static void registerModItemGroup() {
         
