@@ -3,13 +3,13 @@
 	"id": "trsm",
 	"version": "${version}",
 	"name": "Reforge Spawn Mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "This is a test module, but new features are still being added. This is a recast because of previous issues.",
 	"authors": [
-		"Me!"
+		"Redstone233"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://Redstone2337200.github.io",
+		"sources": "https://github.com/Redstone2337200/ReforgedMod"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/trsm/icon.png",
