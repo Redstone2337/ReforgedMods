@@ -4,6 +4,12 @@
     "item.trsm.reforged_food": "Reforged Food",
     "item.trsm.reforged_coal": "Reforged Coal",
 
+    "item.trsm.reforged_sword": "Reforged Sword",
+    "item.trsm.reforged_pickaxe": "Reforged Pickaxe",
+    "item.trsm.reforged_axe": "Reforged Axe",
+    "item.trsm.reforged_hoe": "Reforged Hoe",
+    "item.trsm.reforged_shovel": "Reforged Shovel",
+
     "block.trsm.reforged_block": "Reforged Block",
     "block.trsm.reforged_block1": "Green Reforged Block",
     "block.trsm.fire_reforged_block": "Fire Reforged Block",

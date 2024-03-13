@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "building",
+    "key": {
+      "#": {
+        "item": "trsm:reforged_block"
+      }
+    },
+    "pattern": [
+      "###",
+      "###",
+      "###"
+    ],
+    "result": {
+      "item": "trsm:reforged_block1"
+    },
+    "show_notification": true
+  }

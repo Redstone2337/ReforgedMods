@@ -4,6 +4,12 @@
     "item.trsm.reforged_food": "重铸食物",
     "item.trsm.reforged_coal": "重铸燃料",
 
+    "item.trsm.reforged_sword": "重铸之剑",
+    "item.trsm.reforged_pickaxe": "重铸之镐",
+    "item.trsm.reforged_axe": "重铸重斧",
+    "item.trsm.reforged_hoe": "重铸之锄",
+    "item.trsm.reforged_shovel": "重铸之锹",
+
     "block.trsm.reforged_block": "重铸方块",
     "block.trsm.reforged_block1": "绿色重铸方块",
     "block.trsm.fire_reforged_block": "火焰重铸方块",

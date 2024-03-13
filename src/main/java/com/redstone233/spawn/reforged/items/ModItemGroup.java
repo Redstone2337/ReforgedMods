@@ -28,6 +28,12 @@ public class ModItemGroup {
                     entries.add(ModBlocks.FIRE_REFORGED_BLOCK);
                     entries.add(ModItems.PROSPECTOR);
                     entries.add(ModItems.REFORGED_COAL);
+
+                    entries.add(ModItems.REFORGED_SWORD);
+                    entries.add(ModItems.REFORGED_PICKAXE);
+                    entries.add(ModItems.REFORGED_AXE);
+                    entries.add(ModItems.REFORGED_SHOVRL);
+                    entries.add(ModItems.REFORGED_HOE);
                 })
                 .build());
 
@@ -35,3 +41,5 @@ public class ModItemGroup {
         
     }
 }
+
+// C:\Users\Redstone\.gradle\wrapper\dists\gradle-8.6-bin\afr5mpiioh2wthjmwnkmdsd5w\gradle-8.6

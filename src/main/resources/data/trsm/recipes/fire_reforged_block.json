@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "building",
+    "key": {
+      "#": {
+        "item": "trsm:reforged_block"
+      },
+      "A": {
+        "item": "trsm:reforged_coal"
+      }
+    },
+    "pattern": [
+      "###",
+      "#A#",
+      "###"
+    ],
+    "result": {
+      "item": "trsm:fire_reforged_block"
+    },
+    "show_notification": true
+  }

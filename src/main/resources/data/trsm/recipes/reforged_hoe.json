@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "equipment",
+    "key": {
+      "#": {
+        "item": "trsm:reforged_item"
+      },
+      "A": {
+        "item": "minecraft:stick"
+      }
+    },
+    "pattern": [
+      "##",
+      " A",
+      " A"
+    ],
+    "result": {
+      "item": "trsm:reforged_hoe"
+    },
+    "show_notification": true
+  }
