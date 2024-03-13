@@ -34,7 +34,7 @@ public class ModItems {
             new FabricItemSettings()));
 
     public static final Item REFORGED_SHOVRL = registerItems("reforged_shovel", 
-        new ShovelItem(ModToolMaterial.REFORGED_ITEM, 3, 3.2f, 
+        new ShovelItem(ModToolMaterial.REFORGED_ITEM, 3, 3.1f, 
             new FabricItemSettings()));    
 
     public static final Item REFORGED_SWORD = registerItems("reforged_sword", 
@@ -42,7 +42,7 @@ public class ModItems {
             new FabricItemSettings()));
 
     public static final Item REFORGED_HOE = registerItems("reforged_hoe", 
-        new HoeItem(ModToolMaterial.REFORGED_ITEM, 6, 3.1f, 
+        new HoeItem(ModToolMaterial.REFORGED_ITEM, 4, 3.1f, 
             new FabricItemSettings()));
 
     public static final Item REFORGED_FOOD = registerItems("reforged_food",
