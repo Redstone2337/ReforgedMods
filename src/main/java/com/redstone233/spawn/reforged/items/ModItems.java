@@ -14,7 +14,7 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
 
-    public static final Item REFORGED_ITEM = registerItems("regeforged_item", 
+    public static final Item REFORGED_ITEM = registerItems("reforged_item", 
         new Item(new FabricItemSettings()));
         
     public static final Item PROSPECTOR = registerItems("prospector", 
