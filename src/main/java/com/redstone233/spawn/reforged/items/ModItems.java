@@ -14,11 +14,17 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
 
-    public static final Item REFORGED_ITEM = registerItems("reforged_item", 
+    public static final Item REFORGED_ITEM = registerItems("regeforged_item", 
         new Item(new FabricItemSettings()));
         
     public static final Item PROSPECTOR = registerItems("prospector", 
         new Prospectetor(new FabricItemSettings().maxDamage(64)));
+
+    public static final Item REFORGED_FOOD = registerItems("reforged_food",
+        new Item(new FabricItemSettings().food(ModFoodComponents.REFORGED_FOOD)));
+
+    public static final Item REFORGED_COAL = registerItems("reforged_coal", 
+    new Item(new FabricItemSettings()));
 
     private static void addItemsToIG(FabricItemGroupEntries fabricItemGroupEntries) {
         fabricItemGroupEntries.add(REFORGED_ITEM);

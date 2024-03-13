@@ -1,10 +1,15 @@
 package com.redstone233.spawn.reforged.items.custom;
 
+import java.util.List;
+
+import com.redstone233.spawn.reforged.trsm.ModTags;
+
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
-import net.minecraft.block.Blocks;
+import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUsageContext;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
@@ -42,12 +47,17 @@ public class Prospectetor extends Item {
     }
 
     private void outputMessage(BlockPos down, PlayerEntity player, Block block) {
-        player.sendMessage(Text.literal("Found" + block.asItem().getName().getString()
+        player.sendMessage(Text.literal("[Prostr/INFO]Found" + block.asItem().getName().getString()
         + "at（" + down.getX() + "，" + down.getY() + "，" + down.getZ() + "）！"),false);
     }
 
     private boolean isRightBlock(BlockState state) {
-        return state.isOf(Blocks.IRON_ORE) || state.isOf(Blocks.DIAMOND_ORE);
+        return state.isIn(ModTags.Blocks.PROSPECTOR_LIST);
     }
-    
+
+    @Override
+    public void appendTooltip(ItemStack stack, World world, List<Text> tooltip, TooltipContext context) {
+        tooltip.add(Text.translatable("item.trsm.prospector.tooltip"));
+        super.appendTooltip(stack, world, tooltip, context);
+    }
 }

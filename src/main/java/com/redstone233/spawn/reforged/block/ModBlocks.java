@@ -1,6 +1,7 @@
 package com.redstone233.spawn.reforged.block;
 
 import com.redstone233.spawn.reforged.ReforgeSpawnMod;
+import com.redstone233.spawn.reforged.block.custom.FireReforgedBlock;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
@@ -18,9 +19,13 @@ public class ModBlocks {
         registerBlocks("reforged_block", 
         new Block(FabricBlockSettings.copyOf(Blocks.STONE)));
 
-        public static final Block REFORGED_BLOCK1 = 
+    public static final Block REFORGED_BLOCK1 = 
         registerBlocks("reforged_block1", 
         new Block(FabricBlockSettings.copyOf(Blocks.STONE)));
+
+    public static final Block FIRE_REFORGED_BLOCK = 
+        registerBlocks("fire_reforged_block", 
+            new FireReforgedBlock(FabricBlockSettings.copyOf(Blocks.STONE)));
 
     private static Block registerBlocks(String name,Block block) {
         registerBlockItems(name,block);

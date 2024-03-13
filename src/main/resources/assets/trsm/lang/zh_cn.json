@@ -1,9 +1,15 @@
 {
     "item.trsm.reforged_item": "重铸物品",
     "item.trsm.prospector": "探矿器",
+    "item.trsm.reforged_food": "重铸食物",
+    "item.trsm.reforged_coal": "重铸燃料",
 
     "block.trsm.reforged_block": "重铸方块",
-    "block.trsm.reforged_block1": "二级重铸方块",
+    "block.trsm.reforged_block1": "绿色重铸方块",
+    "block.trsm.fire_reforged_block": "火焰重铸方块",
 
-    "itemGroup.trsm_group": "重铸模组"
+    "itemGroup.trsm_group": "重铸模组",
+
+    "item.trsm.prospector.tooltip": "一个好用的工具",
+    "item.trsm.fire_reforged_block.tooltip": "一个好用的垃圾桶"
 }

@@ -4,7 +4,6 @@ import com.redstone233.spawn.reforged.ReforgeSpawnMod;
 import com.redstone233.spawn.reforged.block.ModBlocks;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
-import net.minecraft.block.Blocks;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
@@ -23,10 +22,12 @@ public class ModItemGroup {
                 .displayName(Text.translatable("itemGroup.trsm_group"))
                 .entries((context, entries) -> {
                     entries.add(ModItems.REFORGED_ITEM);
-                    entries.add(Blocks.GRASS_BLOCK);
+                    entries.add(ModItems.REFORGED_FOOD);
                     entries.add(ModBlocks.REFORGED_BLOCK);
                     entries.add(ModBlocks.REFORGED_BLOCK1);
+                    entries.add(ModBlocks.FIRE_REFORGED_BLOCK);
                     entries.add(ModItems.PROSPECTOR);
+                    entries.add(ModItems.REFORGED_COAL);
                 })
                 .build());
 

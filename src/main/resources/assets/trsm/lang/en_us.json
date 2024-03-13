@@ -1,9 +1,16 @@
 {
     "item.trsm.reforged_item": "Reforged Item",
     "item.trsm.prospector": "Prospector",
+    "item.trsm.reforged_food": "Reforged Food",
+    "item.trsm.reforged_coal": "Reforged Coal",
 
     "block.trsm.reforged_block": "Reforged Block",
-    "block.trsm.reforged_block1": "2 Reforged Block",
+    "block.trsm.reforged_block1": "Green Reforged Block",
+    "block.trsm.fire_reforged_block": "Fire Reforged Block",
 
-    "itemGroup.trsm_group": "Reforged Group"
+    "itemGroup.trsm_group": "Reforged Group",
+
+
+    "item.trsm.prospector.tooltip": "A Good Item",
+    "item.trsm.fire_reforged_block.tooltip": "A Good Bucket"
 }
