@@ -1,6 +1,7 @@
 package com.redstone233.spawn.reforged.items;
 
 import com.redstone233.spawn.reforged.ReforgeSpawnMod;
+import com.redstone233.spawn.reforged.items.custom.ModArmorItem;
 import com.redstone233.spawn.reforged.items.custom.Prospectetor;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
@@ -11,6 +12,7 @@ import net.minecraft.item.ItemGroups;
 import net.minecraft.item.PickaxeItem;
 import net.minecraft.item.ShovelItem;
 import net.minecraft.item.SwordItem;
+import net.minecraft.item.ArmorItem;
 import net.minecraft.item.AxeItem;
 import net.minecraft.item.HoeItem;
 import net.minecraft.registry.Registries;
@@ -19,7 +21,7 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
 
-    public static final Item REFORGED_ITEM = registerItems("reforged_item", 
+    public static final Item REFORGED_ITEM = registerItems("regeforged_item", 
         new Item(new FabricItemSettings()));
         
     public static final Item PROSPECTOR = registerItems("prospector", 
@@ -34,7 +36,7 @@ public class ModItems {
             new FabricItemSettings()));
 
     public static final Item REFORGED_SHOVRL = registerItems("reforged_shovel", 
-        new ShovelItem(ModToolMaterial.REFORGED_ITEM, 3, 3.1f, 
+        new ShovelItem(ModToolMaterial.REFORGED_ITEM, 3, 3.2f, 
             new FabricItemSettings()));    
 
     public static final Item REFORGED_SWORD = registerItems("reforged_sword", 
@@ -42,7 +44,23 @@ public class ModItems {
             new FabricItemSettings()));
 
     public static final Item REFORGED_HOE = registerItems("reforged_hoe", 
-        new HoeItem(ModToolMaterial.REFORGED_ITEM, 4, 3.1f, 
+        new HoeItem(ModToolMaterial.REFORGED_ITEM, 6, 3.1f, 
+            new FabricItemSettings()));
+
+    public static final Item REFORGED_HELMET = registerItems("reforged_helmets",
+        new ModArmorItem(ModArmorMaterial.REFORGED_ITEM, ArmorItem.Type.HELMET, 
+            new FabricItemSettings()));
+
+    public static final Item REFORGED_CHESTPLATE = registerItems("reforged_chestplates",
+        new ArmorItem(ModArmorMaterial.REFORGED_ITEM, ArmorItem.Type.CHESTPLATE, 
+            new FabricItemSettings()));
+
+    public static final Item REFORGED_LEGGINGS = registerItems("reforged_leggings",
+        new ArmorItem(ModArmorMaterial.REFORGED_ITEM, ArmorItem.Type.LEGGINGS, 
+            new FabricItemSettings()));
+
+    public static final Item REFORGED_BOOTS = registerItems("reforged_boots",
+        new ArmorItem(ModArmorMaterial.REFORGED_ITEM, ArmorItem.Type.BOOTS, 
             new FabricItemSettings()));
 
     public static final Item REFORGED_FOOD = registerItems("reforged_food",

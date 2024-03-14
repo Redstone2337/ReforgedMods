@@ -34,6 +34,11 @@ public class ModItemGroup {
                     entries.add(ModItems.REFORGED_AXE);
                     entries.add(ModItems.REFORGED_SHOVRL);
                     entries.add(ModItems.REFORGED_HOE);
+
+                    entries.add(ModItems.REFORGED_HELMET);
+                    entries.add(ModItems.REFORGED_CHESTPLATE);
+                    entries.add(ModItems.REFORGED_LEGGINGS);
+                    entries.add(ModItems.REFORGED_BOOTS);
                 })
                 .build());
 
