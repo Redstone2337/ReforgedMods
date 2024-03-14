@@ -9,6 +9,12 @@
     "item.trsm.reforged_axe": "Reforged Axe",
     "item.trsm.reforged_hoe": "Reforged Hoe",
     "item.trsm.reforged_shovel": "Reforged Shovel",
+    "item.trsm.reforged_helmets": "Reforged Helmets",
+    "item.trsm.reforged_chestplates": "Reforged Hestplates",
+    "item.trsm.reforged_leggings": "Reforged Leggings",
+    "item.trsm.reforged_boots": "Reforged Boots",
+    "item.trsm.reforged_apple": "Reforged Apple",
+    "item.trsm.reforged_apple_seeds": "Reforged Apple Seeds",
 
     "block.trsm.reforged_block": "Reforged Block",
     "block.trsm.reforged_block1": "Green Reforged Block",
@@ -16,6 +22,14 @@
 
     "itemGroup.trsm_group": "Reforged Group",
 
+    "commands.trsm.info.page.success": "Run command trsm successful",
+    "commands.trsm.info.page.fail": "Run command trsm fail",
+    "commands.info.depends.minecraft.success": "Run command trsm successful",
+    "commands.info.depends.minecraft.fail": "Run command trsm fail",
+    "commands.info.depends.fabric.success": "Run command trsm successful",
+    "commands.info.depends.fabric.fail": "Run command trsm fail",
+    "commands.trsm.info.depends.success": "Run command trsm successful",
+    "commands.trsm.info.depends.fail": "Run command trsm fail",
 
     "item.trsm.prospector.tooltip": "A Good Item",
     "item.trsm.fire_reforged_block.tooltip": "A Good Bucket"

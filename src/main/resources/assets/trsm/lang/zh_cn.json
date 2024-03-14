@@ -9,12 +9,27 @@
     "item.trsm.reforged_axe": "重铸重斧",
     "item.trsm.reforged_hoe": "重铸之锄",
     "item.trsm.reforged_shovel": "重铸之锹",
+    "item.trsm.reforged_helmets": "重铸头盔",
+    "item.trsm.reforged_chestplates": "重铸胸甲",
+    "item.trsm.reforged_leggings": "重铸护腿",
+    "item.trsm.reforged_boots": "重铸靴子",
+    "item.trsm.reforged_apple": "重铸苹果",
+    "item.trsm.reforged_apple_seeds": "重铸苹果种子",
 
     "block.trsm.reforged_block": "重铸方块",
     "block.trsm.reforged_block1": "绿色重铸方块",
     "block.trsm.fire_reforged_block": "火焰重铸方块",
 
     "itemGroup.trsm_group": "重铸模组",
+
+    "commands.trsm.info.page.success": "执行命令“trsm”成功",
+    "commands.trsm.info.page.fail": "执行命令“trsm”失败",
+    "commands.info.depends.minecraft.success": "执行命令“trsm”成功",
+    "commands.info.depends.minecraft.fail": "执行命令“trsm”失败",
+    "commands.info.depends.fabric.success": "执行命令“trsm”成功",
+    "commands.info.depends.fabric.fail": "执行命令“trsm”失败",
+    "commands.trsm.info.depends.success": "执行命令“trsm”成功",
+    "commands.trsm.info.depends.fail": "执行命令“trsm”失败",
 
     "item.trsm.prospector.tooltip": "一个好用的工具",
     "item.trsm.fire_reforged_block.tooltip": "一个好用的垃圾桶"
