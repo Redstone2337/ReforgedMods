@@ -49,11 +49,11 @@ public class ModItems {
         new HoeItem(ModToolMaterial.REFORGED_ITEM, 6, 3.1f, 
             new FabricItemSettings()));
 
-    public static final Item REFORGED_HELMET = registerItems("reforged_helmet",
+    public static final Item REFORGED_HELMET = registerItems("reforged_helmets",
         new ModArmorItem(ModArmorMaterial.REFORGED_ITEM, ArmorItem.Type.HELMET, 
             new FabricItemSettings()));
 
-    public static final Item REFORGED_CHESTPLATE = registerItems("reforged_chestplate",
+    public static final Item REFORGED_CHESTPLATE = registerItems("reforged_chestplates",
         new ArmorItem(ModArmorMaterial.REFORGED_ITEM, ArmorItem.Type.CHESTPLATE, 
             new FabricItemSettings()));
 
