@@ -2,7 +2,6 @@ package com.redstone233.spawn.reforged;
 
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
-import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -30,8 +29,5 @@ public class ReforgeSpawnMod implements ModInitializer {
 		ModBlocks.registerModBlocks();
 
 		FuelRegistry.INSTANCE.add(ModItems.REFORGED_COAL, 2000);
-		CommandRegistrationCallback.EVENT
-			.register((dispatcher, registryAccess, environment) -> TestReforgedCommands.register(dispatcher)
-		);
 	}
 }
