@@ -10,6 +10,7 @@ import org.slf4j.LoggerFactory;
 import com.redstone233.spawn.reforged.block.ModBlocks;
 import com.redstone233.spawn.reforged.items.ModItemGroup;
 import com.redstone233.spawn.reforged.items.ModItems;
+import com.redstone233.spawn.reforged.commands.ReforgedSpawnModCommands;
 
 public class ReforgeSpawnMod implements ModInitializer {
 	// This logger is used to write text to the console and the log file.
@@ -32,7 +33,7 @@ public class ReforgeSpawnMod implements ModInitializer {
 		FuelRegistry.INSTANCE.add(ModItems.REFORGED_COAL, 2000);
 
 		CommandRegistrationCallback.EVENT
-			.register((dispatcher, registryAccess, environment) -> TestReforgedCommands.register(dispatcher)
+			.register((dispatcher, registryAccess, environment) -> ReforgedSpawnModCommands.register(dispatcher)
 		);
 	}
 }
