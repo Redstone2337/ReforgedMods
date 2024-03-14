@@ -1,5 +1,6 @@
 package com.redstone233.spawn.reforged.datagen;
 
+import com.redstone233.spawn.reforged.block.AppleCropBlock;
 import com.redstone233.spawn.reforged.block.ModBlocks;
 import com.redstone233.spawn.reforged.items.ModItems;
 
@@ -22,6 +23,10 @@ public class ModModlesProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.FIRE_REFORGED_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.REFORGED_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.REFORGED_BLOCK1);
+
+        blockStateModelGenerator.registerCrop(ModBlocks.REFORGED_APPLE_CROP,
+            AppleCropBlock.AGE, 
+                0,1,2,3,4,5);
     }
 
     @Override
@@ -31,6 +36,8 @@ public class ModModlesProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.REFORGED_COAL, Models.GENERATED);
         itemModelGenerator.register(ModItems.REFORGED_FOOD, Models.GENERATED);
         itemModelGenerator.register(ModItems.REFORGED_ITEM, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.REFORGED_APPLE, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.REFORGED_SWORD, Models.HANDHELD);
         itemModelGenerator.register(ModItems.REFORGED_PICKAXE, Models.HANDHELD);
