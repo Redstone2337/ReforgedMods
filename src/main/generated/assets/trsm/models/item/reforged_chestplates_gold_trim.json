@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "trsm:item/reforged_chestplates",
+    "layer1": "minecraft:trims/items/chestplate_trim_gold"
+  }
+}

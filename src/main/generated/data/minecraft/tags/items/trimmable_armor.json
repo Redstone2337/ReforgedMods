@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "trsm:reforged_helmets",
+    "trsm:reforged_chestplates",
+    "trsm:reforged_leggings",
+    "trsm:reforged_boots"
+  ]
+}
