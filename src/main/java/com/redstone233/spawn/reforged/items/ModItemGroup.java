@@ -39,6 +39,8 @@ public class ModItemGroup {
                     entries.add(ModItems.REFORGED_CHESTPLATE);
                     entries.add(ModItems.REFORGED_LEGGINGS);
                     entries.add(ModItems.REFORGED_BOOTS);
+                    entries.add(ModItems.REFORGED_APPLE_SEEDS);
+                    entries.add(ModItems.REFORGED_APPLE);
                 })
                 .build());
 

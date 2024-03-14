@@ -1,6 +1,7 @@
 package com.redstone233.spawn.reforged.items;
 
 import com.redstone233.spawn.reforged.ReforgeSpawnMod;
+import com.redstone233.spawn.reforged.block.ModBlocks;
 import com.redstone233.spawn.reforged.items.custom.ModArmorItem;
 import com.redstone233.spawn.reforged.items.custom.Prospectetor;
 
@@ -12,6 +13,7 @@ import net.minecraft.item.ItemGroups;
 import net.minecraft.item.PickaxeItem;
 import net.minecraft.item.ShovelItem;
 import net.minecraft.item.SwordItem;
+import net.minecraft.item.AliasedBlockItem;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.AxeItem;
 import net.minecraft.item.HoeItem;
@@ -65,6 +67,12 @@ public class ModItems {
 
     public static final Item REFORGED_FOOD = registerItems("reforged_food",
         new Item(new FabricItemSettings().food(ModFoodComponents.REFORGED_FOOD)));
+
+    public static final Item REFORGED_APPLE = registerItems("reforged_apple",
+        new Item(new FabricItemSettings().food(ModFoodComponents.REFORGED_APPLE)));
+
+     public static final Item REFORGED_APPLE_SEEDS = registerItems("reforged_apple_seeds",
+         new AliasedBlockItem(ModBlocks.REFORGED_APPLE_CROP, new FabricItemSettings()));
 
     public static final Item REFORGED_COAL = registerItems("reforged_coal", 
     new Item(new FabricItemSettings()));
