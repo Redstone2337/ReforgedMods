@@ -23,6 +23,10 @@ public class ModBlocks {
         registerBlocks("reforged_block1", 
         new Block(FabricBlockSettings.copyOf(Blocks.STONE)));
 
+    public static final Block REFORGED_APPLE_CROP = Registry.register(Registries.BLOCK, 
+        new Identifier(ReforgeSpawnMod.MOD_ID, "reforged_apple_crop"), 
+            new AppleCropBlock(FabricBlockSettings.copyOf(Blocks.WHEAT)));
+
     public static final Block FIRE_REFORGED_BLOCK = 
         registerBlocks("fire_reforged_block", 
             new FireReforgedBlock(FabricBlockSettings.copyOf(Blocks.STONE)));
