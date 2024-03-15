@@ -22,14 +22,14 @@
 			"com.redstone233.spawn.reforged.ReforgeSpawnModDataGenerator"
 		]
 	},
-	"custom": {
-        	"modmenu": {
-        		"badges": [ "library" ]
-        	}
-    	},
 	"mixins": [
 		"trsm.mixins.json"
 	],
+	"custom": {
+        "modmenu": {
+            "badges": [ "library" ]
+        	}
+    	},
 	"depends": {
 		"fabricloader": ">=0.15.7",
 		"minecraft": "~1.20.4",
