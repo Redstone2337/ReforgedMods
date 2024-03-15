@@ -22,6 +22,11 @@
 			"com.redstone233.spawn.reforged.ReforgeSpawnModDataGenerator"
 		]
 	},
+	"custom": {
+        	"modmenu": {
+        		"badges": [ "library" ]
+        	}
+    	},
 	"mixins": [
 		"trsm.mixins.json"
 	],
