@@ -30,7 +30,7 @@ public class ModItems {
         new Prospectetor(new FabricItemSettings().maxDamage(64)));
 
     public static final Item REFORGED_PICKAXE = registerItems("reforged_pickaxe", 
-        new PickaxeItem(ModToolMaterial.REFORGED_ITEM, 5, -5.3f, 
+        new PickaxeItem(ModToolMaterial.REFORGED_ITEM, 5, 2.3f, 
             new FabricItemSettings()));
     
     public static final Item REFORGED_AXE = registerItems("reforged_axe", 
