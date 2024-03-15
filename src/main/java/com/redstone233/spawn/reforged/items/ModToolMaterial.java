@@ -6,7 +6,7 @@ import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 
 public enum ModToolMaterial implements ToolMaterial {
-    REFORGED_ITEM(5,600,6.25f,7.25f,25,
+    REFORGED_ITEM(5,600,6.5f,7.5f,25,
     () -> Ingredient.ofItems(ModItems.REFORGED_ITEM))
     ;
 
