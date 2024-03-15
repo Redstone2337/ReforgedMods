@@ -26,10 +26,16 @@
 		"trsm.mixins.json"
 	],
 	"custom": {
-        "modmenu": {
-            "badges": [ "library" ]
-        	}
-    	},
+    		"modmenu": {
+        	"parent": {
+            		"id": "reforged",
+            		"name": "Reforged API",
+            		"description": "This is a simple front module.",
+            		"icon": "assets/trsm/reforged_library.png",
+            		"badges": [ "library" ]
+        		}
+    		}
+	},
 	"depends": {
 		"fabricloader": ">=0.15.7",
 		"minecraft": "~1.20.4",
