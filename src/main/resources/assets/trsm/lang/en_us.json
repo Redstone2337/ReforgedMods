@@ -22,14 +22,19 @@
 
     "itemGroup.trsm_group": "Reforged Group",
 
-    "commands.trsm.info.page.success": "Run command trsm successful",
-    "commands.trsm.info.page.fail": "Run command trsm fail",
-    "commands.info.depends.minecraft.success": "Run command trsm successful",
-    "commands.info.depends.minecraft.fail": "Run command trsm fail",
-    "commands.info.depends.fabric.success": "Run command trsm successful",
-    "commands.info.depends.fabric.fail": "Run command trsm fail",
-    "commands.trsm.info.depends.success": "Run command trsm successful",
-    "commands.trsm.info.depends.fail": "Run command trsm fail",
+    "commands.trsm.info.page.success": "\u00a7aRun command trsm successful",
+    "commands.trsm.info.page.fail": "Run command trsm failed",
+    "commands.info.depends.minecraft.success": "\u00a7aRun command trsm successful",
+    "commands.info.depends.minecraft.fail": "Run command trsm failed",
+    "commands.info.depends.fabric.success": "\u00a7aRun command trsm successful",
+    "commands.info.depends.fabric.fail": "Run command trsm failed",
+    "commands.trsm.info.depends.success": "\u00a7aRun command trsm successful",
+    "commands.trsm.info.depends.fail": "Run command trsm failed",
+    "commands.int.value.odd.success": "\u00a7a(Long)Integers %s are odd",
+    "commands.int.value.even.success": "\u00a7a(Long)Integers %s are even",
+    "commands.long.value.fail": "Run command long failed",
+    "commands.reforged.success": "\u00a7aRun command reforged successful",
+    "commands.reforged.fail": "Run command reforged failed",
 
     "item.trsm.prospector.tooltip": "A Good Item",
     "item.trsm.fire_reforged_block.tooltip": "A Good Bucket"

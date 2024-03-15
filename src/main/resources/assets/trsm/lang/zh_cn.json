@@ -1,6 +1,6 @@
 {
-    "item.trsm.reforged_item": "重铸物品",
-    "item.trsm.prospector": "探矿器",
+    "item.trsm.reforged_item": "\u00a71重铸物品",
+    "item.trsm.prospector": "\u00a7d探\u00a7b矿\u00a7a6器",
     "item.trsm.reforged_food": "重铸食物",
     "item.trsm.reforged_coal": "重铸燃料",
 
@@ -22,15 +22,20 @@
 
     "itemGroup.trsm_group": "重铸模组",
 
-    "commands.trsm.info.page.success": "执行命令“trsm”成功",
+    "commands.trsm.info.page.success": "\u00a7a执行命令“trsm”成功",
     "commands.trsm.info.page.fail": "执行命令“trsm”失败",
-    "commands.info.depends.minecraft.success": "执行命令“trsm”成功",
+    "commands.info.depends.minecraft.success": "\u00a7a执行命令“trsm”成功",
     "commands.info.depends.minecraft.fail": "执行命令“trsm”失败",
-    "commands.info.depends.fabric.success": "执行命令“trsm”成功",
+    "commands.info.depends.fabric.success": "\u00a7a执行命令“trsm”成功",
     "commands.info.depends.fabric.fail": "执行命令“trsm”失败",
-    "commands.trsm.info.depends.success": "执行命令“trsm”成功",
+    "commands.trsm.info.depends.success": "\u00a7a执行命令“trsm”成功",
     "commands.trsm.info.depends.fail": "执行命令“trsm”失败",
+    "commands.int.value.odd.success": "(长)整数%s是奇数",
+    "commands.int.value.even.success": "(长)整数%s是偶数",
+    "commands.long.value.fail": "执行命令“long”失败",
+    "commands.reforged.success": "\u00a7a执行命令“reforged”成功",
+    "commands.reforged.fail": "执行命令“reforged”失败",
 
-    "item.trsm.prospector.tooltip": "一个好用的工具",
-    "item.trsm.fire_reforged_block.tooltip": "一个好用的垃圾桶"
+    "item.trsm.prospector.tooltip": "\u00a7b一个好用的工具",
+    "item.trsm.fire_reforged_block.tooltip": "\u00a76一个好用的垃圾桶"
 }
