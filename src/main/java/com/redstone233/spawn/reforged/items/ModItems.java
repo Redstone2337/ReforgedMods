@@ -30,23 +30,23 @@ public class ModItems {
         new Prospectetor(new FabricItemSettings().maxDamage(64)));
 
     public static final Item REFORGED_PICKAXE = registerItems("reforged_pickaxe", 
-        new PickaxeItem(ModToolMaterial.REFORGED_ITEM, 5, 2.3f, 
+        new PickaxeItem(ModToolMaterial.REFORGED_ITEM, 5, -1.3f, 
             new FabricItemSettings()));
     
     public static final Item REFORGED_AXE = registerItems("reforged_axe", 
-        new AxeItem(ModToolMaterial.REFORGED_ITEM, 11, 5.2f, 
+        new AxeItem(ModToolMaterial.REFORGED_ITEM, 15, 5.1f, 
             new FabricItemSettings()));
 
     public static final Item REFORGED_SHOVRL = registerItems("reforged_shovel", 
-        new ShovelItem(ModToolMaterial.REFORGED_ITEM, 3, 3.2f, 
+        new ShovelItem(ModToolMaterial.REFORGED_ITEM, 3, -1.2f, 
             new FabricItemSettings()));    
 
     public static final Item REFORGED_SWORD = registerItems("reforged_sword", 
-        new SwordItem(ModToolMaterial.REFORGED_ITEM, 10, 1.5f, 
+        new SwordItem(ModToolMaterial.REFORGED_ITEM, 10, -1.5f, 
             new FabricItemSettings()));
 
     public static final Item REFORGED_HOE = registerItems("reforged_hoe", 
-        new HoeItem(ModToolMaterial.REFORGED_ITEM, 6, 3.1f, 
+        new HoeItem(ModToolMaterial.REFORGED_ITEM, 6, -1.8f, 
             new FabricItemSettings()));
 
     public static final Item REFORGED_HELMET = registerItems("reforged_helmets",
