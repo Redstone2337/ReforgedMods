@@ -34,15 +34,15 @@ public class ModItems {
             new FabricItemSettings()));
     
     public static final Item REFORGED_AXE = registerItems("reforged_axe", 
-        new AxeItem(ModToolMaterial.REFORGED_ITEM, 15, -4.5f, 
+        new AxeItem(ModToolMaterial.REFORGED_ITEM, 15, -3.5f, 
             new FabricItemSettings()));
             
     public static final Item COMBO_AXE = registerItems("combo_axe", 
-        new AxeItem(ModToolMaterial.REFORGED_ITEM, 15, 5.2f, 
+        new AxeItem(ModToolMaterial.REFORGED_ITEM, 15, 5.5f, 
             new FabricItemSettings()));
             
     public static final Item SECOND_AXE = registerItems("second_axe", 
-        new AxeItem(ModToolMaterial.REFORGED_ITEM, 100, -5.2f, 
+        new AxeItem(ModToolMaterial.REFORGED_ITEM, 100, -4.5f, 
             new FabricItemSettings()));
 
     public static final Item REFORGED_SHOVRL = registerItems("reforged_shovel", 
