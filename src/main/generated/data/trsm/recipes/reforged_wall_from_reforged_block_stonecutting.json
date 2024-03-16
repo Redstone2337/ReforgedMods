@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "trsm:reforged_block"
+  },
+  "result": "trsm:reforged_wall"
+}
