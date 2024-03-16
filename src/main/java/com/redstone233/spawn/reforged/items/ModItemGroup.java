@@ -32,6 +32,8 @@ public class ModItemGroup {
                     entries.add(ModItems.REFORGED_SWORD);
                     entries.add(ModItems.REFORGED_PICKAXE);
                     entries.add(ModItems.REFORGED_AXE);
+                    entries.add(ModItems.COMBO_AXE);
+                    entries.add(ModItems.SECOND_AXE);
                     entries.add(ModItems.REFORGED_SHOVRL);
                     entries.add(ModItems.REFORGED_HOE);
 
