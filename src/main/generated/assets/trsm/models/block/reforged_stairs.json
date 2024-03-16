@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "trsm:block/reforged_block",
+    "side": "trsm:block/reforged_block",
+    "top": "trsm:block/reforged_block"
+  }
+}
