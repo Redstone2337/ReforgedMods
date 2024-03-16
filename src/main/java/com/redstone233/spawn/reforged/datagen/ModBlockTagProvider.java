@@ -48,7 +48,16 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK, 
             new Identifier("fabric", "needs_tool_level_4")))
-                .add(ModBlocks.FIRE_REFORGED_BLOCK);    
+                .add(ModBlocks.FIRE_REFORGED_BLOCK);
+                
+        getOrCreateTagBuilder(BlockTags.FENCES)
+            .add(ModBlocks.REFORGED_FENCE);
+
+        getOrCreateTagBuilder(BlockTags.FENCE_GATES)
+            .add(ModBlocks.REFORGED_FENCE_GATE);
+
+        getOrCreateTagBuilder(BlockTags.WALLS)
+            .add(ModBlocks.REFORGED_WALL);
     }
     
 }

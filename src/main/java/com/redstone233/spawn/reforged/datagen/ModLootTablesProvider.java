@@ -21,6 +21,15 @@ public class ModLootTablesProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.FIRE_REFORGED_BLOCK);
         addDrop(ModBlocks.REFORGED_BLOCK);
         addDrop(ModBlocks.REFORGED_BLOCK1);
+        addDrop(ModBlocks.REFORGED_BUTTON);
+        addDrop(ModBlocks.REFORGED_FENCE);
+        addDrop(ModBlocks.REFORGED_FENCE_GATE);
+        addDrop(ModBlocks.REFORGED_PRESSURE_PLATE);
+        addDrop(ModBlocks.REFORGED_STAIR);
+        addDrop(ModBlocks.REFORGED_TRAPDOOR);
+
+        addDrop(ModBlocks.REFORGED_DOOR,doorDrops(ModBlocks.REFORGED_DOOR));
+        addDrop(ModBlocks.REFORGED_SLAB,slabDrops(ModBlocks.REFORGED_SLAB));
 
         BlockStatePropertyLootCondition.Builder builder = 
             BlockStatePropertyLootCondition.builder(ModBlocks.REFORGED_APPLE_CROP)

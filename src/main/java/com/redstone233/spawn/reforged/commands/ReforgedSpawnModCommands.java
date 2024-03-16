@@ -265,7 +265,7 @@ public class ReforgedSpawnModCommands {
         if (value %2 == 0) {
             source.getSource().sendFeedback(() -> {
                 return Text.translatable("commands.int.value.even.success");
-            }, false);
+            }, true);
             return value;
         } else if (value %2 != 0) {
             source.getSource().sendError(Text.translatable("commands.int.value.odd.success"));
@@ -274,7 +274,6 @@ public class ReforgedSpawnModCommands {
             source.getSource().sendError(Text.translatable("commands.long.value.fail"));
             return 0;
         }
-
     }
 
     private static int getDependsMinecraft(ServerCommandSource source) {

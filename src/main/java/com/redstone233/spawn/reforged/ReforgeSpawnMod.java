@@ -2,15 +2,14 @@ package com.redstone233.spawn.reforged;
 
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
-import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.redstone233.spawn.reforged.block.ModBlockGroup;
 import com.redstone233.spawn.reforged.block.ModBlocks;
 import com.redstone233.spawn.reforged.items.ModItemGroup;
 import com.redstone233.spawn.reforged.items.ModItems;
-import com.redstone233.spawn.reforged.commands.ReforgedSpawnModCommands;
 
 public class ReforgeSpawnMod implements ModInitializer {
 	// This logger is used to write text to the console and the log file.
@@ -29,11 +28,8 @@ public class ReforgeSpawnMod implements ModInitializer {
 		ModItems.registerModItems();
 		ModItemGroup.registerModItemGroup();
 		ModBlocks.registerModBlocks();
+		ModBlockGroup.registerModBlockGroup();
 
 		FuelRegistry.INSTANCE.add(ModItems.REFORGED_COAL, 2000);
-
-		CommandRegistrationCallback.EVENT
-			.register((dispatcher, registryAccess, environment) -> ReforgedSpawnModCommands.register(dispatcher)
-		);
 	}
 }

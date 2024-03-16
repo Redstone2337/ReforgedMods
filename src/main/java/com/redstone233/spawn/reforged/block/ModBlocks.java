@@ -6,7 +6,18 @@ import com.redstone233.spawn.reforged.block.custom.FireReforgedBlock;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockSetType;
 import net.minecraft.block.Blocks;
+import net.minecraft.block.ButtonBlock;
+import net.minecraft.block.DoorBlock;
+import net.minecraft.block.FenceBlock;
+import net.minecraft.block.FenceGateBlock;
+import net.minecraft.block.PressurePlateBlock;
+import net.minecraft.block.SlabBlock;
+import net.minecraft.block.StairsBlock;
+import net.minecraft.block.TrapdoorBlock;
+import net.minecraft.block.WallBlock;
+import net.minecraft.block.WoodType;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -23,6 +34,42 @@ public class ModBlocks {
         registerBlocks("reforged_block1", 
         new Block(FabricBlockSettings.copyOf(Blocks.STONE)));
 
+    public static final Block REFORGED_STAIR = 
+        registerBlocks("reforged_stair", 
+        new StairsBlock(ModBlocks.REFORGED_BLOCK.getDefaultState(),FabricBlockSettings.copyOf(Blocks.STONE)));
+
+    public static final Block REFORGED_SLAB = 
+        registerBlocks("reforged_slab", 
+        new SlabBlock(FabricBlockSettings.copyOf(Blocks.STONE)));
+
+    public static final Block REFORGED_BUTTON = 
+        registerBlocks("reforged_button", 
+            new ButtonBlock(BlockSetType.STONE, 20, FabricBlockSettings.copyOf(Blocks.STONE)));
+
+    public static final Block REFORGED_PRESSURE_PLATE = 
+        registerBlocks("reforged_pressure_plate", 
+            new PressurePlateBlock(BlockSetType.STONE,FabricBlockSettings.copyOf(Blocks.STONE)));
+
+    public static final Block REFORGED_FENCE = 
+        registerBlocks("reforged_fence", 
+            new FenceBlock(FabricBlockSettings.copyOf(Blocks.STONE)));
+            
+    public static final Block REFORGED_FENCE_GATE = 
+        registerBlocks("reforged_fance_gate", 
+            new FenceGateBlock(WoodType.OAK,FabricBlockSettings.copyOf(Blocks.STONE)));
+
+    public static final Block REFORGED_WALL = 
+        registerBlocks("reforged_wall", 
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.STONE)));
+
+    public static final Block REFORGED_DOOR= 
+        registerBlocks("reforged_door", 
+            new DoorBlock(BlockSetType.STONE,FabricBlockSettings.copyOf(Blocks.STONE)));
+
+    public static final Block REFORGED_TRAPDOOR = 
+        registerBlocks("reforged_trapdoor", 
+            new TrapdoorBlock(BlockSetType.STONE,FabricBlockSettings.copyOf(Blocks.STONE)));
+    
     public static final Block REFORGED_APPLE_CROP = Registry.register(Registries.BLOCK, 
         new Identifier(ReforgeSpawnMod.MOD_ID, "reforged_apple_crop"), 
             new AppleCropBlock(FabricBlockSettings.copyOf(Blocks.WHEAT)));
