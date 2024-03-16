@@ -29,9 +29,6 @@
     		"modmenu": {
         	"parent": {
             		"id": "reforged",
-            		"name": "Reforged API",
-            		"description": "This is a simple front module.",
-            		"icon": "assets/trsm/reforged_library.png",
             		"badges": [ "library" ]
         		}
     		}
