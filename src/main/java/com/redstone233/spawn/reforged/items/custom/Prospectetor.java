@@ -38,7 +38,7 @@ public class Prospectetor extends Item {
                 }
             }
             if (!foundBlock) {
-                player.sendMessage(Text.literal("No Ore Found!"));
+                player.sendMessage(Text.translatable("item.trsm.prospector.error"));
             }
         }
         context.getStack().damage(1, context.getPlayer(), 
