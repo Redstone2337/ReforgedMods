@@ -26,11 +26,11 @@ import net.minecraft.util.Identifier;
 
 public class ModBlocks {
 
-    public static final Block REFORGED_BLOCK1 = 
+    public static final Block REFORGED_BLOCK = 
         registerBlocks("reforged_block1", 
         new Block(FabricBlockSettings.copyOf(Blocks.STONE)));
 
-    public static final Block REFORGED_BLOCK = 
+    public static final Block REFORGED_BLOCK1 = 
         registerBlocks("reforged_block", 
         new Block(FabricBlockSettings.copyOf(Blocks.STONE)));
 
