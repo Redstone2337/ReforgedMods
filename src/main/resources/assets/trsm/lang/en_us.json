@@ -18,11 +18,23 @@
     "item.trsm.reforged_apple": "Reforged Apple",
     "item.trsm.reforged_apple_seeds": "Reforged Apple Seeds",
 
+    "block.trsm.reforged_stair": "Reforged Stairs",
+    "block.trsm.reforged_slab": "Reforged Slabs",
+    "block.trsm.reforged_button": "Reforged Button",
+    "block.trsm.reforged_pressure_plate": "Reforged Pressure Plate",
+    "block.trsm.reforged_fence": "Reforged Fence",
+    "block.trsm.reforged_fance_gate": "Reforged Fance Gate",
+    "block.trsm.reforged_wall": "Reforged Wall",
+    "block.trsm.reforged_door": "Reforged Door",
+    "block.trsm.reforged_trapdoor": "Reforged Trapdoor",
+
+
     "block.trsm.reforged_block": "Reforged Block",
     "block.trsm.reforged_block1": "Green Reforged Block",
     "block.trsm.fire_reforged_block": "Fire Reforged Block",
 
     "itemGroup.trsm_group": "Reforged Group",
+    "itemGroup.trsm_block_group": "Reforged Block Group",
 
     "commands.trsm.info.page.success": "\u00a7aRun command trsm successful",
     "commands.trsm.info.page.fail": "Run command trsm failed",

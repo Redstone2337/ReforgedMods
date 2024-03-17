@@ -1,6 +1,6 @@
 {
     "item.trsm.reforged_item": "\u00a71重铸物品",
-    "item.trsm.prospector": "\u00a7d探\u00a7b矿\u00a7a6器",
+    "item.trsm.prospector": "\u00a7d探\u00a7b矿\u00a7a器",
     "item.trsm.reforged_food": "重铸食物",
     "item.trsm.reforged_coal": "重铸燃料",
 
@@ -18,11 +18,22 @@
     "item.trsm.reforged_apple": "重铸苹果",
     "item.trsm.reforged_apple_seeds": "重铸苹果种子",
 
+    "block.trsm.reforged_stair": "重铸楼梯",
+    "block.trsm.reforged_slab": "重铸阶梯",
+    "block.trsm.reforged_button": "重铸按钮",
+    "block.trsm.reforged_pressure_plate": "重铸压力板",
+    "block.trsm.reforged_fence": "重铸栅栏门",
+    "block.trsm.reforged_fance_gate": "重铸栅栏",
+    "block.trsm.reforged_wall": "重铸墙壁",
+    "block.trsm.reforged_door": "重铸之门",
+    "block.trsm.reforged_trapdoor": "重铸活板门",
+
     "block.trsm.reforged_block": "重铸方块",
     "block.trsm.reforged_block1": "绿色重铸方块",
     "block.trsm.fire_reforged_block": "火焰重铸方块",
 
     "itemGroup.trsm_group": "重铸模组",
+    "itemGroup.trsm_block_group": "重铸方块",
 
     "commands.trsm.info.page.success": "\u00a7a执行命令“trsm”成功",
     "commands.trsm.info.page.fail": "执行命令“trsm”失败",
