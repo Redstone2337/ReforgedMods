@@ -36,7 +36,7 @@ public class ModBlocks {
 
     public static final Block REFORGED_STAIR = 
         registerBlocks("reforged_stairs", 
-        new StairsBlock(ModBlocks.REFORGED_BLOCK.getDefaultState(),FabricBlockSettings.copyOf(Blocks.STONE)));
+        new StairsBlock(ModBlocks.REFORGED_BLOCK1.getDefaultState(),FabricBlockSettings.copyOf(Blocks.STONE)));
 
     public static final Block REFORGED_SLAB = 
         registerBlocks("reforged_slab", 
