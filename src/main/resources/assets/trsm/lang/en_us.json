@@ -51,5 +51,6 @@
     "commands.reforged.fail": "Run command reforged failed",
 
     "item.trsm.prospector.tooltip": "A Good Item",
-    "item.trsm.fire_reforged_block.tooltip": "A Good Bucket"
+    "item.trsm.fire_reforged_block.tooltip": "A Good Bucket",
+    "item.trsm.prospector.error": "\u00a74[Prospetr/ERROR]No ore was found!"
 }
