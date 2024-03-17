@@ -18,7 +18,7 @@
     "item.trsm.reforged_apple": "Reforged Apple",
     "item.trsm.reforged_apple_seeds": "Reforged Apple Seeds",
 
-    "block.trsm.reforged_stair": "Reforged Stairs",
+    "block.trsm.reforged_stairs": "Reforged Stairs",
     "block.trsm.reforged_slab": "Reforged Slabs",
     "block.trsm.reforged_button": "Reforged Button",
     "block.trsm.reforged_pressure_plate": "Reforged Pressure Plate",
@@ -53,5 +53,5 @@
     "item.trsm.prospector.tooltip": "A Good Item",
     "item.trsm.fire_reforged_block.tooltip": "A Good Bucket",
     "item.trsm.prospector.error": "\u00a74[Prospetr/ERROR]No ore was found!",
-    "item.trsm.prospector.info": "\u00a7a[Prospetr/INFO]Found %s at coordinates [%d, %d, %d]!"
+    "item.trsm.prospector.info": "\u00a7a[Prospetr/INFO]\u00a7aFound \u00a7a%s \u00a7aat coordinates \u00a7a[%d，%d，%d]!"
 }
