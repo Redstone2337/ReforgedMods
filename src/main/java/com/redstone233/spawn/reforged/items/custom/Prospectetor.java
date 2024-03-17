@@ -49,6 +49,7 @@ public class Prospectetor extends Item {
     private void outputMessage(BlockPos down, PlayerEntity player, Block block) {
         player.sendMessage(Text.literal("[Prostr/INFO]Found" + block.asItem().getName().getString()
         + "at（" + down.getX() + "，" + down.getY() + "，" + down.getZ() + "）！"),false);
+        player.sendMessage(Text.translatable("item.trsm.prospector.info"));
     }
 
     private boolean isRightBlock(BlockState state) {
