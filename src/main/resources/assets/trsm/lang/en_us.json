@@ -53,5 +53,5 @@
     "item.trsm.prospector.tooltip": "A Good Item",
     "item.trsm.fire_reforged_block.tooltip": "A Good Bucket",
     "item.trsm.prospector.error": "\u00a74[Prospetr/ERROR]No ore was found!",
-    "item.trsm.prospector.info": "\u00a7a[Prospetr/INFO]\u00a7aFound \u00a7a%s \u00a7aat coordinates \u00a7a[\u00a7b%d，\u00a7e%d，\u00a7d%d]\u00a7a!"
+    "item.trsm.prospector.info": "\u00a7a[Prospetr/INFO]\u00a7aFound \u00a7a %s \u00a7aat coordinates \u00a7a[\u00a7b %d，\u00a7e %d，\u00a7d %d]\u00a7a!"
 }
