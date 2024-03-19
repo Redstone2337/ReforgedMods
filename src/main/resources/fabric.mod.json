@@ -28,7 +28,7 @@
 	"custom": {
     		"modmenu": {
         	"parent": {
-            		"id": "reforged",
+            		"id": "reforgedapi",
             		"badges": [ "library" ]
         		}
     		}
