@@ -52,5 +52,5 @@
     "item.trsm.prospector.tooltip": "\u00a7b一个好用的工具",
     "item.trsm.fire_reforged_block.tooltip": "\u00a76一个好用的垃圾桶",
     "item.trsm.prospector.error": "\u00a74[探矿器/错误]此处未找到任何矿石！",
-    "item.trsm.prospector.info": "\u00a7a[探矿器/成功]\u00a7a已找到\u00a7a %s \u00a7a并生成在\u00a7a[\u00a7b %d，\u00a7e %d，\u00a7d %d \u00a7a]\的u00a7a位置!"
+    "item.trsm.prospector.info": "\u00a7a[探矿器/成功]\u00a7a已找到\u00a7a %s \u00a7a并生成在\u00a7a[\u00a7b %d，\u00a7e %d，\u00a7d %d \u00a7a]\u00a7a的位置!"
 }
