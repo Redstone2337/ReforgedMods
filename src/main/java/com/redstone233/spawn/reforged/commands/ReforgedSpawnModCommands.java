@@ -268,10 +268,12 @@ public class ReforgedSpawnModCommands {
             }, true);
             return value;
         } else if (value %2 != 0) {
-            source.getSource().sendError(Text.translatable("commands.int.value.odd.success"));
+            source.getSource().sendFeedback(() -> {
+                return Text.translatable("commands.int.value.odd.success",value);
+            }, true);            
             return value;
         } else {
-            source.getSource().sendError(Text.translatable("commands.long.value.fail"));
+            source.getSource().sendError(Text.translatable("commands.long.value.fail",value));
             return 0;
         }
     }
