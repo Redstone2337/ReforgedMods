@@ -20,5 +20,12 @@ public class ReforgeSpawnModDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(ModModlesProvider::new);
 		pack.addProvider(ModLootTablesProvider::new);
 		pack.addProvider(ModRecipesProvider::new);
+		pack.addProvider(ModWorldGenerator::new);
+	}
+	
+	@Override
+	public void buildRegistry(RegistryBuilder registryBuilder) {
+		registryBuilder.addRegistry(RegistryKeys.CONFIGURED_FEATURE, ModConfiguredFeatures::boostrap);
+		registryBuilder.addRegistry(RegistryKeys.PLACED_FEATURE, ModPlacedFeatures::boostrap);
 	}
 }
