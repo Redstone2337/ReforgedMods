@@ -31,6 +31,9 @@
     "block.trsm.reforged_block": "重铸方块",
     "block.trsm.reforged_block1": "绿色重铸方块",
     "block.trsm.fire_reforged_block": "火焰重铸方块",
+    "block.trsm.reforged_ore": "重铸矿石",
+    "block.trsm.chance_block": "机会方块",
+
 
     "itemGroup.trsm_group": "重铸模组",
     "itemGroup.trsm_block_group": "重铸方块",

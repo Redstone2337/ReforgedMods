@@ -32,6 +32,9 @@
     "block.trsm.reforged_block": "Reforged Block",
     "block.trsm.reforged_block1": "Green Reforged Block",
     "block.trsm.fire_reforged_block": "Fire Reforged Block",
+    "block.trsm.reforged_ore": "Reforged Ore",
+    "block.trsm.chance_block": "Chance Block",
+
 
     "itemGroup.trsm_group": "Reforged Group",
     "itemGroup.trsm_block_group": "Reforged Block Group",
