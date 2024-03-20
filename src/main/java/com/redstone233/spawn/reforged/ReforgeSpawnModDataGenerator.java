@@ -1,13 +1,17 @@
 package com.redstone233.spawn.reforged;
 
-import com.redstone233.spawn.reforged.datagen.ModBlockTagProvider;
-import com.redstone233.spawn.reforged.datagen.ModItemTagProvider;
-import com.redstone233.spawn.reforged.datagen.ModLootTablesProvider;
-import com.redstone233.spawn.reforged.datagen.ModModlesProvider;
-import com.redstone233.spawn.reforged.datagen.ModRecipesProvider;
+import com.redstone233.spawn.reforged.datagen.*;
+// import com.redstone233.spawn.reforged.datagen.ModBlockTagProvider;
+// import com.redstone233.spawn.reforged.datagen.ModItemTagProvider;
+// import com.redstone233.spawn.reforged.datagen.ModLootTablesProvider;
+// import com.redstone233.spawn.reforged.datagen.ModModlesProvider;
+// import com.redstone233.spawn.reforged.datagen.ModRecipesProvider;
 
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
+
+import net.minecraft.registry.RegistryBuilder;
+import net.minecraft.registry.RegistryKeys;
 
 public class ReforgeSpawnModDataGenerator implements DataGeneratorEntrypoint {
 	@Override
