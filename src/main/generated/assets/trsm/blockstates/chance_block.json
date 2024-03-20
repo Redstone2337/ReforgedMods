@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "trsm:block/chance_block"
+    }
+  }
+}
