@@ -23,6 +23,8 @@ public class ModModlesProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.FIRE_REFORGED_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.REFORGED_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.REFORGED_BLOCK1);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.REFORGED_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CHANCE_BLOCK);
 
         blockStateModelGenerator.registerCrop(ModBlocks.REFORGED_APPLE_CROP,
             AppleCropBlock.AGE, 
