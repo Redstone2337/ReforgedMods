@@ -12,6 +12,7 @@ import com.redstone233.spawn.reforged.block.ModBlocks;
 import com.redstone233.spawn.reforged.items.ModItemGroup;
 import com.redstone233.spawn.reforged.items.ModItems;
 import com.redstone233.spawn.reforged.commands.ReforgedSpawnModCommands;
+import com.redstone233.spawn.reforged.world.gen.ModWorldGeneration;
 
 public class ReforgeSpawnMod implements ModInitializer {
 	// This logger is used to write text to the console and the log file.
