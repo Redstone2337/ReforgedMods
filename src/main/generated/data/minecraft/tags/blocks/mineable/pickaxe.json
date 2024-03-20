@@ -2,7 +2,9 @@
   "replace": false,
   "values": [
     "trsm:fire_reforged_block",
+    "trsm:reforged_block1",
     "trsm:reforged_block",
-    "trsm:reforged_block1"
+    "trsm:reforged_ore",
+    "trsm:chance_block"
   ]
 }
