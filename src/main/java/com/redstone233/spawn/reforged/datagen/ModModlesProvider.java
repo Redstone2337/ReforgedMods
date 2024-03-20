@@ -30,15 +30,15 @@ public class ModModlesProvider extends FabricModelProvider {
             AppleCropBlock.AGE, 
                 0,1,2,3,4,5);
 
-        BlockStateModelGenerator.BlockTexturePool reforgedTexturePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.FIRE_REFORGED_BLOCK);
+        // BlockStateModelGenerator.BlockTexturePool reforgedTexturePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.FIRE_REFORGED_BLOCK);
 
-        reforgedTexturePool.stairs(ModBlocks.REFORGED_STAIR);
-        reforgedTexturePool.slab(ModBlocks.REFORGED_SLAB);
-        reforgedTexturePool.wall(ModBlocks.REFORGED_WALL);
-        reforgedTexturePool.button(ModBlocks.REFORGED_BUTTON);
-        reforgedTexturePool.pressurePlate(ModBlocks.REFORGED_PRESSURE_PLATE);
-        reforgedTexturePool.fence(ModBlocks.REFORGED_FENCE);
-        reforgedTexturePool.fenceGate(ModBlocks.REFORGED_FENCE_GATE);
+        // reforgedTexturePool.stairs(ModBlocks.REFORGED_STAIR);
+        // reforgedTexturePool.slab(ModBlocks.REFORGED_SLAB);
+        // reforgedTexturePool.wall(ModBlocks.REFORGED_WALL);
+        // reforgedTexturePool.button(ModBlocks.REFORGED_BUTTON);
+        // reforgedTexturePool.pressurePlate(ModBlocks.REFORGED_PRESSURE_PLATE);
+        // reforgedTexturePool.fence(ModBlocks.REFORGED_FENCE);
+        // reforgedTexturePool.fenceGate(ModBlocks.REFORGED_FENCE_GATE);
 
         blockStateModelGenerator.registerDoor(ModBlocks.REFORGED_DOOR);
         blockStateModelGenerator.registerTrapdoor(ModBlocks.REFORGED_TRAPDOOR);
