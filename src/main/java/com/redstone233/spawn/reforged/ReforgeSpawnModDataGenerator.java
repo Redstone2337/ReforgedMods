@@ -6,6 +6,8 @@ import com.redstone233.spawn.reforged.datagen.*;
 // import com.redstone233.spawn.reforged.datagen.ModLootTablesProvider;
 // import com.redstone233.spawn.reforged.datagen.ModModlesProvider;
 // import com.redstone233.spawn.reforged.datagen.ModRecipesProvider;
+import com.redstone233.spawn.reforged.world.ModConfiguredFeatures;
+import com.redstone233.spawn.reforged.world.ModPlacedFeatures;
 
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
