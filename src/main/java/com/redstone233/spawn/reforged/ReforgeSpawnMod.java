@@ -31,6 +31,7 @@ public class ReforgeSpawnMod implements ModInitializer {
 		ModItemGroup.registerModItemGroup();
 		ModBlocks.registerModBlocks();
 		ModBlockGroup.registerModBlockGroup();
+		ModWorldGeneration.generateModWorldGen();
 
 		FuelRegistry.INSTANCE.add(ModItems.REFORGED_COAL, 2000);
 
