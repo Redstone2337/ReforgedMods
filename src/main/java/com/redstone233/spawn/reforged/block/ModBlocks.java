@@ -18,6 +18,7 @@ import net.minecraft.block.*;
 // import net.minecraft.block.StairsBlock;
 // import net.minecraft.block.TrapdoorBlock;
 // import net.minecraft.block.WallBlock;
+import net.minecraft.block.enums.Instrument;
 import net.minecraft.block.ExperienceDroppingBlock;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
