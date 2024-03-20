@@ -33,7 +33,10 @@ public class ModBlocks {
         new Block(FabricBlockSettings.copyOf(Blocks.STONE)));
         
         public static final Block REFORGED_ORE = registerBlocks("reforged_ore",
-            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.STONE).strength(5f),UniformIntProvider.create(2,5)));
+            new ExperienceDroppingBlock(UniformIntProvider.create(10, 17),
+					AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY)
+							.instrument(Instrument.BASEDRUM).requiresTool().strength(3.0f, 3.0f)
+							.sounds(BlockSoundGroup.NETHER_ORE)));
 
     public static final Block REFORGED_BLOCK1 = 
         registerBlocks("reforged_block", 
