@@ -32,7 +32,7 @@ public class ModLootTablesProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.REFORGED_DOOR,doorDrops(ModBlocks.REFORGED_DOOR));
         addDrop(ModBlocks.REFORGED_SLAB,slabDrops(ModBlocks.REFORGED_SLAB));
         
-        addDrop(ModBlocks.REFORGED_ORE,copperOreLikeDrops(ModBlocks.REFORGED_ORE,ModItems.REGEFORGED_ITEM));
+        addDrop(ModBlocks.REFORGED_ORE,copperOreLikeDrops(ModBlocks.REFORGED_ORE,ModItems.REFORGED_ITEM));
 
         BlockStatePropertyLootCondition.Builder builder = 
             BlockStatePropertyLootCondition.builder(ModBlocks.REFORGED_APPLE_CROP)
@@ -44,4 +44,13 @@ public class ModLootTablesProvider extends FabricBlockLootTableProvider {
                 ModItems.REFORGED_APPLE_SEEDS, builder));
     }
     
+    public LootTable.Builder copperOreLikeDrops(Block drop, Item item) {
+        return BlockLootTableGenerator.dropsWithSilkTouch(drop,
+                (LootPoolEntry.Builder)this.applyExplosionDecay(drop,
+                        ((LeafEntry.Builder) ItemEntry.builder(item)
+                                .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(2.0f, 5.0f))))
+                                .apply(ApplyBonusLootFunction.oreDrops(Enchantments.FORTUNE))));
+    }
 }
+
+
