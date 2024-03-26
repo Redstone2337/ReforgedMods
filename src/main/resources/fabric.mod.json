@@ -18,6 +18,9 @@
 		"main": [
 			"com.redstone233.spawn.reforged.ReforgeSpawnMod"
 		],
+		"client": [
+			"com.redstone233.spawn.reforged.ReforgedSpawnModClient"
+		],
 		"fabric-datagen": [
 			"com.redstone233.spawn.reforged.ReforgeSpawnModDataGenerator"
 		]
