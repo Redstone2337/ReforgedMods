@@ -30,6 +30,8 @@ public class ModItemGroup {
                     entries.add(ModItems.REFORGED_COAL);
 
                     entries.add(ModItems.REFORGED_SWORD);
+                    entries.add(ModItems.NEXUS_SWORD);
+                    entries.add(ModItems.ICE_DRAGON_SWORD);
                     entries.add(ModItems.REFORGED_PICKAXE);
                     entries.add(ModItems.REFORGED_AXE);
                     entries.add(ModItems.COMBO_AXE);
@@ -43,6 +45,8 @@ public class ModItemGroup {
                     entries.add(ModItems.REFORGED_BOOTS);
                     entries.add(ModItems.REFORGED_APPLE_SEEDS);
                     entries.add(ModItems.REFORGED_APPLE);
+                    entries.add(ModItems.ICE_DRAGON_SCALES);
+                    entries.add(ModItems.ICE_DRAGON_KEY);
                 })
                 .build());
 
