@@ -24,10 +24,16 @@ import net.minecraft.util.Identifier;
 public class ModItems {
 
     public static final Item REFORGED_ITEM = registerItems("reforged_item", 
-        new Item(new FabricItemSettings()));
-        
+        new Item(new FabricItemSettings().maxCount(64)));
+
+    public static final Item ICE_DRAGON_SCALES = registerItems("ice_dragon_scales", 
+        new Item(new FabricItemSettings().maxCount(64)));
+
+    public static final Item ICE_DRAGON_KEY = registerItems("ice_dragon_key", 
+        new Item(new FabricItemSettings().maxCount(64)));
+
     public static final Item PROSPECTOR = registerItems("prospector", 
-        new Prospectetor(new FabricItemSettings().maxDamage(64)));
+        new Prospectetor(new FabricItemSettings().maxDamage(128)));
 
     public static final Item REFORGED_PICKAXE = registerItems("reforged_pickaxe", 
         new PickaxeItem(ModToolMaterial.REFORGED_ITEM, 5, 2.3f, 
@@ -53,6 +59,14 @@ public class ModItems {
         new SwordItem(ModToolMaterial.REFORGED_ITEM, 10, 3.6f, 
             new FabricItemSettings()));
 
+    public static final Item NEXUS_SWORD = registerItems("nexus_sword", 
+        new SwordItem(ModToolMaterial.REFORGED_ITEM, 20, 4.0f, 
+            new FabricItemSettings()));
+
+    public static final Item ICE_DRAGON_SWORD = registerItems("ice_dragon_sword", 
+        new SwordItem(ModToolMaterial.REFORGED_ITEM, 10, 3.6f, 
+            new FabricItemSettings()));
+
     public static final Item REFORGED_HOE = registerItems("reforged_hoe", 
         new HoeItem(ModToolMaterial.REFORGED_ITEM, 6, 2.6f, 
             new FabricItemSettings()));
@@ -74,16 +88,16 @@ public class ModItems {
             new FabricItemSettings()));
 
     public static final Item REFORGED_FOOD = registerItems("reforged_food",
-        new Item(new FabricItemSettings().food(ModFoodComponents.REFORGED_FOOD)));
+        new Item(new FabricItemSettings().food(ModFoodComponents.REFORGED_FOOD).maxCount(64)));
 
     public static final Item REFORGED_APPLE = registerItems("reforged_apple",
-        new Item(new FabricItemSettings().food(ModFoodComponents.REFORGED_APPLE)));
+        new Item(new FabricItemSettings().food(ModFoodComponents.REFORGED_APPLE).maxCount(64)));
 
      public static final Item REFORGED_APPLE_SEEDS = registerItems("reforged_apple_seeds",
-         new AliasedBlockItem(ModBlocks.REFORGED_APPLE_CROP, new FabricItemSettings()));
+         new AliasedBlockItem(ModBlocks.REFORGED_APPLE_CROP, new FabricItemSettings().maxCount(64)));
 
     public static final Item REFORGED_COAL = registerItems("reforged_coal", 
-    new Item(new FabricItemSettings()));
+    new Item(new FabricItemSettings().maxCount(64)));
 
     private static void addItemsToIG(FabricItemGroupEntries fabricItemGroupEntries) {
         fabricItemGroupEntries.add(REFORGED_ITEM);
