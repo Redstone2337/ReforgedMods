@@ -53,8 +53,12 @@ public class ModModlesProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.REFORGED_ITEM, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.REFORGED_APPLE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ICE_DRAGON_SCALES, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ICE_DRAGON_KEY, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.REFORGED_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.NEXUS_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.ICE_DRAGON_SWORD, Models.HANDHELD);
         itemModelGenerator.register(ModItems.REFORGED_PICKAXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.REFORGED_AXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.COMBO_AXE, Models.HANDHELD);
