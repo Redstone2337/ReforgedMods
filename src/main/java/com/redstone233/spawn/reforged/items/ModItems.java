@@ -4,7 +4,6 @@ import com.redstone233.spawn.reforged.ReforgeSpawnMod;
 import com.redstone233.spawn.reforged.block.ModBlocks;
 import com.redstone233.spawn.reforged.items.custom.ModArmorItem;
 import com.redstone233.spawn.reforged.items.custom.Prospectetor;
-import com.redstone233.spawn.reforged.items.custom.NexusSword;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
