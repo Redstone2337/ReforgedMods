@@ -4,6 +4,7 @@ import com.redstone233.spawn.reforged.ReforgeSpawnMod;
 import com.redstone233.spawn.reforged.block.ModBlocks;
 import com.redstone233.spawn.reforged.items.custom.ModArmorItem;
 import com.redstone233.spawn.reforged.items.custom.Prospectetor;
+import com.redstone233.spawn.reforged.items.custom.NexusSword;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
@@ -33,59 +34,62 @@ public class ModItems {
         new Item(new FabricItemSettings().maxCount(64)));
 
     public static final Item PROSPECTOR = registerItems("prospector", 
-        new Prospectetor(new FabricItemSettings().maxDamage(128)));
+        new Prospectetor(new FabricItemSettings().maxDamage(1000)));
+
+    //public static final Item NEXUS_SWORLD = registerItems("nexus_sword", 
+        //new Prospectetor(new FabricItemSettings().maxDamage(3000)));
 
     public static final Item REFORGED_PICKAXE = registerItems("reforged_pickaxe", 
         new PickaxeItem(ModToolMaterial.REFORGED_ITEM, 5, 2.3f, 
-            new FabricItemSettings()));
+            new FabricItemSettings().maxDamage(20000)));
     
     public static final Item REFORGED_AXE = registerItems("reforged_axe", 
         new AxeItem(ModToolMaterial.REFORGED_ITEM, 15, -3.5f, 
-            new FabricItemSettings()));
+            new FabricItemSettings().maxDamage(25000)));
             
     public static final Item COMBO_AXE = registerItems("combo_axe", 
         new AxeItem(ModToolMaterial.REFORGED_ITEM, 15, 5.5f, 
-            new FabricItemSettings()));
+            new FabricItemSettings().maxDamage(50000)));
             
     public static final Item SECOND_AXE = registerItems("second_axe", 
         new AxeItem(ModToolMaterial.REFORGED_ITEM, 100, -3.5f, 
-            new FabricItemSettings()));
+            new FabricItemSettings().maxDamage(55000)));
 
     public static final Item REFORGED_SHOVRL = registerItems("reforged_shovel", 
         new ShovelItem(ModToolMaterial.REFORGED_ITEM, 3, 2.7f, 
-            new FabricItemSettings()));    
+            new FabricItemSettings().maxDamage(30000)));    
 
     public static final Item REFORGED_SWORD = registerItems("reforged_sword", 
         new SwordItem(ModToolMaterial.REFORGED_ITEM, 10, 3.6f, 
-            new FabricItemSettings()));
+            new FabricItemSettings().maxDamage(35000)));
 
     public static final Item NEXUS_SWORD = registerItems("nexus_sword", 
         new SwordItem(ModToolMaterial.REFORGED_ITEM, 20, 4.0f, 
-            new FabricItemSettings()));
+            new FabricItemSettings().maxDamage(30000)));
 
     public static final Item ICE_DRAGON_SWORD = registerItems("ice_dragon_sword", 
         new SwordItem(ModToolMaterial.REFORGED_ITEM, 10, 3.6f, 
-            new FabricItemSettings()));
+            new FabricItemSettings().maxDamage(20000)));
 
     public static final Item REFORGED_HOE = registerItems("reforged_hoe", 
         new HoeItem(ModToolMaterial.REFORGED_ITEM, 6, 2.6f, 
-            new FabricItemSettings()));
+            new FabricItemSettings().maxDamage(40000)));
 
     public static final Item REFORGED_HELMET = registerItems("reforged_helmets",
         new ModArmorItem(ModArmorMaterial.REFORGED_ITEM, ArmorItem.Type.HELMET, 
-            new FabricItemSettings()));
+            new FabricItemSettings().maxDamage(33000)));
 
     public static final Item REFORGED_CHESTPLATE = registerItems("reforged_chestplates",
         new ArmorItem(ModArmorMaterial.REFORGED_ITEM, ArmorItem.Type.CHESTPLATE, 
-            new FabricItemSettings()));
+            new FabricItemSettings().maxDamage(32000)));
 
     public static final Item REFORGED_LEGGINGS = registerItems("reforged_leggings",
         new ArmorItem(ModArmorMaterial.REFORGED_ITEM, ArmorItem.Type.LEGGINGS, 
-            new FabricItemSettings()));
+            new FabricItemSettings().maxDamage(34000)));
 
     public static final Item REFORGED_BOOTS = registerItems("reforged_boots",
         new ArmorItem(ModArmorMaterial.REFORGED_ITEM, ArmorItem.Type.BOOTS, 
-            new FabricItemSettings()));
+            new FabricItemSettings().maxDamage(36000)));
 
     public static final Item REFORGED_FOOD = registerItems("reforged_food",
         new Item(new FabricItemSettings().food(ModFoodComponents.REFORGED_FOOD).maxCount(64)));
