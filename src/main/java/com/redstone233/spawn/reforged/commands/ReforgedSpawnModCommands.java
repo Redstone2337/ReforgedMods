@@ -169,7 +169,7 @@ public class ReforgedSpawnModCommands {
         );
     }
 
-    private static int mathTrig(ServerCommandSource source,double angle,String name) {
+    private static int mathTrig(ServerCommandSource source,double angle,String name) throws CommandSyntaxException {
         PlayerEntity player = source.getPlayer();
         double value = Math.toRadians(angle);
         ServerTickManager serverTickManager = source.getServer().getTickManager();
@@ -207,7 +207,7 @@ public class ReforgedSpawnModCommands {
          }
     }
 
-    private static int mathDefe(ServerCommandSource source,double value,String name) {
+    private static int mathDefe(ServerCommandSource source,double value,String name) throws CommandSyntaxException {
         PlayerEntity player = source.getPlayer();
         ServerTickManager serverTickManager = source.getServer().getTickManager();
         boolean bl = serverTickManager.stopStepping();
@@ -246,7 +246,7 @@ public class ReforgedSpawnModCommands {
          }
     }
 
-    private static int getDependsFabric(ServerCommandSource source) {
+    private static int getDependsFabric(ServerCommandSource source) throws CommandSyntaxException {
         PlayerEntity player = source.getPlayer();
         ServerTickManager serverTickManager = source.getServer().getTickManager();
         boolean bl = serverTickManager.stopStepping();
