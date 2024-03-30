@@ -5,6 +5,7 @@ import com.mojang.brigadier.LiteralMessage;
 import com.mojang.brigadier.arguments.DoubleArgumentType;
 import com.mojang.brigadier.arguments.IntegerArgumentType;
 import com.mojang.brigadier.context.CommandContext;
+import com.mojang.brigadier.exceptions.CommandSyntaxException;
 import com.redstone233.spawn.reforged.ModGlobalInfo;
 
 import net.minecraft.entity.player.PlayerEntity;
@@ -261,7 +262,7 @@ public class ReforgedSpawnModCommands {
         }
     }
 
-    private static int getValue(int value,PlayerEntity player, CommandContext<ServerCommandSource> source) {
+    private static int getValue(int value,PlayerEntity player, CommandContext<ServerCommandSource> source) throws CommandSyntaxException {
         if (value %2 == 0) {
             source.getSource().sendFeedback(() -> {
                 return Text.translatable("commands.int.value.even.success");
@@ -278,7 +279,7 @@ public class ReforgedSpawnModCommands {
         }
     }
 
-    private static int getDependsMinecraft(ServerCommandSource source) {
+    private static int getDependsMinecraft(ServerCommandSource source) throws CommandSyntaxException {
         PlayerEntity player = source.getPlayer();
         ServerTickManager serverTickManager = source.getServer().getTickManager();
         boolean bl = serverTickManager.stopStepping();
@@ -294,7 +295,7 @@ public class ReforgedSpawnModCommands {
         }
     }
 
-    private static int getSuccess(ServerCommandSource source, int page) {
+    private static int getSuccess(ServerCommandSource source, int page) throws CommandSyntaxException {
         PlayerEntity player = source.getPlayer();
         ServerTickManager serverTickManager = source.getServer().getTickManager();
         boolean bl = serverTickManager.stopStepping();
@@ -324,7 +325,7 @@ public class ReforgedSpawnModCommands {
         }
     }
 
-    private static int executeStopStep(ServerCommandSource source) {
+    private static int executeStopStep(ServerCommandSource source) throws CommandSyntaxException {
         ServerTickManager serverTickManager = source.getServer().getTickManager();
         boolean bl = serverTickManager.stopStepping();
         if (bl) {
@@ -338,7 +339,7 @@ public class ReforgedSpawnModCommands {
         }
      }
 
-     public static int getSuccess(ServerCommandSource source, int slot, PlayerEntity player) {
+     public static int getSuccess(ServerCommandSource source, int slot, PlayerEntity player) throws CommandSyntaxException {
         ServerTickManager serverTickManager = source.getServer().getTickManager();
         boolean bl = serverTickManager.stopStepping();
         ItemStack stack = player.getInventory().getStack(slot);
