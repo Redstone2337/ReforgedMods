@@ -5,6 +5,8 @@
     "item.trsm.reforged_coal": "重铸燃料",
 
     "item.trsm.reforged_sword": "重铸之剑",
+    "item.trsm.nexus_sword": "血纳之剑",
+    "item.trsm.ice_dragon_sword": "漪水冰刃",
     "item.trsm.reforged_pickaxe": "重铸之镐",
     "item.trsm.reforged_axe": "重铸重斧",
     "item.trsm.combo_axe": "\u00a7b连击轻斧",
@@ -16,6 +18,8 @@
     "item.trsm.reforged_leggings": "重铸护腿",
     "item.trsm.reforged_boots": "重铸靴子",
     "item.trsm.reforged_apple": "重铸苹果",
+    "item.trsm.ice_dragon_scales": "雪纳瑞鳞",
+    "item.trsm.ice_dragon_key": "瑞鳞之钥",
     "item.trsm.reforged_apple_seeds": "重铸苹果种子",
 
     "block.trsm.reforged_stairs": "重铸楼梯",
