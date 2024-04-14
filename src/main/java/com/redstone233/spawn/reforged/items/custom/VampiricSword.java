@@ -31,7 +31,7 @@ public class VampiricSword extends SwordItem {
             float vampirismAmount = calculateVampirismAmount(currentHP,maxHP);
 
             playerEntity.heal(vampirismAmount);
-            itemStack.decrement(1);
+            //itemStack.decrement(1);
         }
         return ActionResult.SUCCESS;
     }
@@ -45,14 +45,14 @@ public class VampiricSword extends SwordItem {
                 float vampirismAmount = calculateVampirismAmount(currentHP,maxHP);
 
                 user.heal(vampirismAmount);
-                stack.decrement(1);
+                //stack.decrement(1);
             } else if (hand == Hand.OFF_HAND) {
                 float currentHP = user.getHealth();
                 float maxHP = user.getMaxHealth();
                 float vampirismAmount = calculateVampirismAmount(currentHP,maxHP);
 
                 user.heal(vampirismAmount);
-                stack.decrement(2);
+                //stack.decrement(2);
             }
         }
         return ActionResult.SUCCESS;
@@ -67,14 +67,14 @@ public class VampiricSword extends SwordItem {
                 float vampirismAmount = calculateVampirismAmount(currentHP,maxHP);
 
                 attacker.heal(vampirismAmount);
-                stack.decrement(1);
+                //stack.decrement(1);
             } else if (Hand.OFF_HAND != null) {
                 float currentHP = attacker.getHealth();
                 float maxHP = attacker.getMaxHealth();
                 float vampirismAmount = calculateVampirismAmount(currentHP,maxHP);
 
                 attacker.heal(vampirismAmount);
-                stack.decrement(1);
+                //stack.decrement(1);
             }
         }
         return true;
