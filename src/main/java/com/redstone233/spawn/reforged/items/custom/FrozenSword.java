@@ -20,7 +20,7 @@ public class FrozenSword extends SwordItem {
 
     @Override
     public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
-        target.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS,200,255));
+        target.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS,200,255,true));
         return true;
     }
 
