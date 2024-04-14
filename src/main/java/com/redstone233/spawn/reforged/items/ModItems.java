@@ -48,7 +48,7 @@ public class ModItems {
             new FabricItemSettings().maxDamage(20000)));
     
     public static final Item REFORGED_AXE = registerItems("reforged_axe", 
-        new AxeItem(ModToolMaterial.REFORGED_ITEM, 15, -3.5f, 
+        new AxeItem(ModToolMaterial.REFORGED_ITEM, 15, -1.5f, 
             new FabricItemSettings().maxDamage(25000)));
             
     public static final Item COMBO_AXE = registerItems("combo_axe", 
