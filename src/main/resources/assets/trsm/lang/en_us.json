@@ -59,6 +59,9 @@
     "commands.reforged.success": "\u00a7aRun command reforged successful",
     "commands.reforged.fail": "Run command reforged failed",
 
+    "enchantment.trsm.vampiricm": "Vampiricm",
+    "enchantment.trsm.frozen": "Frozen",
+
     "item.trsm.prospector.tooltip": "A Good Item",
     "item.trsm.fire_reforged_block.tooltip": "A Good Bucket",
     "item.trsm.vampirism.tooltip1": "\u00a7aIt is said that this weapon has a strong ability to suck blood, but it has been a long time.",
