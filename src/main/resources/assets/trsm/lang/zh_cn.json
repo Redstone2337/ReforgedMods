@@ -27,6 +27,10 @@
     "item.minecraft.potion.effect.fire_potion": "引火上身",
     "item.minecraft.splash_potion.effect.fire_potion": "喷溅型引火上身",
     "item.minecraft.lingering_potion.effect.fire_potion": "滞留型引火上身",
+    "item.minecraft.potion.effect.great_fire_potion": "引火上身Ⅱ",
+    "item.minecraft.splash_potion.effect.great_fire_potion": "喷溅型引火上身Ⅱ",
+    "item.minecraft.lingering_potion.effect.great_fire_potion": "滞留型引火上身Ⅱ",
+
 
     "block.trsm.reforged_stairs": "重铸楼梯",
     "block.trsm.reforged_slab": "重铸阶梯",
