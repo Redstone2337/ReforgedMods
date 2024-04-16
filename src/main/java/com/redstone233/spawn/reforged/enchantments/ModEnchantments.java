@@ -34,7 +34,7 @@ public class ModEnchantments {
 
     public static final Enchantment SPEED = 
         registerModEnchantments("speed", 
-            new SpeedEnchantments(Enchantment.Rarity.COMMON,EnchantmentTarget.WEAPON,
+            new SpeedEnchantments(Enchantment.Rarity.UNCOMMON,EnchantmentTarget.WEAPON,
                 new EquipmentSlot[] {
                     EquipmentSlot.MAINHAND,
                     EquipmentSlot.OFFHAND
