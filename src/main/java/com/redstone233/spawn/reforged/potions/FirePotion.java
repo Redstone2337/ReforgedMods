@@ -5,7 +5,7 @@ import net.minecraft.potion.Potion;
 
 public class FirePotion extends Potion {
 
-    public FirePotion(StatusEffectInstance[] effect,int duration) {
-        super(effect,duration);
+    public FirePotion(StatusEffectInstance[] effect) {
+        super(effect);
     }
 }
