@@ -24,6 +24,10 @@
     "item.trsm.ice_dragon_key": "瑞鳞之钥",
     "item.trsm.reforged_apple_seeds": "重铸苹果种子",
 
+    "item.minecraft.potion.effect.fire_potion": "引火上身",
+    "item.minecraft.splash_potion.effect.fire_potion": "喷溅型引火上身",
+    "item.minecraft.lingering_potion.effect.fire_potion": "滞留型引火上身",
+
     "block.trsm.reforged_stairs": "重铸楼梯",
     "block.trsm.reforged_slab": "重铸阶梯",
     "block.trsm.reforged_button": "重铸按钮",
@@ -60,13 +64,16 @@
 
     "enchantment.trsm.vampiricm": "吸血",
     "enchantment.trsm.frozen": "缓速",
+    "enchantment.trsm.speed": "加速",
+
+    "effect.trsm.fire_effect": "引火上身",
 
     "item.trsm.prospector.tooltip": "\u00a7b一个好用的工具",
     "item.trsm.fire_reforged_block.tooltip": "\u00a76一个好用的垃圾桶",
-    "item.trsm.vampirism.tooltip1": "\u00a7a\u00a7l听说这把武器有较强的吸血能力",
-    "item.trsm.vampirism.tooltip2": "\u00a7c\u00a7l神话",
-    "item.trsm.frozen.tooltip1": "\u00a7a\u00a7l传说这把武器可以让实体停止一段时间的运动",
-    "item.trsm.frozen.tooltip2": "\u00a7c\u00a7l神话",
+    "item.trsm.vampirism.tooltip1": "\u00a7a听说这把武器有较强的吸血能力",
+    "item.trsm.vampirism.tooltip2": "\u00a7c神话",
+    "item.trsm.frozen.tooltip1": "\u00a7a传说这把武器可以让实体停止一段时间的运动",
+    "item.trsm.frozen.tooltip2": "\u00a7c神话",
     "item.trsm.prospector.error": "\u00a74[探矿器/错误]此处未找到任何矿石！",
     "item.trsm.prospector.info": "\u00a7a[探矿器/成功]\u00a7a已找到\u00a7a %s \u00a7a并生成在\u00a7a[\u00a7b %d，\u00a7e %d，\u00a7d %d \u00a7a]\u00a7a的位置!"
 }
