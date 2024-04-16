@@ -71,6 +71,7 @@
     "enchantment.trsm.speed": "Speed",
 
     "effect.trsm.fire_effect": "Draw Fire",
+    "effect.trsm.great_fire_effect": "Draw FireⅡ",
 
     "item.trsm.prospector.tooltip": "A Good Item",
     "item.trsm.fire_reforged_block.tooltip": "A Good Bucket",
