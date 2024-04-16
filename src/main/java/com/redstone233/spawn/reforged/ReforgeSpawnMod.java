@@ -11,7 +11,7 @@ import com.redstone233.spawn.reforged.block.ModBlockGroup;
 import com.redstone233.spawn.reforged.block.ModBlocks;
 import com.redstone233.spawn.reforged.items.ModItemGroup;
 import com.redstone233.spawn.reforged.items.ModItems;
-import com.redstone233.spawn.reforged.items.ModEnchantments;
+import com.redstone233.spawn.reforged.enchantments.ModEnchantments;
 import com.redstone233.spawn.reforged.commands.ReforgedSpawnModCommands;
 import com.redstone233.spawn.reforged.world.gen.ModWorldGeneration;
 
