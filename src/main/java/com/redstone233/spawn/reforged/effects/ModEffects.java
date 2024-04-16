@@ -13,6 +13,10 @@ public class ModEffects {
         registerModEffects("fire_effect",
             new FireEffects());
 
+    public static final StatusEffect GREAT_FIRE_STATUS = 
+        registerModEffects("great_fire_effect",
+            new GreatFireEffect());
+
     private static final StatusEffect registerModEffects(String name,StatusEffect effect) {
         return Registry.register(Registries.STATUS_EFFECT, 
             new Identifier(ReforgeSpawnMod.MOD_ID, name), effect);
