@@ -13,8 +13,8 @@ public class ModPotions {
 
 
     public static final Potion FIRE_POTION = registerModPotions("fire_potion", 
-        new FirePotion(new StatusEffectInstance(ModEffects.FIRE_STATUS_EFFECT,600)));
-
+        new FirePotion(new StatusEffectInstance[]{new StatusEffectInstance(ModEffects.FIRE_STATUS_EFFECT)}));
+    
     public static final Potion GREAT_FIRE_POTION = registerModPotions("great_fire_potion", 
         new Potion(new StatusEffectInstance(ModEffects.GREAT_FIRE_STATUS,1800)));
 
