@@ -17,8 +17,9 @@ public class GreatFireEffect extends StatusEffect {
 
     @Override
     public void applyUpdateEffect(LivingEntity entity, int amplifier) {
-        if (entity.isOnFire()) {
-            entity.setOnFireFor(20 * (amplifier + 2));
+        if (!entity.isOnFire()) {
+            entity.setOnFireFor(40 * (amplifier + 1));
+            entity.setFireTicks(40 * (amplifier + 1));
         }
         super.applyUpdateEffect(entity, amplifier);
     }
