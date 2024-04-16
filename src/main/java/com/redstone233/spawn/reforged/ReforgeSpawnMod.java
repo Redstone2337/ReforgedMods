@@ -11,8 +11,10 @@ import com.redstone233.spawn.reforged.block.ModBlockGroup;
 import com.redstone233.spawn.reforged.block.ModBlocks;
 import com.redstone233.spawn.reforged.items.ModItemGroup;
 import com.redstone233.spawn.reforged.items.ModItems;
-import com.redstone233.spawn.reforged.enchantments.ModEnchantments;
+import com.redstone233.spawn.reforged.potions.ModPotions;
 import com.redstone233.spawn.reforged.commands.ReforgedSpawnModCommands;
+import com.redstone233.spawn.reforged.effects.ModEffects;
+import com.redstone233.spawn.reforged.enchantments.ModEnchantments;
 import com.redstone233.spawn.reforged.world.gen.ModWorldGeneration;
 
 public class ReforgeSpawnMod implements ModInitializer {
@@ -35,6 +37,8 @@ public class ReforgeSpawnMod implements ModInitializer {
 		ModBlockGroup.registerModBlockGroup();
 		ModWorldGeneration.generateModWorldGen();
 		ModEnchantments.registerModEnchantments();
+		ModEffects.registerModEffects();
+		ModPotions.registerModPotions();
 
 		FuelRegistry.INSTANCE.add(ModItems.REFORGED_COAL, 2000);
 
