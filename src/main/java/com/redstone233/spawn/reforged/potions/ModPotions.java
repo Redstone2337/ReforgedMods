@@ -16,7 +16,7 @@ public class ModPotions {
         new FirePotion(new StatusEffectInstance[]{new StatusEffectInstance(ModEffects.FIRE_STATUS_EFFECT)}));
 
     public static final Potion GREAT_FIRE_POTION = registerModPotions("great_fire_potion", 
-        new Potion(new StatusEffectInstance[]{new StatusEffectInstance(ModEffects.GREAT_FIRE_STATUS)},600));
+        new Potion(new StatusEffectInstance(new StatusEffectInstance(ModEffects.GREAT_FIRE_STATUS),600));
 
 
     private static Potion registerModPotions(String name, Potion potion) {
