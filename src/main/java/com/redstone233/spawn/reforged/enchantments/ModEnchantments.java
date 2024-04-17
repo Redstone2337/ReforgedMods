@@ -42,6 +42,7 @@ public class ModEnchantments {
             )
         );
 
+    /*
     public static final Enchantment CURSE_SPEED = 
         registerModEnchantments("curse_speed", 
             new CurseSpeedEnchantments(Enchantment.Rarity.UNCOMMON,EnchantmentTarget.WEAPON,
@@ -50,7 +51,7 @@ public class ModEnchantments {
                     EquipmentSlot.OFFHAND
                 }
             )
-        );
+        );*/
 
     private static Enchantment registerModEnchantments(String name,Enchantment enchantment) {
         return Registry.register(Registries.ENCHANTMENT, 
