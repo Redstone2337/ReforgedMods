@@ -1,5 +1,5 @@
 {
-    "parent": "trsm:item/light_bow",
+    "parent": "minecraft:item/bow_pulling_1",
     "textures": {
         "layer0": "trsm:item/light_bow_pulling_1"
     }
