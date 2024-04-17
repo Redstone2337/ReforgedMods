@@ -33,6 +33,9 @@ public class ModItems {
     public static final Item ICE_DRAGON_SCALES = registerItems("ice_dragon_scales", 
         new Item(new FabricItemSettings().maxCount(64)));
 
+    public static final Item FOGOTTEN_CHAKRAM = registerItems("forgotten_chakram", 
+        new Item(new FabricItemSettings().maxCount(64)));
+    
     public static final Item ICE_DRAGON_KEY = registerItems("ice_dragon_key", 
         new Item(new FabricItemSettings().maxCount(64)));
 
