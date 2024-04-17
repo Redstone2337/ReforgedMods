@@ -50,6 +50,7 @@ public class ModItemGroup {
                     entries.add(ModItems.ICE_DRAGON_SCALES);
                     entries.add(ModItems.ICE_DRAGON_KEY);
                     entries.add(ModItems.REFORGED_AMETHYST);
+                    entries.add(ModItems.FOGOTTEN_CHAKRAM);
                 })
                 .build());
 
