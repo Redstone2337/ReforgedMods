@@ -2,6 +2,8 @@ package com.redstone233.spawn.reforged.items;
 
 import com.redstone233.spawn.reforged.ReforgeSpawnMod;
 import com.redstone233.spawn.reforged.block.ModBlocks;
+import com.redstone233.spawn.reforged.items.custom.FrozenArrow;
+import com.redstone233.spawn.reforged.items.custom.FrozenBow;
 import com.redstone233.spawn.reforged.items.custom.FrozenSword;
 import com.redstone233.spawn.reforged.items.custom.ModArmorItem;
 import com.redstone233.spawn.reforged.items.custom.Prospectetor;
@@ -43,12 +45,15 @@ public class ModItems {
     //public static final Item NEXUS_SWORLD = registerItems("nexus_sword", 
         //new Prospectetor(new FabricItemSettings().maxDamage(3000)));
 
+    public static final Item ICE_DRAGON_BOW = registerItems("light_bow", 
+        new FrozenBow(new FabricItemSettings().maxDamage(12000)));
+
     public static final Item REFORGED_PICKAXE = registerItems("reforged_pickaxe", 
         new PickaxeItem(ModToolMaterial.REFORGED_ITEM, 5, 2.3f, 
             new FabricItemSettings().maxDamage(20000)));
     
     public static final Item REFORGED_AXE = registerItems("reforged_axe", 
-        new AxeItem(ModToolMaterial.REFORGED_ITEM, 15, -1.5f, 
+        new AxeItem(ModToolMaterial.REFORGED_ITEM, 15, -3.5f, 
             new FabricItemSettings().maxDamage(25000)));
             
     public static final Item COMBO_AXE = registerItems("combo_axe", 
@@ -106,10 +111,13 @@ public class ModItems {
         new Item(new FabricItemSettings().food(ModFoodComponents.REFORGED_APPLE).maxCount(64)));
 
      public static final Item REFORGED_APPLE_SEEDS = registerItems("reforged_apple_seeds",
-         new AliasedBlockItem(ModBlocks.REFORGED_APPLE_CROP, new FabricItemSettings().maxCount(64)));
+        new AliasedBlockItem(ModBlocks.REFORGED_APPLE_CROP, new FabricItemSettings().maxCount(64)));
 
     public static final Item REFORGED_COAL = registerItems("reforged_coal", 
-    new Item(new FabricItemSettings().maxCount(64)));
+        new Item(new FabricItemSettings().maxCount(64)));
+
+    public static final Item ICE_DRAGON_ARROW = registerItems("light_arrow",
+        new FrozenArrow(new FabricItemSettings().maxCount(64)));
 
     private static void addItemsToIG(FabricItemGroupEntries fabricItemGroupEntries) {
         fabricItemGroupEntries.add(REFORGED_ITEM);

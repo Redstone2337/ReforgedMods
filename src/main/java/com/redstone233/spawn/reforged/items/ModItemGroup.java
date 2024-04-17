@@ -2,7 +2,6 @@ package com.redstone233.spawn.reforged.items;
 
 import com.redstone233.spawn.reforged.ReforgeSpawnMod;
 import com.redstone233.spawn.reforged.block.ModBlocks;
-
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -28,6 +27,7 @@ public class ModItemGroup {
                     entries.add(ModBlocks.FIRE_REFORGED_BLOCK);
                     entries.add(ModItems.PROSPECTOR);
                     entries.add(ModItems.REFORGED_COAL);
+                    entries.add(ModItems.ICE_DRAGON_ARROW);
 
                     entries.add(ModItems.REFORGED_SWORD);
                     entries.add(ModItems.NEXUS_SWORD);
@@ -39,6 +39,7 @@ public class ModItemGroup {
                     entries.add(ModItems.SECOND_AXE);
                     entries.add(ModItems.REFORGED_SHOVRL);
                     entries.add(ModItems.REFORGED_HOE);
+                    entries.add(ModItems.ICE_DRAGON_BOW);
 
                     entries.add(ModItems.REFORGED_HELMET);
                     entries.add(ModItems.REFORGED_CHESTPLATE);
