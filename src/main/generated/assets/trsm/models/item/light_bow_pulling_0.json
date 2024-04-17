@@ -1,0 +1,6 @@
+{
+    "parent": "item/light_bow",
+    "textures": {
+        "layer0": "item/light_bow_pulling_0"
+    }
+}
