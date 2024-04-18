@@ -38,11 +38,11 @@ public class TrsmCommand {
             source.sendFeedback(() -> {
                 return Text.translatable("commands.trsm.success");
             }, true);
-            player.sendMessage(Text.translatable("command.trsm.fabric.version",
+            player.sendMessage(Text.translatable("commands.trsm.fabric.version",
                 ModGlobalInfo.TextGlobal.versionAr[1]), false);
             return 1;
         } else {
-            source.sendError(Text.translatable("command.trsm.fail"));
+            source.sendError(Text.translatable("commands.trsm.fail"));
             return 0;
         }
     }
@@ -53,9 +53,9 @@ public class TrsmCommand {
         boolean bl = serverTickManager.stopStepping();
         if (bl) {
             source.sendFeedback(() -> {
-                    return Text.translatable("command.trsm.success");
+                    return Text.translatable("commands.trsm.success");
             }, true);
-            player.sendMessage(Text.translatable("command.trsm.minecraft.version",
+            player.sendMessage(Text.translatable("commands.trsm.minecraft.version",
             ModGlobalInfo.TextGlobal.versionAr[0]), false);
             return 1;
         } else {

@@ -14,7 +14,7 @@ public class ModCommands {
 
     public static void register(CommandDispatcher<ServerCommandSource> dispatcher) {
         LiteralArgumentBuilder<ServerCommandSource> builder =
-            CommandManager.literal("reforgedspawn").executes(ModCommands::run)
+            CommandManager.literal("trsm").executes(ModCommands::run)
             .then(LongCommand.register())
             .then(NbtCommand.register())
             .then(TrsmCommand.register())

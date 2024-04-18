@@ -28,10 +28,10 @@ public class LongCommand {
             if (value %2 == 0) {
                 player.sendMessage(Text.translatable("commands.long.even.info",value), false);
             } else if (value %2 != 0) {
-                player.sendMessage(Text.translatable("command.long.odd.info",value), false);
+                player.sendMessage(Text.translatable("commands.long.odd.info",value), false);
         }
             source.sendFeedback(() -> {
-                return Text.translatable("command.long.success");
+                return Text.translatable("commands.long.success");
             }, true);
             return 1;
         } else {

@@ -42,7 +42,7 @@ public class NbtCommand {
             } else if (slot < 0) {
                 player.sendMessage(Text.translatable("commands.nbt.slot.small", slot), false);
             } else if (slot > 40) {
-                player.sendMessage(Text.translatable("command.nbt.slot.big", slot), false);
+                player.sendMessage(Text.translatable("commands.nbt.slot.big", slot), false);
             }
             source.sendFeedback(() -> {
                 return Text.translatable("commands.nbt.success");
