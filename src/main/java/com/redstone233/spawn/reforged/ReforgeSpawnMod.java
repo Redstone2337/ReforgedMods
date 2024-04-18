@@ -12,7 +12,7 @@ import com.redstone233.spawn.reforged.block.ModBlocks;
 import com.redstone233.spawn.reforged.items.ModItemGroup;
 import com.redstone233.spawn.reforged.items.ModItems;
 import com.redstone233.spawn.reforged.potions.ModPotions;
-import com.redstone233.spawn.reforged.commands.ReforgedSpawnModCommands;
+import com.redstone233.spawn.reforged.commands.ModCommands;
 import com.redstone233.spawn.reforged.effects.ModEffects;
 import com.redstone233.spawn.reforged.enchantments.ModEnchantments;
 import com.redstone233.spawn.reforged.world.gen.ModWorldGeneration;
@@ -43,7 +43,7 @@ public class ReforgeSpawnMod implements ModInitializer {
 		FuelRegistry.INSTANCE.add(ModItems.REFORGED_COAL, 2000);
 
 		CommandRegistrationCallback.EVENT
-			.register((dispatcher, registryAccess, environment) -> ReforgedSpawnModCommands.register(dispatcher)
+			.register((dispatcher, registryAccess, environment) -> ModCommands.register(dispatcher)
 		);
 	}
 }
