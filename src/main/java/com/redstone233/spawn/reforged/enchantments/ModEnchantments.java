@@ -34,7 +34,7 @@ public class ModEnchantments {
 
     public static final Enchantment SPEED = 
         registerModEnchantments("speed", 
-            new SpeedEnchantments(Enchantment.Rarity.UNCOMMON,EnchantmentTarget.WEAPON,
+            new SpeedEnchantment(Enchantment.Rarity.UNCOMMON,EnchantmentTarget.WEAPON,
                 new EquipmentSlot[] {
                     EquipmentSlot.MAINHAND,
                     EquipmentSlot.OFFHAND
@@ -42,16 +42,16 @@ public class ModEnchantments {
             )
         );
 
-    /*
+    
     public static final Enchantment CURSE_SPEED = 
         registerModEnchantments("curse_speed", 
-            new CurseSpeedEnchantments(Enchantment.Rarity.UNCOMMON,EnchantmentTarget.WEAPON,
+            new CurseSpeedEnchantment(Enchantment.Rarity.VERY_RARE,EnchantmentTarget.WEAPON,
                 new EquipmentSlot[] {
                     EquipmentSlot.MAINHAND,
                     EquipmentSlot.OFFHAND
                 }
             )
-        );*/
+        );
 
     private static Enchantment registerModEnchantments(String name,Enchantment enchantment) {
         return Registry.register(Registries.ENCHANTMENT, 
