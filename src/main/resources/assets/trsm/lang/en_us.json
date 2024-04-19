@@ -123,6 +123,8 @@
     "commands.reforged.math.int.min": "The minimum value between %d and %d is %d",
 
     "enchantment.trsm.vampiricm": "Vampiricm",
+    "enchantment.trsm.seconds_back": "Curse Of Seconds Back",
+    "enchantment.trsm.seckill": "Seckill",
     "enchantment.trsm.frozen": "Frozen",
     "enchantment.trsm.speed": "Speed",
     "enchantment.trsm.one_push": "Curse Of One Push",
