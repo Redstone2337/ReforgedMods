@@ -53,6 +53,18 @@ public class ModEnchantments {
             )
         );
 
+    public static final Enchantment ONE_PUSH = 
+        registerModEnchantments("one_push", 
+            new OnePushEnchantment(Enchantment.Rarity.VERY_RARE, EnchantmentTarget.ARMOR,
+                new EquipmentSlot[] {
+                    EquipmentSlot.HEAD,
+                    EquipmentSlot.FEET,
+                    EquipmentSlot.LEGS,
+                    EquipmentSlot.CHEST
+            }
+        )
+    );
+
     private static Enchantment registerModEnchantments(String name,Enchantment enchantment) {
         return Registry.register(Registries.ENCHANTMENT, 
             new Identifier(ReforgeSpawnMod.MOD_ID, name),enchantment);
