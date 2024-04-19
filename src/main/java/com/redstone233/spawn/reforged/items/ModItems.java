@@ -84,7 +84,7 @@ public class ModItems {
             new FabricItemSettings().maxDamage(20000)));
     
     public static final Item REFORGED_AMETHYST_SWORD = registerItems("reforged_amethyst_sword", 
-        new SwordItem(ModToolMaterial.REFORGED_ITEM, 11, 3.0f, 
+        new SwordItem(ModToolMaterial.REFORGED_AMETHYST, 11, 3.0f, 
             new FabricItemSettings().maxDamage(23002)));
 
     public static final Item REFORGED_HOE = registerItems("reforged_hoe", 
