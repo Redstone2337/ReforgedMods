@@ -49,9 +49,9 @@ public class OnePushEnchantment extends Enchantment {
     public void onTargetDamaged(LivingEntity user, Entity target, int level) {
         if (target instanceof LivingEntity && user instanceof PlayerEntity player) {
             ((LivingEntity) target).addStatusEffect(
-                new StatusEffectInstance(StatusEffects.WEAKNESS,-1,255,false, true));
+                new StatusEffectInstance(StatusEffects.WEAKNESS,200,255,false, true));
             player.addStatusEffect(
-                new StatusEffectInstance(StatusEffects.STRENGTH,-1,255,false, true));
+                new StatusEffectInstance(StatusEffects.STRENGTH,200,255,false, true));
         }
         super.onTargetDamaged(user, target, level);
     }
