@@ -72,9 +72,33 @@
     "commands.nbt.slot.big": "\u00a7eThis Slot %d are so biggest!",
     "commands.reforged.success": "\u00a7aRun command reforged successful",
     "commands.reforged.fail": "Run command reforged failed",
+    "commands.trsm.info.mod": "The one page info of %s",
+    "commands.trsm.info.version": "The two page info of %s",
+    "commands.trsm.info.page.biggist": "\u00a7eThis page %d are so biggist!",
+    "commands.trsm.info.page.smaill": "\u00a7eThis page %d are so smaill!",
+    "commands.trsm.usag": "Trsm commands are runner",
 
     "commands.reforged.math.success": "\u00a7aRun command math successful",
     "commands.reforged.math.fail": "Run command math fail",
+    "commands.info.success": "\u00a7aRun command info successful",
+    "commands.info.fail": "Run command info fail",
+
+    "commands.info.line1": "The Line %s text for %s",
+    "commands.info.line2": "The Line %s text for %s",
+    "commands.info.line3": "The Line %s text for %s",
+    "commands.info.line4": "The Line %s text for %s",
+    "commands.info.line5": "The Line %s is no text",
+
+    "commands.info.page1": "The page %s text for %s",
+    "commands.info.page2": "The page %s text for %s",
+    "commands.info.page3": "The page %s text for %s",
+    "commands.info.page4": "The page %s text for %s",
+    "commands.info.page5": "The page %s is no text",
+
+    "commands.info.ver1": "The version %s info to %s",
+    "commands.info.ver2": "The version %s info to %s",
+    "commands.info.ver3": "The version %s info to %s",
+    "commands.info.ver4": "The version %s info is no text",
 
     "commands.reforged.math.sin": "The angle %a sine are %a",
     "commands.reforged.math.cos": "The angle %a cosine are %a",
@@ -100,6 +124,7 @@
     "enchantment.trsm.vampiricm": "Vampiricm",
     "enchantment.trsm.frozen": "Frozen",
     "enchantment.trsm.speed": "Speed",
+    "enchantment.trsm.one_push": "Curse Of One Push",
     "enchantment.trsm.curse_speed": "Curse Of Speed",
 
     "effect.trsm.fire_effect": "Draw Fire",
