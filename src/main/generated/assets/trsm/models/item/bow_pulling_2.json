@@ -1,0 +1,6 @@
+{
+    "parent": "trsm:item/light_bow",
+    "textures": {
+        "layer0": "trsm:item/bow_pulling_2"
+    }
+}
