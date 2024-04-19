@@ -46,7 +46,7 @@ public class SeckillEnchantment extends Enchantment {
             ((LivingEntity) target).addStatusEffect(
                 new StatusEffectInstance(StatusEffects.WITHER,-1,255, false, true));
             player.addStatusEffect(
-                new StatusEffectInstance(StatusEffects.STRENGTH,-1,255,false, true));
+                new StatusEffectInstance(StatusEffects.STRENGTH,600,255,false, true));
         }
         super.onTargetDamaged(user, target, level);
     }
