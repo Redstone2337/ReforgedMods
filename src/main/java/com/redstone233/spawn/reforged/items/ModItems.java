@@ -4,6 +4,7 @@ import com.redstone233.spawn.reforged.ReforgeSpawnMod;
 import com.redstone233.spawn.reforged.block.ModBlocks;
 import com.redstone233.spawn.reforged.items.custom.FrozenArrow;
 import com.redstone233.spawn.reforged.items.custom.FrozenBow;
+import com.redstone233.spawn.reforged.items.custom.EnderBow;
 import com.redstone233.spawn.reforged.items.custom.FrozenSword;
 import com.redstone233.spawn.reforged.items.custom.ModArmorItem;
 import com.redstone233.spawn.reforged.items.custom.Prospectetor;
@@ -50,6 +51,9 @@ public class ModItems {
 
     public static final Item ICE_DRAGON_BOW = registerItems("light_bow", 
         new FrozenBow(new FabricItemSettings().maxDamage(12000)));
+
+    public static final Item ENDER_BOW = registerItems("ender_bow", 
+        new EnderBow(new FabricItemSettings().maxDamage(12000)));
 
     public static final Item REFORGED_PICKAXE = registerItems("reforged_pickaxe", 
         new PickaxeItem(ModToolMaterial.REFORGED_ITEM, 5, 2.3f, 
