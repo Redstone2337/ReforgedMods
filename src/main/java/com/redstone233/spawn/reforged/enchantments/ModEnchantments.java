@@ -53,6 +53,26 @@ public class ModEnchantments {
             )
         );
 
+    public static final Enchantment SECONDS_BACK = 
+        registerModEnchantments("seconds_back", 
+            new SecondsBackEnchantment(Enchantment.Rarity.VERY_RARE,EnchantmentTarget.WEAPON,
+                new EquipmentSlot[] {
+                    EquipmentSlot.MAINHAND,
+                    EquipmentSlot.OFFHAND
+                }
+            )
+        );
+        
+        public static final Enchantment SECKILL = 
+        registerModEnchantments("seckill", 
+            new SeckillEnchantment(Enchantment.Rarity.VERY_RARE,EnchantmentTarget.WEAPON,
+                new EquipmentSlot[] {
+                    EquipmentSlot.MAINHAND,
+                    EquipmentSlot.OFFHAND
+                }
+            )
+        );
+
     public static final Enchantment ONE_PUSH = 
         registerModEnchantments("one_push", 
             new OnePushEnchantment(Enchantment.Rarity.VERY_RARE, EnchantmentTarget.WEAPON,
