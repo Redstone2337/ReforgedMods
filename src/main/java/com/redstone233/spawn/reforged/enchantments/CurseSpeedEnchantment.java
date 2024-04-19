@@ -49,13 +49,13 @@ public class CurseSpeedEnchantment extends Enchantment {
     public void onTargetDamaged(LivingEntity user, Entity target, int level) {
         if (target instanceof LivingEntity && user instanceof PlayerEntity player) {
             ((LivingEntity) target).addStatusEffect(
-                new StatusEffectInstance(StatusEffects.SPEED,20 * 4 * level));
+                new StatusEffectInstance(StatusEffects.SPEED,-1,20 * 4 * level,false,true));
             ((LivingEntity) target).addStatusEffect(
-                new StatusEffectInstance(StatusEffects.SLOW_FALLING,20 * 4 * level));
+                new StatusEffectInstance(StatusEffects.SLOW_FALLING,-1,20 * 4 * level,false,true));
             player.addStatusEffect(
-                new StatusEffectInstance(StatusEffects.STRENGTH,100 * 2 * level));
+                new StatusEffectInstance(StatusEffects.STRENGTH,-1,20 * 2 * level,false,true));
             player.addStatusEffect(
-                new StatusEffectInstance(StatusEffects.GLOWING,20 * 4 * level));
+                new StatusEffectInstance(StatusEffects.GLOWING,-1,20 * 4 * level,false,true));
         }
         super.onTargetDamaged(user, target, level);
     }

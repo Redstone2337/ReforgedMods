@@ -39,7 +39,7 @@ public class SpeedEnchantments extends Enchantment {
         if (target instanceof LivingEntity) {
             ((LivingEntity) target).addStatusEffect(
                 new StatusEffectInstance(StatusEffects.SPEED,20 * 2 * level,
-                    level - 1));
+                    level - 1,false,true));
         }
         super.onTargetDamaged(user, target, level);
     }
