@@ -25,14 +25,16 @@ public class LongCommand {
         ServerTickManager serverTickManager = source.getServer().getTickManager();
         boolean bl = serverTickManager.stopStepping();
         if (bl) {
+           if (source instanceof ServerCommandSource) { 
             if (value %2 == 0) {
                 player.sendMessage(Text.translatable("commands.long.even.info",value), false);
             } else if (value %2 != 0) {
                 player.sendMessage(Text.translatable("commands.long.odd.info",value), false);
-        }
+            }
             source.sendFeedback(() -> {
                 return Text.translatable("commands.long.success");
             }, true);
+        }
             return 1;
         } else {
             source.sendError(Text.translatable("commands.long.fail"));

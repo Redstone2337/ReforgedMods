@@ -1,5 +1,6 @@
 package com.redstone233.spawn.reforged.commands;
 
+import com.mojang.brigadier.Command;
 import com.mojang.brigadier.arguments.IntegerArgumentType;
 import com.mojang.brigadier.builder.LiteralArgumentBuilder;
 import com.mojang.brigadier.exceptions.CommandSyntaxException;
@@ -17,7 +18,9 @@ public class TrsmCommand {
             .requires(src -> src.hasPermissionLevel(2))
                 .then(CommandManager.literal("info")
                     .then(CommandManager.argument("page", IntegerArgumentType.integer())
-                    .executes(null)
+                    .executes(run -> getInfoMod(run.getSource(),
+                        IntegerArgumentType.getInteger(run, "page"))
+                )
             )
         )
             .requires(src -> src.hasPermissionLevel(2))
@@ -61,7 +64,37 @@ public class TrsmCommand {
         } else {
             source.sendError(Text.translatable("commands.trsm.fail"));
             return 0;
-        }
-        
+        }    
     }
+
+    private static int getInfoMod(ServerCommandSource source,int page) throws CommandSyntaxException {
+        PlayerEntity player = source.getPlayer();
+        ServerTickManager serverTickManager = source.getServer().getTickManager();
+        boolean bl = serverTickManager.stopStepping();
+        if (bl) {
+            source.sendFeedback(() -> {
+                return Text.translatable("commands.trsm.success");
+            }, true);
+                if (page == 1) {
+                    for (String textArrys : ModGlobalInfo.TextGlobal.textArray) {
+                        player.sendMessage(Text.translatable("commands.trsm.info.mod",textArrys), false);
+                    }
+                } else if (page == 2) {
+                    for (String versionArs : ModGlobalInfo.TextGlobal.versionAr) {
+                        player.sendMessage(Text.translatable("commands.trsm.info.version",versionArs), false);
+                    }
+                }
+                if (page <= 3) {
+                    player.sendMessage(Text.translatable("commands.trsm.info.page.biggist",page), false);
+                } else {
+                    player.sendMessage(Text.translatable("commands.trsm.info.page.small",page), false);
+                }
+            return Command.SINGLE_SUCCESS;
+        } else {
+            source.sendError(
+                Text.translatable("commands.trsm.fail"));
+            return 0; 
+        }
+    }
+
 }
