@@ -55,12 +55,14 @@ public class ModEnchantments {
 
     public static final Enchantment ONE_PUSH = 
         registerModEnchantments("one_push", 
-            new OnePushEnchantment(Enchantment.Rarity.VERY_RARE, EnchantmentTarget.ARMOR,
+            new OnePushEnchantment(Enchantment.Rarity.VERY_RARE, EnchantmentTarget.WEAPON,
                 new EquipmentSlot[] {
-                    EquipmentSlot.HEAD,
-                    EquipmentSlot.FEET,
-                    EquipmentSlot.LEGS,
-                    EquipmentSlot.CHEST
+                   // EquipmentSlot.HEAD,
+                   // EquipmentSlot.FEET,
+                   // EquipmentSlot.LEGS,
+                   // EquipmentSlot.CHEST
+                    EquipmentSlot.MAINHAND,
+                    EquipmentSlot.OFFHAND
             }
         )
     );
