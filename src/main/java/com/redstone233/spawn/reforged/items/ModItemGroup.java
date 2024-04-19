@@ -40,6 +40,7 @@ public class ModItemGroup {
                     entries.add(ModItems.REFORGED_SHOVRL);
                     entries.add(ModItems.REFORGED_HOE);
                     entries.add(ModItems.ICE_DRAGON_BOW);
+                    entries.add(ModItems.ENDER_BOW);
 
                     entries.add(ModItems.REFORGED_HELMET);
                     entries.add(ModItems.REFORGED_CHESTPLATE);
