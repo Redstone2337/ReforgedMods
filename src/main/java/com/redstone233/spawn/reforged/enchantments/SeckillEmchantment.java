@@ -7,6 +7,7 @@ import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
+import net.minecraft.entity.player.PlayerEntity;
 
 public class SeckillEnchantment extends Enchantment {
 
@@ -41,7 +42,7 @@ public class SeckillEnchantment extends Enchantment {
 
     @Override
     public void onTargetDamaged(LivingEntity user, Entity target, int level) {
-        if (target instanceof LivingEntity) {
+        if (target instanceof LivingEntity && user instanceof PlayerEntity player) {
             ((LivingEntity) target).addStatusEffect(
                 new StatusEffectInstance(StatusEffects.WITHER,-1,255, false, true));
             player.addStatusEffect(
