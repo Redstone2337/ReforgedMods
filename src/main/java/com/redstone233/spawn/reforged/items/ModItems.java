@@ -64,7 +64,7 @@ public class ModItems {
             new FabricItemSettings().maxDamage(50000)));
             
     public static final Item SECOND_AXE = registerItems("second_axe", 
-        new AxeItem(ModToolMaterial.REFORGED_ITEM, 100, -3.5f, 
+        new AxeItem(ModToolMaterial.REFORGED_ITEM, 500, -3.5f, 
             new FabricItemSettings().maxDamage(55000)));
 
     public static final Item REFORGED_SHOVRL = registerItems("reforged_shovel", 
