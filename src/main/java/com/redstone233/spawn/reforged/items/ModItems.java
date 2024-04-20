@@ -9,6 +9,7 @@ import com.redstone233.spawn.reforged.items.custom.FrozenSword;
 import com.redstone233.spawn.reforged.items.custom.ModArmorItem;
 import com.redstone233.spawn.reforged.items.custom.Prospectetor;
 import com.redstone233.spawn.reforged.items.custom.VampiricSword;
+import com.redstone233.spawn.reforged.items.custom.Reforged3dSword;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
@@ -78,6 +79,10 @@ public class ModItems {
     public static final Item REFORGED_SWORD = registerItems("reforged_sword", 
         new SwordItem(ModToolMaterial.REFORGED_ITEM, 10, 3.6f, 
             new FabricItemSettings().maxDamage(35000)));
+
+    public static final Item REFORGED_3D_SWORD = registerItems("reforged_3d_sword", 
+        new Reforged3dSword(ModToolMaterial.REFORGED_ITEM, 15, 3.6f, 
+            new FabricItemSettings().maxDamage(40000)));
 
     public static final Item NEXUS_SWORD = registerItems("nexus_sword", 
         new VampiricSword(ModToolMaterial.REFORGED_ITEM, 20, 4.0f, 
