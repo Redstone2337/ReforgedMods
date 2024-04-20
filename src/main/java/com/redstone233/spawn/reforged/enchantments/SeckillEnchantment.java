@@ -43,10 +43,9 @@ public class SeckillEnchantment extends Enchantment {
     @Override
     public void onTargetDamaged(LivingEntity user, Entity target, int level) {
         if (target instanceof LivingEntity && user instanceof PlayerEntity player) {
-            ((LivingEntity) target).addStatusEffect(
-                new StatusEffectInstance(StatusEffects.WITHER,-1,255, false, true));
+            ((LivingEntity) target).kill();
             player.addStatusEffect(
-                new StatusEffectInstance(StatusEffects.STRENGTH,600,255,false, true));
+                new StatusEffectInstance(StatusEffects.INSTANT_HEALTH,600,255,false, true));
         }
         super.onTargetDamaged(user, target, level);
     }

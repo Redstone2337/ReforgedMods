@@ -53,6 +53,16 @@ public class ModEnchantments {
             )
         );
 
+    public static final Enchantment ONE_PUSH = 
+        registerModEnchantments("one_push", 
+            new OnePushEnchantment(Enchantment.Rarity.VERY_RARE, EnchantmentTarget.WEAPON,
+                new EquipmentSlot[] {
+                    EquipmentSlot.MAINHAND,
+                    EquipmentSlot.OFFHAND
+            }
+        )
+    );
+
     public static final Enchantment SECONDS_BACK = 
         registerModEnchantments("seconds_back", 
             new SecondsBackEnchantment(Enchantment.Rarity.VERY_RARE,EnchantmentTarget.WEAPON,
@@ -73,19 +83,17 @@ public class ModEnchantments {
             )
         );
 
-    public static final Enchantment ONE_PUSH = 
-        registerModEnchantments("one_push", 
-            new OnePushEnchantment(Enchantment.Rarity.VERY_RARE, EnchantmentTarget.WEAPON,
-                new EquipmentSlot[] {
-                   // EquipmentSlot.HEAD,
-                   // EquipmentSlot.FEET,
-                   // EquipmentSlot.LEGS,
-                   // EquipmentSlot.CHEST
-                    EquipmentSlot.MAINHAND,
-                    EquipmentSlot.OFFHAND
-            }
-        )
-    );
+        public static final Enchantment SECKILL_ARMOR =
+            registerModEnchantments("seckill_armor", 
+                new SeckillArmorEnchant(Enchantment.Rarity.COMMON,EnchantmentTarget.ARMOR,
+                    new EquipmentSlot[] {
+                        EquipmentSlot.HEAD,
+                        EquipmentSlot.CHEST,
+                        EquipmentSlot.LEGS,
+                        EquipmentSlot.FEET
+                    }
+                )
+            );
 
     private static Enchantment registerModEnchantments(String name,Enchantment enchantment) {
         return Registry.register(Registries.ENCHANTMENT, 
