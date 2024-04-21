@@ -85,6 +85,10 @@
     "commands.info.success": "\u00a7aRun command info successful",
     "commands.info.fail": "Run command info fail",
 
+    "commands.moditem.success": "\u00a7aRun command moditem successful",
+    "commands.moditem.fail": "Run command moditem failed",
+    "invnventory.isfull": "Your Inventory are fulling",
+
     "commands.info.line1": "The Line %s text for %s",
     "commands.info.line2": "The Line %s text for %s",
     "commands.info.line3": "The Line %s text for %s",
