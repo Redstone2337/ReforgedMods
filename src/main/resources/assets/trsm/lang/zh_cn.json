@@ -84,6 +84,10 @@
     "commands.info.success": "\u00a7a执行命令“info”成功",
     "commands.info.fail": "执行命令“info”失败",
 
+    "commands.moditem.success": "\u00a7a执行命令“moditem”成功",
+    "commands.moditem.fail": "执行命令“moditem”失败",
+    "invnventory.isfull": "你的物品栏已满",
+
     "commands.info.line1": "第%s行的文本为%s",
     "commands.info.line2": "第%s行的文本为%s",
     "commands.info.line3": "第%s行的文本为%s",
