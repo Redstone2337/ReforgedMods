@@ -12,26 +12,29 @@ import net.minecraft.server.command.ServerCommandSource;
 import net.minecraft.text.Text;
 
 public class InfoCommand {
-    
+
     public static LiteralArgumentBuilder<ServerCommandSource> register() {
         return CommandManager.literal("info")
             .requires(src -> src.hasPermissionLevel(4))
                 .then(CommandManager.literal("text")
                     .then(CommandManager.argument("line", IntegerArgumentType.integer())
                         .executes(run -> runLine(run.getSource(), 
-                            IntegerArgumentType.getInteger(run, "line")))
+                            IntegerArgumentType.getInteger(run, "line"))
+                        )
                     )
                 )
             .then(CommandManager.literal("book")
                 .then(CommandManager.argument("page", IntegerArgumentType.integer())
                     .executes(run -> runBook(run.getSource(), 
-                        IntegerArgumentType.getInteger(run, "page")))
+                        IntegerArgumentType.getInteger(run, "page"))
+                    )
                 )
             )
             .then(CommandManager.literal("ver")
                 .then(CommandManager.argument("value", IntegerArgumentType.integer())
                     .executes(run -> runVers(run.getSource(), 
-                        IntegerArgumentType.getInteger(run, "value")))
+                        IntegerArgumentType.getInteger(run, "value"))
+                )
             )
         );
     }
@@ -59,9 +62,7 @@ public class InfoCommand {
                     player.sendMessage(Text.translatable("commands.info.line5",line), false);
                 }
             }
-            source.sendFeedback(() -> {
-                return Text.translatable("commands.info.success");
-            }, true);
+            source.sendFeedback(() -> Text.translatable("commands.info.success"), false);
         }
         return 1;
        } else {
@@ -97,9 +98,7 @@ public class InfoCommand {
                         player.sendMessage(Text.translatable("commands.info.page5",page), false);
                     }
                 }
-                source.sendFeedback(() -> {
-                    return Text.translatable("commands.info.success");
-                }, true);
+                source.sendFeedback(() -> Text.translatable("commands.info.success"), false);
             }
             return 1;
         } else {
@@ -131,9 +130,7 @@ public class InfoCommand {
                         player.sendMessage(Text.translatable("commands.info.ver4",value), false);
                     }
                 }
-                source.sendFeedback(() -> {
-                    return Text.translatable("commands.info.success");
-                }, true);
+                source.sendFeedback(() -> Text.translatable("commands.info.success"), false);
             }
             return 1;
         } else {

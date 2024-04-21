@@ -12,7 +12,6 @@ import net.minecraft.text.Text;
 
 public class LongCommand {
 
-
     public static LiteralArgumentBuilder<ServerCommandSource> register() {
         return CommandManager.literal("long")
             .requires(src -> src.hasPermissionLevel(2))
@@ -31,9 +30,7 @@ public class LongCommand {
             } else if (value %2 != 0) {
                 player.sendMessage(Text.translatable("commands.long.odd.info",value), false);
             }
-            source.sendFeedback(() -> {
-                return Text.translatable("commands.long.success");
-            }, true);
+            source.sendFeedback(() -> Text.translatable("commands.long.success"), false);
         }
             return 1;
         } else {

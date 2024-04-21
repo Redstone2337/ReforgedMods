@@ -37,6 +37,7 @@ public class NbtCommand {
                         assert stack.getNbt() != null;
                         String s = stack.getNbt().toString();
                         player.sendMessage((Text) new LiteralMessage(s), false);
+                        source.sendMessage((Text) new LiteralMessage(s));
                     } else {
                         player.sendMessage(Text.translatable("commands.nbt.slot.error"), false);
                     }
@@ -45,14 +46,12 @@ public class NbtCommand {
                 } else if (slot > 40) {
                     player.sendMessage(Text.translatable("commands.nbt.slot.big", slot), false);
                 }
-            source.sendFeedback(() -> {
-                    return Text.translatable("commands.nbt.success");
-                }, true);
+            source.sendFeedback(() -> Text.translatable("commands.nbt.success"), false);
             }
             return 1;
         } else {
-            source.sendError(Text.translatable("commands.nbt.fail"));
-                return 0;
+        source.sendError(Text.translatable("commands.nbt.fail"));
+            return 0;
         }
     }
 

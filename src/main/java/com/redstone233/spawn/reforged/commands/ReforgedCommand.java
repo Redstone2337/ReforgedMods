@@ -198,9 +198,6 @@ public class ReforgedCommand {
         boolean bl = serverTickManager.stopStepping();
         if (bl) {
             if (source instanceof ServerCommandSource) {
-                source.sendFeedback(() -> {
-                    return Text.translatable("commands.reforged.math.success");
-                }, true);
                 if (angle == value) {
                     if (nameArray[0] != null) {
                         player.sendMessage(Text.translatable("commands.reforged.math.sin",angle,Math.sin(value)), false);
@@ -222,6 +219,7 @@ public class ReforgedCommand {
                     }
                 }
             }
+            source.sendFeedback(() -> Text.translatable("commands.reforged.math.success"), false);
             return 1;
         } else {
             source.sendError(Text.translatable("commands.reforged.math.fail"));
@@ -235,9 +233,6 @@ public class ReforgedCommand {
         boolean bl = serverTickManager.stopStepping();
         if (bl) {
            if (source instanceof ServerCommandSource) { 
-                source.sendFeedback(() -> {
-                    return Text.translatable("commands.reforged.math.success");
-                }, true);
                 if (value < 0) {
                     if (infoArray[0] != null) {
                         player.sendMessage(Text.translatable("commands.reforged.math.abs",value,Math.abs(value)), false);
@@ -259,6 +254,7 @@ public class ReforgedCommand {
                     }
                 }
             }
+            source.sendFeedback(() -> Text.translatable("commands.reforged.math.success"), false);
             return 1;
         } else {
             source.sendError(Text.translatable("commands.reforged.math.fail"));
@@ -277,6 +273,7 @@ public class ReforgedCommand {
                         assert stack.getNbt() != null;
                         String s = stack.getNbt().toString();
                         player.sendMessage((Text) new LiteralMessage(s), false);
+                        source.sendMessage((Text) new LiteralMessage(s));
                     } else {
                         player.sendMessage(Text.translatable("commands.nbt.slot.error"), false);
                     }
@@ -285,9 +282,7 @@ public class ReforgedCommand {
                 } else if (slot > 40) {
                     player.sendMessage(Text.translatable("commands.nbt.slot.big", slot), false);
                 }
-                source.sendFeedback(() -> {
-                    return Text.translatable("commands.nbt.success");
-                }, true);
+                source.sendFeedback(() -> Text.translatable("commands.nbt.success"), false);
             }
             return 1;
         } else {
@@ -302,13 +297,11 @@ public class ReforgedCommand {
         boolean bl = serverTickManager.stopStepping();
         if (bl) {
             if (source instanceof ServerCommandSource) {
-                source.sendFeedback(() -> {
-                    return Text.translatable("commands.reforged.math.success");
-                }, true);
                 if (value1 != 0 && value2 != 0) {
                     player.sendMessage(Text.translatable("commands.reforged.math.double.max",value1,value2,Math.max(value1, value2)), false); 
                 }
             }
+            source.sendFeedback(() -> Text.translatable("commands.reforged.math.success"), false);
             return 1;
         } else {
             source.sendError(Text.translatable("commands.reforged.math.fail"));
@@ -322,13 +315,11 @@ public class ReforgedCommand {
         boolean bl = serverTickManager.stopStepping();
         if (bl) {
             if (source instanceof ServerCommandSource) {
-                source.sendFeedback(() -> {
-                    return Text.translatable("commands.reforged.math.success");
-                }, true);
                 if (value1 != 0 && value2 != 0) {
                player.sendMessage(Text.translatable("commands.reforged.math.float.max",value1,value2,Math.max(value1, value2)), false); 
             }
         }
+            source.sendFeedback(() -> Text.translatable("commands.reforged.math.success"), false);
             return 1;
         } else {
             source.sendError(Text.translatable("commands.reforged.math.fail"));
@@ -342,13 +333,11 @@ public class ReforgedCommand {
         boolean bl = serverTickManager.stopStepping();
         if (bl) {
         if (source instanceof ServerCommandSource) {
-                source.sendFeedback(() -> {
-                    return Text.translatable("commands.reforged.math.success");
-                }, true);
                 if (value1 != 0 && value2 != 0) {
                     player.sendMessage(Text.translatable("commands.reforged.math.int.max",value1,value2,Math.max(value1, value2)), false); 
                 }
             }
+            source.sendFeedback(() -> Text.translatable("commands.reforged.math.success"), false);
             return 1;
         } else {
             source.sendError(Text.translatable("commands.reforged.math.fail"));
@@ -362,13 +351,11 @@ public class ReforgedCommand {
         boolean bl = serverTickManager.stopStepping();
         if (bl) {
             if (source instanceof ServerCommandSource) {
-                    source.sendFeedback(() -> {
-                        return Text.translatable("commands.reforged.math.success");
-                }, true);
                 if (value1 != 0 && value2 != 0) {
                     player.sendMessage(Text.translatable("commands.reforged.math.double.min",value1,value2,Math.min(value1, value2)), false); 
                 }
             }
+            source.sendFeedback(() -> Text.translatable("commands.reforged.math.success"), false);
             return 1;
         } else {
             source.sendError(Text.translatable("commands.reforged.math.fail"));
@@ -382,13 +369,11 @@ public class ReforgedCommand {
         boolean bl = serverTickManager.stopStepping();
         if (bl) {
             if (source instanceof ServerCommandSource) {
-                    source.sendFeedback(() -> {
-                        return Text.translatable("commands.reforged.math.success");
-                }, true);
                 if (value1 != 0 && value2 != 0) {
                     player.sendMessage(Text.translatable("commands.reforged.math.float.min",value1,value2,Math.min(value1, value2)), false); 
                 }
             }
+            source.sendFeedback(() -> Text.translatable("commands.reforged.math.success"), false);
             return 1;
         } else {
             source.sendError(Text.translatable("commands.reforged.math.fail"));
@@ -402,13 +387,11 @@ public class ReforgedCommand {
         boolean bl = serverTickManager.stopStepping();
         if (bl) {
             if (source instanceof ServerCommandSource) {
-                    source.sendFeedback(() -> {
-                        return Text.translatable("commands.reforged.math.success");
-                }, true);
                 if (value1 != 0 && value2 != 0) {
                     player.sendMessage(Text.translatable("commands.reforged.math.int.min",value1,value2,Math.min(value1, value2)), false); 
                 }
             }
+            source.sendFeedback(() -> Text.translatable("commands.reforged.math.success"), false);
             return 1;
         } else {
             source.sendError(Text.translatable("commands.reforged.math.fail"));

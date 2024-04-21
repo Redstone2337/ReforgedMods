@@ -19,6 +19,7 @@ public class ModCommands {
             .then(NbtCommand.register())
             .then(TrsmCommand.register())
             .then(InfoCommand.register())
+            .then(ToolItemCommand.register())
             .then(ReforgedCommand.register());
         dispatcher.register(builder);
     }

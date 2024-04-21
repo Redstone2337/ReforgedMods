@@ -38,11 +38,9 @@ public class TrsmCommand {
         ServerTickManager serverTickManager = source.getServer().getTickManager();
         boolean bl = serverTickManager.stopStepping();
         if (bl) {
-            source.sendFeedback(() -> {
-                return Text.translatable("commands.trsm.success");
-            }, true);
             player.sendMessage(Text.translatable("commands.trsm.fabric.version",
                 ModGlobalInfo.TextGlobal.versionAr[1]), false);
+                source.sendFeedback(() -> Text.translatable("commands.reforged.math.success"), false);
             return 1;
         } else {
             source.sendError(Text.translatable("commands.trsm.fail"));
@@ -55,11 +53,9 @@ public class TrsmCommand {
         ServerTickManager serverTickManager = source.getServer().getTickManager();
         boolean bl = serverTickManager.stopStepping();
         if (bl) {
-            source.sendFeedback(() -> {
-                    return Text.translatable("commands.trsm.success");
-            }, true);
             player.sendMessage(Text.translatable("commands.trsm.minecraft.version",
             ModGlobalInfo.TextGlobal.versionAr[0]), false);
+            source.sendFeedback(() -> Text.translatable("commands.reforged.math.success"), false);
             return 1;
         } else {
             source.sendError(Text.translatable("commands.trsm.fail"));
@@ -72,9 +68,6 @@ public class TrsmCommand {
         ServerTickManager serverTickManager = source.getServer().getTickManager();
         boolean bl = serverTickManager.stopStepping();
         if (bl) {
-            source.sendFeedback(() -> {
-                return Text.translatable("commands.trsm.success");
-            }, true);
                 if (page == 1) {
                     for (String textArrys : ModGlobalInfo.TextGlobal.textArray) {
                         player.sendMessage(Text.translatable("commands.trsm.info.mod",textArrys), false);
@@ -89,6 +82,7 @@ public class TrsmCommand {
                 } else {
                     player.sendMessage(Text.translatable("commands.trsm.info.page.small",page), false);
                 }
+                source.sendFeedback(() -> Text.translatable("commands.reforged.math.success"), false);
             return Command.SINGLE_SUCCESS;
         } else {
             source.sendError(
