@@ -45,7 +45,6 @@ public class InfoCommand {
         boolean bl = serverTickManager.stopStepping();
        if (bl) {
         if (source instanceof ServerCommandSource) {
-        try {
             if (line != 0 && line >= 5) {
                 if (line == 1) {
                     player.sendMessage(
@@ -65,11 +64,7 @@ public class InfoCommand {
             }
             source.sendFeedback(() -> Text.translatable("commands.info.success"), false);
         }
-    } catch (Exception e) {
-        player.sendMessage((Text) new LiteralMessage(e), false);
-            }
-        }
-         return 1;
+        return 1;
        } else {
         source.sendError(Text.translatable("commands.info.fail"));
         return 0;
@@ -82,7 +77,6 @@ public class InfoCommand {
         boolean bl = serverTickManager.stopStepping();
         if (bl) {
             if (source instanceof ServerCommandSource) {
-            try {
                 if (page != 0 && page >= 5) {
                     if (page == 1) {
                         player.sendMessage(
@@ -105,9 +99,6 @@ public class InfoCommand {
                     }
                 }
                 source.sendFeedback(() -> Text.translatable("commands.info.success"), false);
-                } catch (Exception e) {
-                    player.sendMessage((Text) new LiteralMessage(e), false);
-                }
             }
             return 1;
         } else {
@@ -122,7 +113,6 @@ public class InfoCommand {
         boolean bl = serverTickManager.stopStepping();
         if (bl) {
             if (source instanceof ServerCommandSource) {
-            try {
                 if (value != 0 && value >= 4) {
                     if (value == 1) {
                         player.sendMessage(
@@ -141,10 +131,7 @@ public class InfoCommand {
                     }
                 }
                 source.sendFeedback(() -> Text.translatable("commands.info.success"), false);
-            } catch (Exception e) {
-            player.sendMessage((Text) new LiteralMessage(e), false);
             }
-        }
             return 1;
         } else {
             source.sendError(Text.translatable("commands.info.fail"));
