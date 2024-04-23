@@ -80,7 +80,7 @@ public class InfoCommand {
         boolean bl = serverTickManager.stopStepping();
         if (bl) {
             if (source instanceof ServerCommandSource) {
-                if (page != 0 && page >= 5) {
+                if (page != 0 && page <= 5) {
                     if (page == 1) {
                         player.sendMessage(
                             Text.translatable("commands.info.page1",page,
@@ -118,7 +118,7 @@ public class InfoCommand {
         boolean bl = serverTickManager.stopStepping();
         if (bl) {
             if (source instanceof ServerCommandSource) {
-                if (value != 0 && value >= 4) {
+                if (value != 0 && value <= 4) {
                     if (value == 1) {
                         player.sendMessage(
                             Text.translatable("commands.info.ver1",value,
