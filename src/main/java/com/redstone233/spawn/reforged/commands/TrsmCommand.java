@@ -40,12 +40,15 @@ public class TrsmCommand {
         if (bl) {
             player.sendMessage(Text.translatable("commands.trsm.fabric.version",
                 ModGlobalInfo.TextGlobal.versionAr[1]), false);
-                source.sendFeedback(() -> Text.translatable("commands.reforged.math.success"), false);
-            return 1;
         } else {
             source.sendError(Text.translatable("commands.trsm.fail"));
             return 0;
         }
+        if (!source.getServer().isDedicated()){
+            throw ModCommands.TRSM_COMMAND_EXCEPTION_TYPE.create();
+        }
+        source.sendFeedback(() -> Text.translatable("commands.reforged.math.success"), false);
+        return 1;
     }
 
     private static int getDependsMinecraft(ServerCommandSource source) throws CommandSyntaxException {
@@ -54,13 +57,16 @@ public class TrsmCommand {
         boolean bl = serverTickManager.stopStepping();
         if (bl) {
             player.sendMessage(Text.translatable("commands.trsm.minecraft.version",
-            ModGlobalInfo.TextGlobal.versionAr[0]), false);
-            source.sendFeedback(() -> Text.translatable("commands.reforged.math.success"), false);
-            return 1;
+                ModGlobalInfo.TextGlobal.versionAr[0]), false);
         } else {
             source.sendError(Text.translatable("commands.trsm.fail"));
             return 0;
-        }    
+        }
+        if (!source.getServer().isDedicated()){
+            throw ModCommands.TRSM_COMMAND_WORONG_BE_INTEGRATED.create();
+        }
+        source.sendFeedback(() -> Text.translatable("commands.reforged.math.success"), false);
+        return 1;   
     }
 
     private static int getInfoMod(ServerCommandSource source,int page) throws CommandSyntaxException {
@@ -77,18 +83,19 @@ public class TrsmCommand {
                         player.sendMessage(Text.translatable("commands.trsm.info.version",versionArs), false);
                     }
                 }
-                if (page <= 3) {
-                    player.sendMessage(Text.translatable("commands.trsm.info.page.biggist",page), false);
-                } else {
+                if (page < 1) {
                     player.sendMessage(Text.translatable("commands.trsm.info.page.small",page), false);
-                }
-                source.sendFeedback(() -> Text.translatable("commands.reforged.math.success"), false);
-            return Command.SINGLE_SUCCESS;
-        } else {
-            source.sendError(
-                Text.translatable("commands.trsm.fail"));
-            return 0; 
+            } else if (page >= 3) {
+                player.sendMessage(Text.translatable("commands.trsm.info.page.biggist",page), false);     
+            } else {
+                source.sendError(Text.translatable("commands.reforged.math.fail"));
+            }
         }
+        if (!source.getServer().isDedicated()){
+            throw ModCommands.TRSM_COMMAND_WORONG_BE_INTEGRATED.create();
+        }
+        source.sendFeedback(() -> Text.translatable("commands.reforged.math.success"), false);
+        return Command.SINGLE_SUCCESS;
     }
 
 }

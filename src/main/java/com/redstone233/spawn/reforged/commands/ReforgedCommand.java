@@ -38,37 +38,37 @@ public class ReforgedCommand {
             .then(CommandManager.literal(typeArray[0])
                 .then(CommandManager.literal(nameArray[0])
                     .then(CommandManager.argument("angle", DoubleArgumentType.doubleArg())
-                        .executes(run -> mathTrig(run.getSource(), 
+                        .executes(run -> mathTrig(run.getSource(), nameArray[1],
                             DoubleArgumentType.getDouble(run, "angle")))
                         )
                     )
                 .then(CommandManager.literal(nameArray[1])
                     .then(CommandManager.argument("angle", DoubleArgumentType.doubleArg())
-                        .executes(run -> mathTrig(run.getSource(), 
+                        .executes(run -> mathTrig(run.getSource(), nameArray[1],
                             DoubleArgumentType.getDouble(run, "angle")))
                         )
                     )
                 .then(CommandManager.literal(nameArray[2])
                     .then(CommandManager.argument("angle", DoubleArgumentType.doubleArg())
-                        .executes(run -> mathTrig(run.getSource(), 
+                        .executes(run -> mathTrig(run.getSource(), nameArray[2],
                             DoubleArgumentType.getDouble(run, "angle")))
                         )
                     )
                 .then(CommandManager.literal(nameArray[3])
                     .then(CommandManager.argument("angle", DoubleArgumentType.doubleArg())
-                        .executes(run -> mathTrig(run.getSource(), 
+                        .executes(run -> mathTrig(run.getSource(), nameArray[3],
                             DoubleArgumentType.getDouble(run, "angle")))
                         )
                     )
                 .then(CommandManager.literal(nameArray[4])
                     .then(CommandManager.argument("angle", DoubleArgumentType.doubleArg())
-                        .executes(run -> mathTrig(run.getSource(), 
+                        .executes(run -> mathTrig(run.getSource(), nameArray[4],
                             DoubleArgumentType.getDouble(run, "angle")))
                         )
                     )
                 .then(CommandManager.literal(nameArray[5])
                     .then(CommandManager.argument("angle", DoubleArgumentType.doubleArg())
-                        .executes(run -> mathTrig(run.getSource(), 
+                        .executes(run -> mathTrig(run.getSource(), nameArray[5],
                             DoubleArgumentType.getDouble(run, "angle")))
                         )
                     )
@@ -77,37 +77,37 @@ public class ReforgedCommand {
             .then(CommandManager.literal(typeArray[1])
                 .then(CommandManager.literal(infoArray[0])
                     .then(CommandManager.argument("value", DoubleArgumentType.doubleArg())
-                        .executes(run -> mathDefe(run.getSource(), 
+                        .executes(run -> mathDefe(run.getSource(), infoArray[0],
                             DoubleArgumentType.getDouble(run, "value")))
                         )
                     )
                 .then(CommandManager.literal(infoArray[1])
                     .then(CommandManager.argument("value", DoubleArgumentType.doubleArg())
-                        .executes(run -> mathDefe(run.getSource(), 
+                        .executes(run -> mathDefe(run.getSource(), infoArray[1],
                             DoubleArgumentType.getDouble(run, "value")))
                         )
                     )
                 .then(CommandManager.literal(infoArray[2])
                     .then(CommandManager.argument("value", DoubleArgumentType.doubleArg())
-                        .executes(run -> mathDefe(run.getSource(), 
+                        .executes(run -> mathDefe(run.getSource(), infoArray[2],
                             DoubleArgumentType.getDouble(run, "value")))
                         )
                     )
                 .then(CommandManager.literal(infoArray[3])
                     .then(CommandManager.argument("value", DoubleArgumentType.doubleArg())
-                        .executes(run -> mathDefe(run.getSource(), 
+                        .executes(run -> mathDefe(run.getSource(), infoArray[3],
                             DoubleArgumentType.getDouble(run, "value")))
                         )
                     )
                 .then(CommandManager.literal(infoArray[4])
                     .then(CommandManager.argument("value", DoubleArgumentType.doubleArg())
-                        .executes(run -> mathDefe(run.getSource(), 
+                        .executes(run -> mathDefe(run.getSource(), infoArray[4],
                             DoubleArgumentType.getDouble(run, "value")))
                         )
                     )
                 .then(CommandManager.literal(infoArray[5])
                     .then(CommandManager.argument("value", DoubleArgumentType.doubleArg())
-                        .executes(run -> mathDefe(run.getSource(), 
+                        .executes(run -> mathDefe(run.getSource(), infoArray[5],
                             DoubleArgumentType.getDouble(run, "value")))
                     )
                 )
@@ -191,7 +191,7 @@ public class ReforgedCommand {
         );
     }
 
-    private static int mathTrig(ServerCommandSource source,double angle) throws CommandSyntaxException {
+    private static int mathTrig(ServerCommandSource source,String type,double angle) throws CommandSyntaxException {
         PlayerEntity player = source.getPlayer();
         double value = Math.toRadians(angle);
         ServerTickManager serverTickManager = source.getServer().getTickManager();
@@ -199,67 +199,75 @@ public class ReforgedCommand {
         if (bl) {
             if (source instanceof ServerCommandSource) {
                 if (angle == value) {
-                    if (nameArray[0] != null) {
+                    if (type == nameArray[0]) {
                         player.sendMessage(Text.translatable("commands.reforged.math.sin",angle,Math.sin(value)), false);
                     }
-                    if (nameArray[1] != null) {
+                    if (type == nameArray[1]) {
                         player.sendMessage(Text.translatable("commands.reforged.math.cos",angle,Math.cos(value)), false);
                     }
-                    if (nameArray[2] != null) {
+                    if (type == nameArray[2]) {
                         player.sendMessage(Text.translatable("commands.reforged.math.tan",angle,Math.tan(value)), false);
                     }
-                    if (nameArray[3] != null) {
+                    if (type == nameArray[3]) {
                         player.sendMessage(Text.translatable("commands.reforged.math.asin",angle,Math.asin(value)), false);
                     }
-                    if (nameArray[4] != null) {
+                    if (type == nameArray[4]) {
                         player.sendMessage(Text.translatable("commands.reforged.math.acos",angle,Math.acos(value)), false);
                     }
-                    if (nameArray[5] != null) {
+                    if (type == nameArray[5]) {
                         player.sendMessage(Text.translatable("commands.reforged.math.atan",angle,Math.asin(angle)), false);
+                    }
+                    if (type == null) {
+                        source.sendError(Text.translatable("commands.reforged.math.fail"));
+                        return 0;
                     }
                 }
             }
+            if (!source.getServer().isDedicated()) {
+                throw ModCommands.TRSM_COMMAND_EXCEPTION_TYPE.create();
+            }
             source.sendFeedback(() -> Text.translatable("commands.reforged.math.success"), false);
-            return 1;
-        } else {
-            source.sendError(Text.translatable("commands.reforged.math.fail"));
-            return 0;
-        }
+        } 
+        return 1;
     }
 
-    private static int mathDefe(ServerCommandSource source,double value) throws CommandSyntaxException {
+    private static int mathDefe(ServerCommandSource source,String type,double value) throws CommandSyntaxException {
         PlayerEntity player = source.getPlayer();
         ServerTickManager serverTickManager = source.getServer().getTickManager();
         boolean bl = serverTickManager.stopStepping();
         if (bl) {
            if (source instanceof ServerCommandSource) { 
                 if (value < 0) {
-                    if (infoArray[0] != null) {
+                    if (type == infoArray[0]) {
                         player.sendMessage(Text.translatable("commands.reforged.math.abs",value,Math.abs(value)), false);
                     }
-                    if (infoArray[1] != null) {
+                    if (type == infoArray[1]) {
                         player.sendMessage(Text.translatable("commands.reforged.math.sqrt",value,Math.sqrt(value)), false);
                     }
-                    if (infoArray[2] != null) {
+                    if (type == infoArray[2]) {
                         player.sendMessage(Text.translatable("commands.reforged.math.cbrt",value), false);
                     }
-                    if (infoArray[3] != null) {
+                    if (type == infoArray[3]) {
                         player.sendMessage(Text.translatable("commands.reforged.math.ceil",value,Math.ceil(value)), false);
                     }
-                    if (infoArray[4] != null) {
+                    if (type == infoArray[4]) {
                         player.sendMessage(Text.translatable("commands.reforged.math.floor",value,Math.floor(value)), false);
                     }
-                    if (infoArray[5] != null) {
+                    if (type == infoArray[5]) {
                     player.sendMessage(Text.translatable("commands.reforged.math.round",value,Math.round(value)), false);
+                    }
+                    if (type == null) {
+                        source.sendError(Text.translatable("commands.reforged.math.fail"));
+            return 0;
                     }
                 }
             }
+            if (!source.getServer().isDedicated()) {
+                throw ModCommands.TRSM_COMMAND_EXCEPTION_TYPE.create();
+            }
             source.sendFeedback(() -> Text.translatable("commands.reforged.math.success"), false);
-            return 1;
-        } else {
-            source.sendError(Text.translatable("commands.reforged.math.fail"));
-            return 0;
         }
+        return 1;
     }
 
     private static int getNbts(ServerCommandSource source, int slot, PlayerEntity player) throws CommandSyntaxException {
@@ -273,7 +281,6 @@ public class ReforgedCommand {
                         assert stack.getNbt() != null;
                         String s = stack.getNbt().toString();
                         player.sendMessage((Text) new LiteralMessage(s), false);
-                        source.sendMessage((Text) new LiteralMessage(s));
                     } else {
                         player.sendMessage(Text.translatable("commands.nbt.slot.error"), false);
                     }
@@ -281,14 +288,17 @@ public class ReforgedCommand {
                     player.sendMessage(Text.translatable("commands.nbt.slot.small", slot), false);
                 } else if (slot > 40) {
                     player.sendMessage(Text.translatable("commands.nbt.slot.big", slot), false);
+                } else {
+                    source.sendError(Text.translatable("commands.nbt.fail"));
+                    return 0;
+                }
+                if (!source.getServer().isDedicated()) {
+                    throw ModCommands.TRSM_COMMAND_EXCEPTION_TYPE.create();
                 }
                 source.sendFeedback(() -> Text.translatable("commands.nbt.success"), false);
-            }
-            return 1;
-        } else {
-            source.sendError(Text.translatable("commands.nbt.fail"));
-                return 0;
+            }   
         }
+        return 1;
     }
 
     private static int doubleMaxValue(ServerCommandSource source,double value1,double value2) throws CommandSyntaxException {
@@ -299,14 +309,17 @@ public class ReforgedCommand {
             if (source instanceof ServerCommandSource) {
                 if (value1 != 0 && value2 != 0) {
                     player.sendMessage(Text.translatable("commands.reforged.math.double.max",value1,value2,Math.max(value1, value2)), false); 
+                } else {
+                    source.sendError(Text.translatable("commands.reforged.math.fail"));
+                    return 0;
                 }
             }
-            source.sendFeedback(() -> Text.translatable("commands.reforged.math.success"), false);
-            return 1;
-        } else {
-            source.sendError(Text.translatable("commands.reforged.math.fail"));
-            return 0;
-        }
+            if (!source.getServer().isDedicated()) {
+                throw ModCommands.TRSM_COMMAND_EXCEPTION_TYPE.create();
+            }
+            source.sendFeedback(() -> Text.translatable("commands.reforged.math.success"), false); 
+        } 
+        return 1;
     }
 
     private static int floatMaxValue(ServerCommandSource source,float value1,float value2) throws CommandSyntaxException {
@@ -317,15 +330,18 @@ public class ReforgedCommand {
             if (source instanceof ServerCommandSource) {
                 if (value1 != 0 && value2 != 0) {
                player.sendMessage(Text.translatable("commands.reforged.math.float.max",value1,value2,Math.max(value1, value2)), false); 
+            } else {
+                source.sendError(Text.translatable("commands.reforged.math.fail"));
+                return 0;
             }
         }
-            source.sendFeedback(() -> Text.translatable("commands.reforged.math.success"), false);
-            return 1;
-        } else {
-            source.sendError(Text.translatable("commands.reforged.math.fail"));
-            return 0;
+        if (!source.getServer().isDedicated()) {
+            throw ModCommands.TRSM_COMMAND_EXCEPTION_TYPE.create();
         }
-    }
+        source.sendFeedback(() -> Text.translatable("commands.reforged.math.success"), false); 
+    } 
+    return 1;
+}
 
     private static int intMaxValue(ServerCommandSource source,int value1,int value2) throws CommandSyntaxException {
         PlayerEntity player = source.getPlayer();
@@ -335,14 +351,17 @@ public class ReforgedCommand {
         if (source instanceof ServerCommandSource) {
                 if (value1 != 0 && value2 != 0) {
                     player.sendMessage(Text.translatable("commands.reforged.math.int.max",value1,value2,Math.max(value1, value2)), false); 
+                } else {
+                    source.sendError(Text.translatable("commands.reforged.math.fail"));
+                    return 0;
                 }
             }
+            if (!source.getServer().isDedicated()) {
+                throw ModCommands.TRSM_COMMAND_WORONG_BE_INTEGRATED.create();
+            }
             source.sendFeedback(() -> Text.translatable("commands.reforged.math.success"), false);
-            return 1;
-        } else {
-            source.sendError(Text.translatable("commands.reforged.math.fail"));
-            return 0;
-        }
+        } 
+        return 1;
     }
 
     private static int doubleMinValue(ServerCommandSource source,double value1,double value2) throws CommandSyntaxException {
@@ -353,14 +372,17 @@ public class ReforgedCommand {
             if (source instanceof ServerCommandSource) {
                 if (value1 != 0 && value2 != 0) {
                     player.sendMessage(Text.translatable("commands.reforged.math.double.min",value1,value2,Math.min(value1, value2)), false); 
+                } else {
+                    source.sendError(Text.translatable("commands.reforged.math.fail"));
+                    return 0;
                 }
             }
+            if (!source.getServer().isDedicated()) {
+                throw ModCommands.TRSM_COMMAND_EXCEPTION_TYPE.create();
+            }
             source.sendFeedback(() -> Text.translatable("commands.reforged.math.success"), false);
-            return 1;
-        } else {
-            source.sendError(Text.translatable("commands.reforged.math.fail"));
-            return 0;
-        }
+        } 
+        return 1;
     }
 
     private static int floatMinValue(ServerCommandSource source,float value1,float value2) throws CommandSyntaxException {
@@ -371,14 +393,17 @@ public class ReforgedCommand {
             if (source instanceof ServerCommandSource) {
                 if (value1 != 0 && value2 != 0) {
                     player.sendMessage(Text.translatable("commands.reforged.math.float.min",value1,value2,Math.min(value1, value2)), false); 
+                } else {
+                    source.sendError(Text.translatable("commands.reforged.math.fail"));
+                    return 0;
                 }
             }
+            if (!source.getServer().isDedicated()) {
+                throw ModCommands.TRSM_COMMAND_EXCEPTION_TYPE.create();
+            }
             source.sendFeedback(() -> Text.translatable("commands.reforged.math.success"), false);
-            return 1;
-        } else {
-            source.sendError(Text.translatable("commands.reforged.math.fail"));
-            return 0;
         }
+        return 1;
     }
 
     private static int intMinValue(ServerCommandSource source,int value1,int value2) throws CommandSyntaxException {
@@ -389,13 +414,16 @@ public class ReforgedCommand {
             if (source instanceof ServerCommandSource) {
                 if (value1 != 0 && value2 != 0) {
                     player.sendMessage(Text.translatable("commands.reforged.math.int.min",value1,value2,Math.min(value1, value2)), false); 
+                } else {
+                    source.sendError(Text.translatable("commands.reforged.math.fail"));
+                    return 0;
                 }
             }
-            source.sendFeedback(() -> Text.translatable("commands.reforged.math.success"), false);
-            return 1;
-        } else {
-            source.sendError(Text.translatable("commands.reforged.math.fail"));
-            return 0;
+            if (!source.getServer().isDedicated()) {
+                throw ModCommands.TRSM_COMMAND_WORONG_BE_INTEGRATED.create();
+            }
+            source.sendFeedback(() -> Text.translatable("commands.reforged.math.success"), false);   
         }
+        return 1;
     }
 }

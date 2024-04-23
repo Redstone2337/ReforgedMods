@@ -1,5 +1,6 @@
 package com.redstone233.spawn.reforged.commands;
 
+import com.mojang.brigadier.Command;
 import com.mojang.brigadier.arguments.IntegerArgumentType;
 import com.mojang.brigadier.builder.LiteralArgumentBuilder;
 import com.mojang.brigadier.exceptions.CommandSyntaxException;
@@ -60,15 +61,17 @@ public class InfoCommand {
                         Text.translatable("commands.info.line4",line,ModGlobalInfo.TextGlobal.textArray[3]), false);
                 } else if (line >= 5) {
                     player.sendMessage(Text.translatable("commands.info.line5",line), false);
+                    source.sendError(Text.translatable("commands.info.fail"));
+                    return 0;
                 }
             }
-            source.sendFeedback(() -> Text.translatable("commands.info.success"), false);
+                if (!source.getServer().isDedicated()) {
+                    throw ModCommands.TRSM_COMMAND_WORONG_BE_INTEGRATED.create();
+                }
+                source.sendFeedback(() -> Text.translatable("commands.info.success"), false);
+            }
         }
-        return 1;
-       } else {
-        source.sendError(Text.translatable("commands.info.fail"));
-        return 0;
-       }
+       return 1;
     }
 
     private static int runBook(ServerCommandSource source,int page) throws CommandSyntaxException {
@@ -96,15 +99,17 @@ public class InfoCommand {
                                 ModGlobalInfo.TextGlobal.textArray[3]), false);
                     } else if (page >= 5) {
                         player.sendMessage(Text.translatable("commands.info.page5",page), false);
+                        source.sendError(Text.translatable("commands.info.fail"));
+                        return 0;
                     }
+                }
+                if (!source.getServer().isDedicated()) {
+                    throw ModCommands.TRSM_COMMAND_WORONG_BE_INTEGRATED.create();
                 }
                 source.sendFeedback(() -> Text.translatable("commands.info.success"), false);
             }
-            return 1;
-        } else {
-            source.sendError(Text.translatable("commands.info.fail"));
-            return 0;
         }  
+        return Command.SINGLE_SUCCESS;
     }
 
     private static int runVers(ServerCommandSource source,int value) throws CommandSyntaxException {
@@ -128,15 +133,18 @@ public class InfoCommand {
                                 ModGlobalInfo.TextGlobal.versionAr[2]), false);
                     } else if (value >= 4) {
                         player.sendMessage(Text.translatable("commands.info.ver4",value), false);
+                        source.sendError(Text.translatable("commands.info.fail"));
+                        return 0;
                     }
+                }
+                if (!source.getServer().isDedicated()) {
+                    throw ModCommands.TRSM_COMMAND_WORONG_BE_INTEGRATED.create();
                 }
                 source.sendFeedback(() -> Text.translatable("commands.info.success"), false);
             }
-            return 1;
-        } else {
-            source.sendError(Text.translatable("commands.info.fail"));
-            return 0;
-        }    
+            
+        }   
+        return 1;  
     }  
       
 }

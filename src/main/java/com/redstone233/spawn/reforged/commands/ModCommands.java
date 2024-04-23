@@ -12,6 +12,11 @@ import net.minecraft.text.Text;
 
 public class ModCommands {
 
+    public static final SimpleCommandExceptionType TRSM_COMMAND_EXCEPTION_TYPE = 
+        new SimpleCommandExceptionType(Text.translatable("commands.trsm.run"));
+    public static final SimpleCommandExceptionType TRSM_COMMAND_WORONG_BE_INTEGRATED =
+        new SimpleCommandExceptionType(Text.translatable("commands.trsm.be.int"));
+
     public static void register(CommandDispatcher<ServerCommandSource> dispatcher) {
         LiteralArgumentBuilder<ServerCommandSource> builder =
             CommandManager.literal("reforgedspawn").executes(ModCommands::run)

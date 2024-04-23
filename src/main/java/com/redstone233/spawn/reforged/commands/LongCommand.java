@@ -29,14 +29,18 @@ public class LongCommand {
                 player.sendMessage(Text.translatable("commands.long.even.info",value), false);
             } else if (value %2 != 0) {
                 player.sendMessage(Text.translatable("commands.long.odd.info",value), false);
+            } 
+            if (value < 0) {
+                source.sendError(Text.translatable("commands.long.fail"));
+                return 0;
+            }
+            if (!source.getServer().isDedicated()) {
+                throw ModCommands.TRSM_COMMAND_WORONG_BE_INTEGRATED.create();
             }
             source.sendFeedback(() -> Text.translatable("commands.long.success"), false);
+            }
         }
-            return 1;
-        } else {
-            source.sendError(Text.translatable("commands.long.fail"));
-            return 0;
-        }
+        return 1;
     }
 
 

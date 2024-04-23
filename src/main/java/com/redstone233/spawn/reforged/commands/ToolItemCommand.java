@@ -101,13 +101,16 @@ public class ToolItemCommand {
         if (bl) {
             if (!player.getInventory().insertStack(new ItemStack(ModItems.REFORGED_SWORD))) {
                 throw new SimpleCommandExceptionType(Text.translatable("invnventory.isfull")).create();
-            }
-            source.sendFeedback(() -> Text.translatable("commands.moditem.success"), false);
-            return 1;
-        } else {
-            source.sendError(Text.translatable("commands.moditem.fail"));
-            return 0;
-        }        
+            } else {
+                source.sendError(Text.translatable("commands.moditem.fail"));
+                return 0;
+            }  
+        }
+        if (!source.getServer().isDedicated()) {
+            throw ModCommands.TRSM_COMMAND_EXCEPTION_TYPE.create();
+        }
+        source.sendFeedback(() -> Text.translatable("commands.moditem.success"), false);
+        return 1;    
     }
 
     private static int clearReforged(ServerCommandSource source) throws CommandSyntaxException {
@@ -118,13 +121,16 @@ public class ToolItemCommand {
             if (!player.getInventory().isEmpty()) {
                 player.getInventory().clear();
                 throw new SimpleCommandExceptionType(Text.translatable("invnventory.isfull")).create();
+            } else {
+                source.sendError(Text.translatable("commands.moditem.fail"));
+                return 0;
             }
-            source.sendFeedback(() -> Text.translatable("commands.moditem.success"), false);
-            return 1;
-        } else {
-            source.sendError(Text.translatable("commands.moditem.fail"));
-            return 0;
-        }        
+        }
+        if (!source.getServer().isDedicated()) {
+           throw ModCommands.TRSM_COMMAND_EXCEPTION_TYPE.create();
+        }
+        source.sendFeedback(() -> Text.translatable("commands.moditem.success"), false);
+        return 1;        
     }
 
     private static int giveNexus(ServerCommandSource source) throws CommandSyntaxException {
@@ -134,13 +140,16 @@ public class ToolItemCommand {
         if (bl) {
             if (!player.getInventory().insertStack(new ItemStack(ModItems.NEXUS_SWORD))) {
                 throw new SimpleCommandExceptionType(Text.translatable("invnventory.isfull")).create();
-            }
-            source.sendFeedback(() -> Text.translatable("commands.moditem.success"), false);
-            return 1;
-        } else {
-            source.sendError(Text.translatable("commands.moditem.fail"));
-            return 0;
-        }        
+            } else {
+                source.sendError(Text.translatable("commands.moditem.fail"));
+                return 0;
+            }    
+        } 
+        if (!source.getServer().isDedicated()) {
+            throw ModCommands.TRSM_COMMAND_EXCEPTION_TYPE.create();
+        }
+        source.sendFeedback(() -> Text.translatable("commands.moditem.success"), false);
+        return 1;       
     }
 
     private static int clearNexus(ServerCommandSource source) throws CommandSyntaxException {
@@ -151,13 +160,16 @@ public class ToolItemCommand {
             if (!player.getInventory().isEmpty()) {
                 player.getInventory().clear();
                 throw new SimpleCommandExceptionType(Text.translatable("invnventory.isfull")).create();
+            } else {
+                source.sendError(Text.translatable("commands.moditem.fail"));
+                return 0;
             }
-            source.sendFeedback(() -> Text.translatable("commands.moditem.success"), false);
-            return 1;
-        } else {
-            source.sendError(Text.translatable("commands.moditem.fail"));
-            return 0;
-        }        
+        }
+        if (!source.getServer().isDedicated()) {
+            throw ModCommands.TRSM_COMMAND_EXCEPTION_TYPE.create();
+        }
+        source.sendFeedback(() -> Text.translatable("commands.moditem.success"), false);
+        return 1;        
     }
 
     private static int giveIce(ServerCommandSource source) throws CommandSyntaxException {
@@ -167,13 +179,16 @@ public class ToolItemCommand {
         if (bl) {
             if (!player.getInventory().insertStack(new ItemStack(ModItems.ICE_DRAGON_SWORD))) {
                 throw new SimpleCommandExceptionType(Text.translatable("invnventory.isfull")).create();
-            }
-            source.sendFeedback(() -> Text.translatable("commands.moditem.success"), false);
-            return 1;
-        } else {
+            } else {
             source.sendError(Text.translatable("commands.moditem.fail"));
             return 0;
-        }        
+            }      
+        }
+        if (!source.getServer().isDedicated()) {
+            throw ModCommands.TRSM_COMMAND_EXCEPTION_TYPE.create();
+        }
+        source.sendFeedback(() -> Text.translatable("commands.moditem.success"), false);
+        return 1;     
     }
 
     private static int clearIce(ServerCommandSource source) throws CommandSyntaxException {
@@ -184,13 +199,16 @@ public class ToolItemCommand {
             if (!player.getInventory().isEmpty()) {
                 player.getInventory().clear();
                 throw new SimpleCommandExceptionType(Text.translatable("invnventory.isfull")).create();
-            }
-            source.sendFeedback(() -> Text.translatable("commands.moditem.success"), false);
-            return 1;
-        } else {
-            source.sendError(Text.translatable("commands.moditem.fail"));
+            } else {
+                source.sendError(Text.translatable("commands.moditem.fail"));
             return 0;
-        }        
+            }    
+        }
+        if (!source.getServer().isDedicated()) {
+           throw ModCommands.TRSM_COMMAND_EXCEPTION_TYPE.create();
+        } 
+        source.sendFeedback(() -> Text.translatable("commands.moditem.success"), false);
+        return 1;        
     }
 
     private static int giveAmethyst(ServerCommandSource source) throws CommandSyntaxException {
@@ -200,13 +218,16 @@ public class ToolItemCommand {
         if (bl) {
             if (!player.getInventory().insertStack(new ItemStack(ModItems.REFORGED_AMETHYST_SWORD))) {
                 throw new SimpleCommandExceptionType(Text.translatable("invnventory.isfull")).create();
-            }
-            source.sendFeedback(() -> Text.translatable("commands.moditem.success"), false);
-            return 1;
-        } else {
+            } else {
             source.sendError(Text.translatable("commands.moditem.fail"));
             return 0;
-        }        
+            }
+        }
+        if (!source.getServer().isDedicated()) {
+            throw ModCommands.TRSM_COMMAND_EXCEPTION_TYPE.create();
+        }
+        source.sendFeedback(() -> Text.translatable("commands.moditem.success"), false);
+        return 1;        
     }
 
     private static int clearAmethyst(ServerCommandSource source) throws CommandSyntaxException {
@@ -217,13 +238,16 @@ public class ToolItemCommand {
             if (!player.getInventory().isEmpty()) {
                 player.getInventory().clear();
                 throw new SimpleCommandExceptionType(Text.translatable("invnventory.isfull")).create();
+            } else {
+                source.sendError(Text.translatable("commands.moditem.fail"));
+                return 0;
             }
-            source.sendFeedback(() -> Text.translatable("commands.moditem.success"), false);
-            return 1;
-        } else {
-            source.sendError(Text.translatable("commands.moditem.fail"));
-            return 0;
-        }        
+        }
+        if (!source.getServer().isDedicated()) {
+            throw ModCommands.TRSM_COMMAND_EXCEPTION_TYPE.create();
+        }
+        source.sendFeedback(() -> Text.translatable("commands.moditem.success"), false);
+        return 1;        
     }
 
     private static int giveReforgedAxe(ServerCommandSource source) throws CommandSyntaxException {
@@ -233,13 +257,16 @@ public class ToolItemCommand {
         if (bl) {
             if (!player.getInventory().insertStack(new ItemStack(ModItems.REFORGED_AXE))) {
                 throw new SimpleCommandExceptionType(Text.translatable("invnventory.isfull")).create();
-            }
-            source.sendFeedback(() -> Text.translatable("commands.moditem.success"), false);
-            return 1;
-        } else {
+            }else {
             source.sendError(Text.translatable("commands.moditem.fail"));
             return 0;
-        }        
+            } 
+        }
+        if (!source.getServer().isDedicated()){
+            throw ModCommands.TRSM_COMMAND_EXCEPTION_TYPE.create();
+        }
+        source.sendFeedback(() -> Text.translatable("commands.moditem.success"), false);
+        return 1;        
     }
 
     private static int clearReforgedAxe(ServerCommandSource source) throws CommandSyntaxException {
@@ -250,13 +277,16 @@ public class ToolItemCommand {
             if (!player.getInventory().isEmpty()) {
                 player.getInventory().clear();
                 throw new SimpleCommandExceptionType(Text.translatable("invnventory.isfull")).create();
-            }
-            source.sendFeedback(() -> Text.translatable("commands.moditem.success"), false);
-            return 1;
-        } else {
+            } else {
             source.sendError(Text.translatable("commands.moditem.fail"));
-            return 0;
-        }        
+            return 0; 
+            }
+        }
+        if (!source.getServer().isDedicated()){
+            throw ModCommands.TRSM_COMMAND_EXCEPTION_TYPE.create();
+        }
+        source.sendFeedback(() -> Text.translatable("commands.moditem.success"), false);
+        return 1;        
     }
 
     private static int giveComboAxe(ServerCommandSource source) throws CommandSyntaxException {
@@ -266,13 +296,16 @@ public class ToolItemCommand {
         if (bl) {
             if (!player.getInventory().insertStack(new ItemStack(ModItems.COMBO_AXE))) {
                 throw new SimpleCommandExceptionType(Text.translatable("invnventory.isfull")).create();
-            }
-            source.sendFeedback(() -> Text.translatable("commands.moditem.success"), false);
-            return 1;
-        } else {
+            } else {
             source.sendError(Text.translatable("commands.moditem.fail"));
             return 0;
-        }        
+            }
+        }
+        if (!source.getServer().isDedicated()){
+            throw ModCommands.TRSM_COMMAND_EXCEPTION_TYPE.create();
+        }
+        source.sendFeedback(() -> Text.translatable("commands.moditem.success"), false);  
+        return 1;        
     }
 
     private static int clearComboAxe(ServerCommandSource source) throws CommandSyntaxException {
@@ -283,13 +316,13 @@ public class ToolItemCommand {
             if (!player.getInventory().isEmpty()) {
                 player.getInventory().clear();
                 throw new SimpleCommandExceptionType(Text.translatable("invnventory.isfull")).create();
-            }
-            source.sendFeedback(() -> Text.translatable("commands.moditem.success"), false);
-            return 1;
-        } else {
+            } else {
             source.sendError(Text.translatable("commands.moditem.fail"));
             return 0;
-        }        
+            }
+        }
+        source.sendFeedback(() -> Text.translatable("commands.moditem.success"), false);
+        return 1;        
     }
 
     private static int giveSecondAxe(ServerCommandSource source) throws CommandSyntaxException {
@@ -299,13 +332,16 @@ public class ToolItemCommand {
         if (bl) {
             if (!player.getInventory().insertStack(new ItemStack(ModItems.SECOND_AXE))) {
                 throw new SimpleCommandExceptionType(Text.translatable("invnventory.isfull")).create();
-            }
-            source.sendFeedback(() -> Text.translatable("commands.moditem.success"), false);
-            return 1;
-        } else {
+            } else {
             source.sendError(Text.translatable("commands.moditem.fail"));
-            return 0;
-        }        
+            return 0; 
+            }
+        }
+        if (!source.getServer().isDedicated()){
+            throw ModCommands.TRSM_COMMAND_EXCEPTION_TYPE.create();
+        }
+        source.sendFeedback(() -> Text.translatable("commands.moditem.success"), false);
+        return 1;        
     }
 
     private static int clearSecondAxe(ServerCommandSource source) throws CommandSyntaxException {
@@ -316,12 +352,15 @@ public class ToolItemCommand {
             if (!player.getInventory().isEmpty()) {
                 player.getInventory().clear();
                 throw new SimpleCommandExceptionType(Text.translatable("invnventory.isfull")).create();
-            }
-            source.sendFeedback(() -> Text.translatable("commands.moditem.success"), false);
-            return 1;
-        } else {
+            } else {
             source.sendError(Text.translatable("commands.moditem.fail"));
-            return 0;
-        }        
+            return 0;  
+            } 
+        }
+        if (!source.getServer().isDedicated()){
+            throw ModCommands.TRSM_COMMAND_EXCEPTION_TYPE.create();
+        }
+        source.sendFeedback(() -> Text.translatable("commands.moditem.success"), false);
+        return 1;        
     }
 }
