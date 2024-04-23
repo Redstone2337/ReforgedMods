@@ -62,6 +62,8 @@
     "commands.trsm.fail": "Run command trsm failed",
     "commands.trsm.fabric.version": "\u00a7cThis Mod is dependent on fabric loader %s",
     "commands.trsm.minecraft.version": "\u00a7cThis Mod requires Minecraft version for %s",
+    "commands.trsm.run": "An error occurred while attempting to execute the command.",
+    "commands.trsm.be.int": "An error occurred while attempting to execute a command with an integer.",
    
     "commands.long.odd.info": "\u00a7a(Long)Integers %d are odd",
     "commands.long.even.info": "\u00a7a(Long)Integers %d are even",

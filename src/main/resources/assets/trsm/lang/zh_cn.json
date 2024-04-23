@@ -62,6 +62,8 @@
     "commands.trsm.fail": "执行命令“trsm”失败",
     "commands.trsm.fabric.version": "\u00a7a此模组需要依赖Fabric Loader的%s版本",
     "commands.trsm.minecraft.version": "\u00a7c此模组需要%s的Minecraft版本",
+    "commands.trsm.run": "试图执行命令时出现错误",
+    "commands.trsm.be.int": "试图执行在整数命令时出现错误",
    
     "commands.long.odd.info": "(长)整数%d是奇数",
     "commands.long.even.info": "(长)整数%d是偶数",
