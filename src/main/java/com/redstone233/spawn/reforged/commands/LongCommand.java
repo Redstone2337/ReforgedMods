@@ -26,9 +26,9 @@ public class LongCommand {
         if (bl) {
            if (source instanceof ServerCommandSource) { 
             if (value %2 == 0) {
-                player.sendMessage(Text.translatable("commands.long.even.info",value), false);
+                player.sendMessage(Text.translatable("commands.long.even.info",value));
             } else if (value %2 != 0) {
-                player.sendMessage(Text.translatable("commands.long.odd.info",value), false);
+                player.sendMessage(Text.translatable("commands.long.odd.info",value));
             } 
             if (value < 0) {
                 source.sendError(Text.translatable("commands.long.fail"));
@@ -37,7 +37,7 @@ public class LongCommand {
             if (!source.getServer().isDedicated()) {
                 throw ModCommands.TRSM_COMMAND_WORONG_BE_INTEGRATED.create();
             }
-            source.sendFeedback(() -> Text.translatable("commands.long.success"), false);
+            source.sendFeedback(() -> Text.translatable("commands.long.success"), true);
             }
         }
         return 1;

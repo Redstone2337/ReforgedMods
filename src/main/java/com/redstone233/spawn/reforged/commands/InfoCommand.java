@@ -106,7 +106,7 @@ public class InfoCommand {
                 if (!source.getServer().isDedicated()) {
                     throw ModCommands.TRSM_COMMAND_WORONG_BE_INTEGRATED.create();
                 }
-                source.sendFeedback(() -> Text.translatable("commands.info.success"), false);
+                source.sendFeedback(() -> Text.translatable("commands.info.success"), true);
             }
         }  
         return Command.SINGLE_SUCCESS;
@@ -122,17 +122,17 @@ public class InfoCommand {
                     if (value == 1) {
                         player.sendMessage(
                             Text.translatable("commands.info.ver1",value,
-                                ModGlobalInfo.TextGlobal.versionAr[0]), false);
+                                ModGlobalInfo.TextGlobal.versionAr[0]));
                     } else if (value == 2) {
                         player.sendMessage(
                             Text.translatable("commands.info.ver2",value,
-                                ModGlobalInfo.TextGlobal.versionAr[1]), false);
+                                ModGlobalInfo.TextGlobal.versionAr[1]));
                     } else if (value == 3) {
                         player.sendMessage(
                             Text.translatable("commands.info.ver3",value,
-                                ModGlobalInfo.TextGlobal.versionAr[2]), false);
+                                ModGlobalInfo.TextGlobal.versionAr[2]));
                     } else if (value >= 4) {
-                        player.sendMessage(Text.translatable("commands.info.ver4",value), false);
+                        player.sendMessage(Text.translatable("commands.info.ver4",value));
                         source.sendError(Text.translatable("commands.info.fail"));
                         return 0;
                     }
@@ -140,9 +140,8 @@ public class InfoCommand {
                 if (!source.getServer().isDedicated()) {
                     throw ModCommands.TRSM_COMMAND_WORONG_BE_INTEGRATED.create();
                 }
-                source.sendFeedback(() -> Text.translatable("commands.info.success"), false);
-            }
-            
+                source.sendFeedback(() -> Text.translatable("commands.info.success"), true);
+            } 
         }   
         return 1;  
     }  

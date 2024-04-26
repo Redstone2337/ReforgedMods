@@ -39,7 +39,7 @@ public class TrsmCommand {
         boolean bl = serverTickManager.stopStepping();
         if (bl) {
             player.sendMessage(Text.translatable("commands.trsm.fabric.version",
-                ModGlobalInfo.TextGlobal.versionAr[1]), false);
+                ModGlobalInfo.TextGlobal.versionAr[1]));
         } else {
             source.sendError(Text.translatable("commands.trsm.fail"));
             return 0;
@@ -47,7 +47,7 @@ public class TrsmCommand {
         if (!source.getServer().isDedicated()){
             throw ModCommands.TRSM_COMMAND_EXCEPTION_TYPE.create();
         }
-        source.sendFeedback(() -> Text.translatable("commands.reforged.math.success"), false);
+        source.sendFeedback(() -> Text.translatable("commands.reforged.math.success"), true);
         return 1;
     }
 
@@ -57,7 +57,7 @@ public class TrsmCommand {
         boolean bl = serverTickManager.stopStepping();
         if (bl) {
             player.sendMessage(Text.translatable("commands.trsm.minecraft.version",
-                ModGlobalInfo.TextGlobal.versionAr[0]), false);
+                ModGlobalInfo.TextGlobal.versionAr[0]));
         } else {
             source.sendError(Text.translatable("commands.trsm.fail"));
             return 0;
@@ -65,7 +65,7 @@ public class TrsmCommand {
         if (!source.getServer().isDedicated()){
             throw ModCommands.TRSM_COMMAND_WORONG_BE_INTEGRATED.create();
         }
-        source.sendFeedback(() -> Text.translatable("commands.reforged.math.success"), false);
+        source.sendFeedback(() -> Text.translatable("commands.reforged.math.success"), true);
         return 1;   
     }
 
@@ -76,17 +76,17 @@ public class TrsmCommand {
         if (bl) {
                 if (page == 1) {
                     for (String textArrys : ModGlobalInfo.TextGlobal.textArray) {
-                        player.sendMessage(Text.translatable("commands.trsm.info.mod",textArrys), false);
+                        player.sendMessage(Text.translatable("commands.trsm.info.mod",textArrys));
                     }
                 } else if (page == 2) {
                     for (String versionArs : ModGlobalInfo.TextGlobal.versionAr) {
-                        player.sendMessage(Text.translatable("commands.trsm.info.version",versionArs), false);
+                        player.sendMessage(Text.translatable("commands.trsm.info.version",versionArs));
                     }
                 }
                 if (page < 1) {
-                    player.sendMessage(Text.translatable("commands.trsm.info.page.small",page), false);
+                    player.sendMessage(Text.translatable("commands.trsm.info.page.small",page));
             } else if (page >= 3) {
-                player.sendMessage(Text.translatable("commands.trsm.info.page.biggist",page), false);     
+                player.sendMessage(Text.translatable("commands.trsm.info.page.biggist",page));     
             } else {
                 source.sendError(Text.translatable("commands.reforged.math.fail"));
             }
@@ -94,7 +94,7 @@ public class TrsmCommand {
         if (!source.getServer().isDedicated()){
             throw ModCommands.TRSM_COMMAND_WORONG_BE_INTEGRATED.create();
         }
-        source.sendFeedback(() -> Text.translatable("commands.reforged.math.success"), false);
+        source.sendFeedback(() -> Text.translatable("commands.reforged.math.success"), true);
         return Command.SINGLE_SUCCESS;
     }
 
