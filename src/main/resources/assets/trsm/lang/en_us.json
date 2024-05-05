@@ -147,6 +147,8 @@
     "item.trsm.vampirism.tooltip2": "\u00a7cMyth",
     "item.trsm.frozen.tooltip1": "\u00a7aThis weapon seems to be able to stop a creature for a while.",
     "item.trsm.frozen.tooltip2": "\u00a7cMyth",
+    "item.trsm.3d.tooltip1": "\u00a7eThe team's first 3D weapon looks pretty good.",
+    "item.trsm.3d.tooltip2": "\u00a7cMath",
     "item.trsm.prospector.error": "\u00a74[Prospetr/ERROR]No ore was found!",
     "item.trsm.prospector.info": "\u00a7a[Prospetr/INFO]\u00a7aFound \u00a7a %s \u00a7aat coordinates \u00a7a[\u00a7b %d，\u00a7e %d，\u00a7d %d \u00a7a]\u00a7a!"
 }
