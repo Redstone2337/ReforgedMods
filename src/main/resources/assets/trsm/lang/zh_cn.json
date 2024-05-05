@@ -146,6 +146,8 @@
     "item.trsm.vampirism.tooltip2": "\u00a7c神话",
     "item.trsm.frozen.tooltip1": "\u00a7a传说这把武器可以让实体停止一段时间的运动",
     "item.trsm.frozen.tooltip2": "\u00a7c神话",
+    "item.trsm.3d.tooltip1": "\u00a7e我的第1个3d武器，就是有点偏。",
+    "item.trsm.3d.tooltip2": "\u00a7c神话",
     "item.trsm.prospector.error": "\u00a74[探矿器/错误]此处未找到任何矿石！",
     "item.trsm.prospector.info": "\u00a7a[探矿器/成功]\u00a7a已找到\u00a7a %s \u00a7a并生成在\u00a7a[\u00a7b %d，\u00a7e %d，\u00a7d %d \u00a7a]\u00a7a的位置!"
 }
