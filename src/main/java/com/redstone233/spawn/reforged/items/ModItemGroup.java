@@ -35,6 +35,7 @@ public class ModItemGroup {
                     entries.add(ModItems.REFORGED_3D_SWORD);
                     entries.add(ModItems.NEXUS_SWORD);
                     entries.add(ModItems.ICE_DRAGON_SWORD);
+                    entries.add(ModItems.GOLD_DAGGER);
                     entries.add(ModItems.REFORGED_AMETHYST_SWORD);
                     entries.add(ModItems.REFORGED_PICKAXE);
                     entries.add(ModItems.REFORGED_AXE);
