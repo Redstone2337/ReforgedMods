@@ -103,8 +103,8 @@ public class ModItems {
             new FabricItemSettings().maxDamage(23002)));
 
     public static final Item GOLD_DAGGER = registerItems("gold_dagger", 
-        new SwordItem(ModToolMaterial.ICE_DRAGON_SCALES, 11, 3.0f, 
-            new FabricItemSettings().maxDamage(23002)));
+        new SwordItem(ModToolMaterial.ICE_DRAGON_SCALES, 11, 4.5f, 
+            new FabricItemSettings().maxDamage(24000)));
 
     public static final Item REFORGED_HOE = registerItems("reforged_hoe", 
         new HoeItem(ModToolMaterial.REFORGED_ITEM, 6, 2.6f, 
