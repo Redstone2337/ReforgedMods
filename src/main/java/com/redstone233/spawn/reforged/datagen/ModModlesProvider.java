@@ -63,6 +63,7 @@ public class ModModlesProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.NEXUS_SWORD, Models.HANDHELD);
         itemModelGenerator.register(ModItems.REFORGED_AMETHYST_SWORD, Models.HANDHELD);
         itemModelGenerator.register(ModItems.ICE_DRAGON_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.GOLD_DAGGER, Models.HANDHELD);
         itemModelGenerator.register(ModItems.REFORGED_PICKAXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.REFORGED_AXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.COMBO_AXE, Models.HANDHELD);
