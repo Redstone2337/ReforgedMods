@@ -44,6 +44,12 @@ public class ModItems {
     public static final Item REFORGED_AMETHYST = registerItems("reforged_amethyst", 
         new Item(new FabricItemSettings().maxCount(64)));
 
+    public static final Item COMBO_INGOT = registerItems("combo_ingot", 
+        new Item(new FabricItemSettings().maxCount(64)));
+    
+    public static final Item SECKILL_INGOT = registerItems("seckill_ingot", 
+        new Item(new FabricItemSettings().maxCount(64)));
+
     public static final Item PROSPECTOR = registerItems("prospector", 
         new Prospectetor(new FabricItemSettings().maxDamage(1000)));
 
