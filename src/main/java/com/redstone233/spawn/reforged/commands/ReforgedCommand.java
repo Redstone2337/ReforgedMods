@@ -196,7 +196,7 @@ public class ReforgedCommand {
         double value = Math.toRadians(angle);
         ServerTickManager serverTickManager = source.getServer().getTickManager();
         boolean bl = serverTickManager.stopStepping();
-        if (bl) {
+        //if (bl) {
             if (source instanceof ServerCommandSource) {
                 if (angle == value) {
                     if (type == nameArray[0]) {
@@ -227,7 +227,7 @@ public class ReforgedCommand {
                 throw ModCommands.TRSM_COMMAND_EXCEPTION_TYPE.create();
             }
             source.sendFeedback(() -> Text.translatable("commands.reforged.math.success"), true);
-        } 
+        //} 
         return 1;
     }
 
@@ -235,7 +235,7 @@ public class ReforgedCommand {
         PlayerEntity player = source.getPlayer();
         ServerTickManager serverTickManager = source.getServer().getTickManager();
         boolean bl = serverTickManager.stopStepping();
-        if (bl) {
+        //if (bl) {
            if (source instanceof ServerCommandSource) { 
                 if (value < 0) {
                     if (type == infoArray[0]) {
@@ -266,7 +266,7 @@ public class ReforgedCommand {
                 throw ModCommands.TRSM_COMMAND_EXCEPTION_TYPE.create();
             }
             source.sendFeedback(() -> Text.translatable("commands.reforged.math.success"), true);
-        }
+        //}
         return 1;
     }
 
@@ -274,7 +274,7 @@ public class ReforgedCommand {
         ServerTickManager serverTickManager = source.getServer().getTickManager();
         boolean bl = serverTickManager.stopStepping();
         ItemStack stack = player.getInventory().getStack(slot);
-        if (bl) {
+        //if (bl) {
             if (source instanceof ServerCommandSource) {
                 if (slot >= 0 && slot <= 40) {
                     if (stack.hasNbt()) {
@@ -297,7 +297,7 @@ public class ReforgedCommand {
                 }
                 source.sendFeedback(() -> Text.translatable("commands.nbt.success"), true);
             }   
-        }
+        //}
         return 1;
     }
 
@@ -305,7 +305,7 @@ public class ReforgedCommand {
         PlayerEntity player = source.getPlayer();
         ServerTickManager serverTickManager = source.getServer().getTickManager();
         boolean bl = serverTickManager.stopStepping();
-        if (bl) {
+        //if (bl) {
             if (source instanceof ServerCommandSource) {
                 if (value1 != 0 && value2 != 0) {
                     player.sendMessage(Text.translatable("commands.reforged.math.double.max",value1,value2,Math.max(value1, value2))); 
@@ -318,7 +318,7 @@ public class ReforgedCommand {
                 throw ModCommands.TRSM_COMMAND_EXCEPTION_TYPE.create();
             }
             source.sendFeedback(() -> Text.translatable("commands.reforged.math.success"), true); 
-        } 
+        //} 
         return 1;
     }
 
@@ -326,7 +326,7 @@ public class ReforgedCommand {
         PlayerEntity player = source.getPlayer();
         ServerTickManager serverTickManager = source.getServer().getTickManager();
         boolean bl = serverTickManager.stopStepping();
-        if (bl) {
+        //if (bl) {
             if (source instanceof ServerCommandSource) {
                 if (value1 != 0 && value2 != 0) {
                player.sendMessage(Text.translatable("commands.reforged.math.float.max",value1,value2,Math.max(value1, value2))); 
@@ -339,7 +339,7 @@ public class ReforgedCommand {
             throw ModCommands.TRSM_COMMAND_EXCEPTION_TYPE.create();
         }
         source.sendFeedback(() -> Text.translatable("commands.reforged.math.success"), true); 
-    } 
+    //} 
     return 1;
 }
 
@@ -347,7 +347,7 @@ public class ReforgedCommand {
         PlayerEntity player = source.getPlayer();
         ServerTickManager serverTickManager = source.getServer().getTickManager();
         boolean bl = serverTickManager.stopStepping();
-        if (bl) {
+        //if (bl) {
         if (source instanceof ServerCommandSource) {
                 if (value1 != 0 && value2 != 0) {
                     player.sendMessage(Text.translatable("commands.reforged.math.int.max",value1,value2,Math.max(value1, value2))); 
@@ -360,7 +360,7 @@ public class ReforgedCommand {
                 throw ModCommands.TRSM_COMMAND_WORONG_BE_INTEGRATED.create();
             }
             source.sendFeedback(() -> Text.translatable("commands.reforged.math.success"), true);
-        } 
+        //} 
         return 1;
     }
 
@@ -368,7 +368,7 @@ public class ReforgedCommand {
         PlayerEntity player = source.getPlayer();
         ServerTickManager serverTickManager = source.getServer().getTickManager();
         boolean bl = serverTickManager.stopStepping();
-        if (bl) {
+        //if (bl) {
             if (source instanceof ServerCommandSource) {
                 if (value1 != 0 && value2 != 0) {
                     player.sendMessage(Text.translatable("commands.reforged.math.double.min",value1,value2,Math.min(value1, value2))); 
@@ -381,7 +381,7 @@ public class ReforgedCommand {
                 throw ModCommands.TRSM_COMMAND_EXCEPTION_TYPE.create();
             }
             source.sendFeedback(() -> Text.translatable("commands.reforged.math.success"), true);
-        } 
+        //} 
         return 1;
     }
 
@@ -389,7 +389,7 @@ public class ReforgedCommand {
         PlayerEntity player = source.getPlayer();
         ServerTickManager serverTickManager = source.getServer().getTickManager();
         boolean bl = serverTickManager.stopStepping();
-        if (bl) {
+        //if (bl) {
             if (source instanceof ServerCommandSource) {
                 if (value1 != 0 && value2 != 0) {
                     player.sendMessage(Text.translatable("commands.reforged.math.float.min",value1,value2,Math.min(value1, value2))); 
@@ -402,7 +402,7 @@ public class ReforgedCommand {
                 throw ModCommands.TRSM_COMMAND_EXCEPTION_TYPE.create();
             }
             source.sendFeedback(() -> Text.translatable("commands.reforged.math.success"), true);
-        }
+        //}
         return 1;
     }
 
@@ -410,7 +410,7 @@ public class ReforgedCommand {
         PlayerEntity player = source.getPlayer();
         ServerTickManager serverTickManager = source.getServer().getTickManager();
         boolean bl = serverTickManager.stopStepping();
-        if (bl) {
+        //if (bl) {
             if (source instanceof ServerCommandSource) {
                 if (value1 != 0 && value2 != 0) {
                     player.sendMessage(Text.translatable("commands.reforged.math.int.min",value1,value2,Math.min(value1, value2))); 
@@ -423,7 +423,7 @@ public class ReforgedCommand {
                 throw ModCommands.TRSM_COMMAND_WORONG_BE_INTEGRATED.create();
             }
             source.sendFeedback(() -> Text.translatable("commands.reforged.math.success"), true);   
-        }
+        //}
         return 1;
     }
 }

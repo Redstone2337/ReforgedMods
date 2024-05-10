@@ -116,7 +116,7 @@ public class InfoCommand {
         PlayerEntity player = source.getPlayer();
         ServerTickManager serverTickManager = source.getServer().getTickManager();
         boolean bl = serverTickManager.stopStepping();
-        if (bl) {
+        //if (bl) {
             if (source instanceof ServerCommandSource) {
                 if (value != 0 && value <= 4) {
                     if (value == 1) {
@@ -140,9 +140,9 @@ public class InfoCommand {
                 if (!source.getServer().isDedicated()) {
                     throw ModCommands.TRSM_COMMAND_WORONG_BE_INTEGRATED.create();
                 }
-                source.sendFeedback(() -> Text.translatable("commands.info.success"), true);
             } 
-        }   
+        //}
+        source.sendFeedback(() -> Text.translatable("commands.info.success"), true);   
         return 1;  
     }  
       

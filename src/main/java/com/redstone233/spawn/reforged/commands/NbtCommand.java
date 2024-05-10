@@ -30,7 +30,7 @@ public class NbtCommand {
         ServerTickManager serverTickManager = source.getServer().getTickManager();
         boolean bl = serverTickManager.stopStepping();
         ItemStack stack = player.getInventory().getStack(slot);
-        if (bl) {
+        //if (bl) {
            if (source instanceof ServerCommandSource) {
                 if (slot >= 0 && slot <= 40) {
                     if (stack.hasNbt()) {
@@ -51,9 +51,9 @@ public class NbtCommand {
                 if (!source.getServer().isDedicated()) {
                     throw ModCommands.TRSM_COMMAND_WORONG_BE_INTEGRATED.create();
                 }
-            source.sendFeedback(() -> Text.translatable("commands.nbt.success"), true);
             }
-        }
+        //}
+        source.sendFeedback(() -> Text.translatable("commands.nbt.success"), true);
         return 1;
     }
 
