@@ -98,14 +98,14 @@ public class ToolItemCommand {
         PlayerEntity player = source.getPlayer();
         ServerTickManager serverTickManager = source.getServer().getTickManager();
         boolean bl = serverTickManager.stopStepping();
-        //if (bl) {
+        if (!bl) {
             if (!player.getInventory().insertStack(new ItemStack(ModItems.REFORGED_SWORD))) {
                 throw new SimpleCommandExceptionType(Text.translatable("invnventory.isfull")).create();
             } else {
                 source.sendError(Text.translatable("commands.moditem.fail"));
                 return 0;
             }  
-        //}
+        }
         if (!source.getServer().isDedicated()) {
             throw ModCommands.TRSM_COMMAND_EXCEPTION_TYPE.create();
         }
@@ -117,7 +117,7 @@ public class ToolItemCommand {
         PlayerEntity player = source.getPlayer();
         ServerTickManager serverTickManager = source.getServer().getTickManager();
         boolean bl = serverTickManager.stopStepping();
-        //if (bl) {
+        if (!bl) {
             if (!player.getInventory().isEmpty()) {
                 player.getInventory().clear();
                 throw new SimpleCommandExceptionType(Text.translatable("invnventory.isfull")).create();
@@ -125,7 +125,7 @@ public class ToolItemCommand {
                 source.sendError(Text.translatable("commands.moditem.fail"));
                 return 0;
             }
-        //}
+        }
         if (!source.getServer().isDedicated()) {
            throw ModCommands.TRSM_COMMAND_EXCEPTION_TYPE.create();
         }
@@ -137,14 +137,14 @@ public class ToolItemCommand {
         PlayerEntity player = source.getPlayer();
         ServerTickManager serverTickManager = source.getServer().getTickManager();
         boolean bl = serverTickManager.stopStepping();
-        //if (bl) {
+        if (!bl) {
             if (!player.getInventory().insertStack(new ItemStack(ModItems.NEXUS_SWORD))) {
                 throw new SimpleCommandExceptionType(Text.translatable("invnventory.isfull")).create();
             } else {
                 source.sendError(Text.translatable("commands.moditem.fail"));
                 return 0;
             }    
-        //} 
+        } 
         if (!source.getServer().isDedicated()) {
             throw ModCommands.TRSM_COMMAND_EXCEPTION_TYPE.create();
         }
@@ -156,7 +156,7 @@ public class ToolItemCommand {
         PlayerEntity player = source.getPlayer();
         ServerTickManager serverTickManager = source.getServer().getTickManager();
         boolean bl = serverTickManager.stopStepping();
-        //if (bl) {
+        if (!bl) {
             if (!player.getInventory().isEmpty()) {
                 player.getInventory().clear();
                 throw new SimpleCommandExceptionType(Text.translatable("invnventory.isfull")).create();
@@ -164,7 +164,7 @@ public class ToolItemCommand {
                 source.sendError(Text.translatable("commands.moditem.fail"));
                 return 0;
             }
-        //}
+        }
         if (!source.getServer().isDedicated()) {
             throw ModCommands.TRSM_COMMAND_EXCEPTION_TYPE.create();
         }
@@ -176,14 +176,14 @@ public class ToolItemCommand {
         PlayerEntity player = source.getPlayer();
         ServerTickManager serverTickManager = source.getServer().getTickManager();
         boolean bl = serverTickManager.stopStepping();
-        //if (bl) {
+        if (!bl) {
             if (!player.getInventory().insertStack(new ItemStack(ModItems.ICE_DRAGON_SWORD))) {
                 throw new SimpleCommandExceptionType(Text.translatable("invnventory.isfull")).create();
             } else {
             source.sendError(Text.translatable("commands.moditem.fail"));
             return 0;
             }      
-        //}
+        }
         if (!source.getServer().isDedicated()) {
             throw ModCommands.TRSM_COMMAND_EXCEPTION_TYPE.create();
         }
@@ -195,7 +195,7 @@ public class ToolItemCommand {
         PlayerEntity player = source.getPlayer();
         ServerTickManager serverTickManager = source.getServer().getTickManager();
         boolean bl = serverTickManager.stopStepping();
-        //if (bl) {
+        if (!bl) {
             if (!player.getInventory().isEmpty()) {
                 player.getInventory().clear();
                 throw new SimpleCommandExceptionType(Text.translatable("invnventory.isfull")).create();
@@ -203,7 +203,7 @@ public class ToolItemCommand {
                 source.sendError(Text.translatable("commands.moditem.fail"));
             return 0;
             }    
-        //}
+        }
         if (!source.getServer().isDedicated()) {
            throw ModCommands.TRSM_COMMAND_EXCEPTION_TYPE.create();
         } 
@@ -215,14 +215,14 @@ public class ToolItemCommand {
         PlayerEntity player = source.getPlayer();
         ServerTickManager serverTickManager = source.getServer().getTickManager();
         boolean bl = serverTickManager.stopStepping();
-        //if (bl) {
+        if (!bl) {
             if (!player.getInventory().insertStack(new ItemStack(ModItems.REFORGED_AMETHYST_SWORD))) {
                 throw new SimpleCommandExceptionType(Text.translatable("invnventory.isfull")).create();
             } else {
             source.sendError(Text.translatable("commands.moditem.fail"));
             return 0;
             }
-        //}
+        }
         if (!source.getServer().isDedicated()) {
             throw ModCommands.TRSM_COMMAND_EXCEPTION_TYPE.create();
         }
@@ -234,7 +234,7 @@ public class ToolItemCommand {
         PlayerEntity player = source.getPlayer();
         ServerTickManager serverTickManager = source.getServer().getTickManager();
         boolean bl = serverTickManager.stopStepping();
-        //if (bl) {
+        if (!bl) {
             if (!player.getInventory().isEmpty()) {
                 player.getInventory().clear();
                 throw new SimpleCommandExceptionType(Text.translatable("invnventory.isfull")).create();
@@ -242,7 +242,7 @@ public class ToolItemCommand {
                 source.sendError(Text.translatable("commands.moditem.fail"));
                 return 0;
             }
-        //}
+        }
         if (!source.getServer().isDedicated()) {
             throw ModCommands.TRSM_COMMAND_EXCEPTION_TYPE.create();
         }
@@ -254,14 +254,14 @@ public class ToolItemCommand {
         PlayerEntity player = source.getPlayer();
         ServerTickManager serverTickManager = source.getServer().getTickManager();
         boolean bl = serverTickManager.stopStepping();
-        //if (bl) {
+        if (!bl) {
             if (!player.getInventory().insertStack(new ItemStack(ModItems.REFORGED_AXE))) {
                 throw new SimpleCommandExceptionType(Text.translatable("invnventory.isfull")).create();
             }else {
             source.sendError(Text.translatable("commands.moditem.fail"));
             return 0;
             } 
-        //}
+        }
         if (!source.getServer().isDedicated()){
             throw ModCommands.TRSM_COMMAND_EXCEPTION_TYPE.create();
         }
@@ -273,7 +273,7 @@ public class ToolItemCommand {
         PlayerEntity player = source.getPlayer();
         ServerTickManager serverTickManager = source.getServer().getTickManager();
         boolean bl = serverTickManager.stopStepping();
-        //if (bl) {
+        if (!bl) {
             if (!player.getInventory().isEmpty()) {
                 player.getInventory().clear();
                 throw new SimpleCommandExceptionType(Text.translatable("invnventory.isfull")).create();
@@ -281,7 +281,7 @@ public class ToolItemCommand {
             source.sendError(Text.translatable("commands.moditem.fail"));
             return 0; 
             }
-        //}
+        }
         if (!source.getServer().isDedicated()){
             throw ModCommands.TRSM_COMMAND_EXCEPTION_TYPE.create();
         }
@@ -293,14 +293,14 @@ public class ToolItemCommand {
         PlayerEntity player = source.getPlayer();
         ServerTickManager serverTickManager = source.getServer().getTickManager();
         boolean bl = serverTickManager.stopStepping();
-        //if (bl) {
+        if (!bl) {
             if (!player.getInventory().insertStack(new ItemStack(ModItems.COMBO_AXE))) {
                 throw new SimpleCommandExceptionType(Text.translatable("invnventory.isfull")).create();
             } else {
             source.sendError(Text.translatable("commands.moditem.fail"));
             return 0;
             }
-        //}
+        }
         if (!source.getServer().isDedicated()){
             throw ModCommands.TRSM_COMMAND_EXCEPTION_TYPE.create();
         }
@@ -312,7 +312,7 @@ public class ToolItemCommand {
         PlayerEntity player = source.getPlayer();
         ServerTickManager serverTickManager = source.getServer().getTickManager();
         boolean bl = serverTickManager.stopStepping();
-        //if (bl) {
+        if (!bl) {
             if (!player.getInventory().isEmpty()) {
                 player.getInventory().clear();
                 throw new SimpleCommandExceptionType(Text.translatable("invnventory.isfull")).create();
@@ -320,7 +320,7 @@ public class ToolItemCommand {
             source.sendError(Text.translatable("commands.moditem.fail"));
             return 0;
             }
-        //}
+        }
         source.sendFeedback(() -> Text.translatable("commands.moditem.success"), true);
         return 1;        
     }
@@ -329,14 +329,14 @@ public class ToolItemCommand {
         PlayerEntity player = source.getPlayer();
         ServerTickManager serverTickManager = source.getServer().getTickManager();
         boolean bl = serverTickManager.stopStepping();
-        //if (bl) {
+        if (!bl) {
             if (!player.getInventory().insertStack(new ItemStack(ModItems.SECOND_AXE))) {
                 throw new SimpleCommandExceptionType(Text.translatable("invnventory.isfull")).create();
             } else {
             source.sendError(Text.translatable("commands.moditem.fail"));
             return 0; 
             }
-        //}
+        }
         if (!source.getServer().isDedicated()){
             throw ModCommands.TRSM_COMMAND_EXCEPTION_TYPE.create();
         }
@@ -348,7 +348,7 @@ public class ToolItemCommand {
         PlayerEntity player = source.getPlayer();
         ServerTickManager serverTickManager = source.getServer().getTickManager();
         boolean bl = serverTickManager.stopStepping();
-        //if (bl) {
+        if (!bl) {
             if (!player.getInventory().isEmpty()) {
                 player.getInventory().clear();
                 throw new SimpleCommandExceptionType(Text.translatable("invnventory.isfull")).create();
@@ -356,7 +356,7 @@ public class ToolItemCommand {
             source.sendError(Text.translatable("commands.moditem.fail"));
             return 0;  
             } 
-        //}
+        }
         if (!source.getServer().isDedicated()){
             throw ModCommands.TRSM_COMMAND_EXCEPTION_TYPE.create();
         }
