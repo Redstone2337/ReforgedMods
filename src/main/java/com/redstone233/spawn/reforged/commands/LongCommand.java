@@ -23,7 +23,7 @@ public class LongCommand {
     private static int getValue(ServerCommandSource source,int value,PlayerEntity player) throws CommandSyntaxException {
         ServerTickManager serverTickManager = source.getServer().getTickManager();
         boolean bl = serverTickManager.stopStepping();
-        //if (bl) {
+        if (!bl) {
            if (source instanceof ServerCommandSource) { 
             if (value %2 == 0) {
                 player.sendMessage(Text.translatable("commands.long.even.info",value));
@@ -38,7 +38,7 @@ public class LongCommand {
                 throw ModCommands.TRSM_COMMAND_WORONG_BE_INTEGRATED.create();
             }
         }
-        //}
+        }
         source.sendFeedback(() -> Text.translatable("commands.long.success"), true);
         return 1;
     }

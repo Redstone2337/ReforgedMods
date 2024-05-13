@@ -44,7 +44,7 @@ public class InfoCommand {
         PlayerEntity player = source.getPlayer();
         ServerTickManager serverTickManager = source.getServer().getTickManager();
         boolean bl = serverTickManager.stopStepping();
-       if (bl) {
+       if (!bl) {
         if (source instanceof ServerCommandSource) {
             if (line != 0 && line >= 5) {
                 if (line == 1) {
@@ -78,7 +78,7 @@ public class InfoCommand {
         PlayerEntity player = source.getPlayer();
         ServerTickManager serverTickManager = source.getServer().getTickManager();
         boolean bl = serverTickManager.stopStepping();
-        if (bl) {
+        if (!bl) {
             if (source instanceof ServerCommandSource) {
                 if (page != 0 && page <= 5) {
                     if (page == 1) {
@@ -116,7 +116,7 @@ public class InfoCommand {
         PlayerEntity player = source.getPlayer();
         ServerTickManager serverTickManager = source.getServer().getTickManager();
         boolean bl = serverTickManager.stopStepping();
-        //if (bl) {
+        if (!bl) {
             if (source instanceof ServerCommandSource) {
                 if (value != 0 && value <= 4) {
                     if (value == 1) {
@@ -141,7 +141,7 @@ public class InfoCommand {
                     throw ModCommands.TRSM_COMMAND_WORONG_BE_INTEGRATED.create();
                 }
             } 
-        //}
+        }
         source.sendFeedback(() -> Text.translatable("commands.info.success"), true);   
         return 1;  
     }  

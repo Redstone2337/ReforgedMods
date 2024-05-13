@@ -37,7 +37,7 @@ public class TrsmCommand {
         PlayerEntity player = source.getPlayer();
         ServerTickManager serverTickManager = source.getServer().getTickManager();
         boolean bl = serverTickManager.stopStepping();
-        if (bl) {
+        if (!bl) {
             player.sendMessage(Text.translatable("commands.trsm.fabric.version",
                 ModGlobalInfo.TextGlobal.versionAr[1]));
         } else {
@@ -55,7 +55,7 @@ public class TrsmCommand {
         PlayerEntity player = source.getPlayer();
         ServerTickManager serverTickManager = source.getServer().getTickManager();
         boolean bl = serverTickManager.stopStepping();
-        if (bl) {
+        if (!bl) {
             player.sendMessage(Text.translatable("commands.trsm.minecraft.version",
                 ModGlobalInfo.TextGlobal.versionAr[0]));
         } else {
@@ -73,7 +73,7 @@ public class TrsmCommand {
         PlayerEntity player = source.getPlayer();
         ServerTickManager serverTickManager = source.getServer().getTickManager();
         boolean bl = serverTickManager.stopStepping();
-        if (bl) {
+        if (!bl) {
                 if (page == 1) {
                     for (String textArrys : ModGlobalInfo.TextGlobal.textArray) {
                         player.sendMessage(Text.translatable("commands.trsm.info.mod",textArrys));
