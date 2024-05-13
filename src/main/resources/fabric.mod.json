@@ -18,6 +18,9 @@
 		"main": [
 			"com.redstone233.spawn.reforged.ReforgeSpawnMod"
 		],
+		"client": [
+			"com.redstone233.spawn.reforged.ReforgedSpawnModClient"
+		],
 		"fabric-datagen": [
 			"com.redstone233.spawn.reforged.ReforgeSpawnModDataGenerator"
 		]
@@ -26,10 +29,13 @@
 		"trsm.mixins.json"
 	],
 	"custom": {
-        "modmenu": {
-            "badges": [ "library" ]
-        	}
-    	},
+    		"modmenu": {
+        	"parent": {
+            		"id": "reforgedapi",
+            		"badges": [ "library" ]
+        		}
+    		}
+	},
 	"depends": {
 		"fabricloader": ">=0.15.7",
 		"minecraft": "~1.20.4",

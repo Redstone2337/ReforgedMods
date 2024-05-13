@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "trsm:block/reforged_slab"
+    },
+    "type=double": {
+      "model": "trsm:block/reforged_planks"
+    },
+    "type=top": {
+      "model": "trsm:block/reforged_slab_top"
+    }
+  }
+}

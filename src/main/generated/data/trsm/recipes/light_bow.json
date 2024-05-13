@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "trsm:forgotten_chakram"
+    },
+    "A": {
+      "item": "minecraft:bow"
+    }
+  },
+  "pattern": [
+    "###",
+    "#A#",
+    "###"
+  ],
+  "result": {
+    "item": "trsm:light_bow"
+  }
+}

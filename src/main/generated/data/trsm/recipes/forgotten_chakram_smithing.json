@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "trsm:ice_dragon_scales"
+  },
+  "base": {
+    "item": "extend:extend_item"
+  },
+  "result": {
+    "item": "trsm:forgotten_chakram"
+  },
+  "template": {
+    "item": "minecraft:netherite_upgrade_smithing_template"
+  }
+}

@@ -38,7 +38,7 @@ public class Prospectetor extends Item {
                 }
             }
             if (!foundBlock) {
-                player.sendMessage(Text.literal("No Ore Found!"));
+                player.sendMessage(Text.translatable("item.trsm.prospector.error"));
             }
         }
         context.getStack().damage(1, context.getPlayer(), 
@@ -47,8 +47,9 @@ public class Prospectetor extends Item {
     }
 
     private void outputMessage(BlockPos down, PlayerEntity player, Block block) {
-        player.sendMessage(Text.literal("[Prostr/INFO]Found" + block.asItem().getName().getString()
-        + "at（" + down.getX() + "，" + down.getY() + "，" + down.getZ() + "）！"),false);
+        // player.sendMessage(Text.literal("[Prostr/INFO]Found" + block.asItem().getName().getString()
+        // + "at（" + down.getX() + "，" + down.getY() + "，" + down.getZ() + "）！"),false);
+        player.sendMessage(Text.translatable("item.trsm.prospector.info",block.asItem().getName().getString(),down.getX(),down.getY(),down.getZ()));
     }
 
     private boolean isRightBlock(BlockState state) {
