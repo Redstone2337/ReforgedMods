@@ -36,7 +36,7 @@ public class NbtCommand {
                     if (stack.hasNbt()) {
                         assert stack.getNbt() != null;
                         String s = stack.getNbt().toString();
-                        player.sendMessage((Text.translatable("commands.nbt.slot.get.success",s));
+                        player.sendMessage(Text.translatable("commands.nbt.slot.get.success",s));
                     } else {
                         player.sendMessage(Text.translatable("commands.nbt.slot.error"));
                     }
