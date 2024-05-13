@@ -63,10 +63,11 @@
 
     "commands.trsm.success": "\u00a7a执行命令“trsm”成功",
     "commands.trsm.fail": "执行命令“trsm”失败",
-    "commands.trsm.fabric.version": "\u00a7a此模组需要依赖Fabric Loader的%s版本",
-    "commands.trsm.minecraft.version": "\u00a7c此模组需要%s的Minecraft版本",
+    "commands.trsm.fabric.version": "\u00a7a此模组需要依赖%s\u00a7a的Fabric Loader版本",
+    "commands.trsm.minecraft.version": "\u00a7c此模组需要%s\u00a7c的Minecraft版本",
     "commands.trsm.run": "试图执行命令时出现错误",
     "commands.trsm.be.int": "试图执行在整数命令时出现错误",
+    "commands.nbt.slot.get.success": "获取成功！获取到的二进制命名标签为%s",
    
     "commands.long.odd.info": "(长)整数%d是奇数",
     "commands.long.even.info": "(长)整数%d是偶数",
