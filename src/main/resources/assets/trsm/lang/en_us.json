@@ -84,6 +84,7 @@
     "commands.trsm.info.page.biggist": "\u00a7eThis page %d are so biggist!",
     "commands.trsm.info.page.smaill": "\u00a7eThis page %d are so smaill!",
     "commands.trsm.usag": "Trsm commands are runner",
+    "commands.nbt.slot.get.success": "Get Nbt successful！Is \u00a7a%s",
 
     "commands.reforged.math.success": "\u00a7aRun command math successful",
     "commands.reforged.math.fail": "Run command math fail",
