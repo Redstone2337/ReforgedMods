@@ -34,9 +34,9 @@ public class LongCommand {
                 source.sendError(Text.translatable("commands.long.fail"));
                 return 0;
             }
-            if (!source.getServer().isDedicated()) {
+            /*if (!source.getServer().isDedicated()) {
                 throw ModCommands.TRSM_COMMAND_WORONG_BE_INTEGRATED.create();
-            }
+            }*/
         }
         }
         source.sendFeedback(() -> Text.translatable("commands.long.success"), true);

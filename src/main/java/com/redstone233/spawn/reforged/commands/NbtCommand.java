@@ -36,7 +36,7 @@ public class NbtCommand {
                     if (stack.hasNbt()) {
                         assert stack.getNbt() != null;
                         String s = stack.getNbt().toString();
-                        player.sendMessage((Text) new LiteralMessage(s));
+                        player.sendMessage((Text.translatable("commands.nbt.slot.get.success",s));
                     } else {
                         player.sendMessage(Text.translatable("commands.nbt.slot.error"));
                     }
@@ -48,9 +48,11 @@ public class NbtCommand {
                     source.sendError(Text.translatable("commands.nbt.fail"));
                         return 0;
                     }
+                    /*
                 if (!source.getServer().isDedicated()) {
                     throw ModCommands.TRSM_COMMAND_WORONG_BE_INTEGRATED.create();
                 }
+                */
             }
         }
         source.sendFeedback(() -> Text.translatable("commands.nbt.success"), true);

@@ -65,9 +65,9 @@ public class InfoCommand {
                     return 0;
                 }
             }
-                if (!source.getServer().isDedicated()) {
+                /*if (!source.getServer().isDedicated()) {
                     throw ModCommands.TRSM_COMMAND_WORONG_BE_INTEGRATED.create();
-                }
+                }*/
                 source.sendFeedback(() -> Text.translatable("commands.info.success"), false);
             }
         }
@@ -103,9 +103,9 @@ public class InfoCommand {
                         return 0;
                     }
                 }
-                if (!source.getServer().isDedicated()) {
+                /*if (!source.getServer().isDedicated()) {
                     throw ModCommands.TRSM_COMMAND_WORONG_BE_INTEGRATED.create();
-                }
+                }*/
                 source.sendFeedback(() -> Text.translatable("commands.info.success"), true);
             }
         }  
@@ -137,9 +137,9 @@ public class InfoCommand {
                         return 0;
                     }
                 }
-                if (!source.getServer().isDedicated()) {
+                /*if (!source.getServer().isDedicated()) {
                     throw ModCommands.TRSM_COMMAND_WORONG_BE_INTEGRATED.create();
-                }
+                }*/
             } 
         }
         source.sendFeedback(() -> Text.translatable("commands.info.success"), true);   

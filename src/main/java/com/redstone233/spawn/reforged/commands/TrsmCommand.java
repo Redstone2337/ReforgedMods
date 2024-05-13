@@ -44,9 +44,9 @@ public class TrsmCommand {
             source.sendError(Text.translatable("commands.trsm.fail"));
             return 0;
         }
-        if (!source.getServer().isDedicated()){
+        /*if (!source.getServer().isDedicated()){
             throw ModCommands.TRSM_COMMAND_EXCEPTION_TYPE.create();
-        }
+        }*/
         source.sendFeedback(() -> Text.translatable("commands.reforged.math.success"), true);
         return 1;
     }
@@ -62,9 +62,9 @@ public class TrsmCommand {
             source.sendError(Text.translatable("commands.trsm.fail"));
             return 0;
         }
-        if (!source.getServer().isDedicated()){
+        /*if (!source.getServer().isDedicated()){
             throw ModCommands.TRSM_COMMAND_WORONG_BE_INTEGRATED.create();
-        }
+        }*/
         source.sendFeedback(() -> Text.translatable("commands.reforged.math.success"), true);
         return 1;   
     }
@@ -91,9 +91,9 @@ public class TrsmCommand {
                 source.sendError(Text.translatable("commands.reforged.math.fail"));
             }
         }
-        if (!source.getServer().isDedicated()){
+        /*if (!source.getServer().isDedicated()){
             throw ModCommands.TRSM_COMMAND_WORONG_BE_INTEGRATED.create();
-        }
+        }*/
         source.sendFeedback(() -> Text.translatable("commands.reforged.math.success"), true);
         return Command.SINGLE_SUCCESS;
     }

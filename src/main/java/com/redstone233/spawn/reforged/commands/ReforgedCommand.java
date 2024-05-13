@@ -223,9 +223,9 @@ public class ReforgedCommand {
                     }
                 }
             }
-            if (!source.getServer().isDedicated()) {
+            /*if (!source.getServer().isDedicated()) {
                 throw ModCommands.TRSM_COMMAND_EXCEPTION_TYPE.create();
-            }
+            }*/
             source.sendFeedback(() -> Text.translatable("commands.reforged.math.success"), true);
         } 
         return 1;
@@ -262,9 +262,9 @@ public class ReforgedCommand {
                     }
                 }
             }
-            if (!source.getServer().isDedicated()) {
+            /*if (!source.getServer().isDedicated()) {
                 throw ModCommands.TRSM_COMMAND_EXCEPTION_TYPE.create();
-            }
+            }*/
             source.sendFeedback(() -> Text.translatable("commands.reforged.math.success"), true);
         }
         return 1;
@@ -314,9 +314,9 @@ public class ReforgedCommand {
                     return 0;
                 }
             }
-            if (!source.getServer().isDedicated()) {
+            /*if (!source.getServer().isDedicated()) {
                 throw ModCommands.TRSM_COMMAND_EXCEPTION_TYPE.create();
-            }
+            }*/
             source.sendFeedback(() -> Text.translatable("commands.reforged.math.success"), true); 
         } 
         return 1;
@@ -356,9 +356,9 @@ public class ReforgedCommand {
                     return 0;
                 }
             }
-            if (!source.getServer().isDedicated()) {
-                throw ModCommands.TRSM_COMMAND_WORONG_BE_INTEGRATED.create();
-            }
+            /*if (!source.getServer().isDedicated()) {
+                throw ModCommands.TRSM_COMMAND_EXCEPTION_TYPE.create();
+            }*/
             source.sendFeedback(() -> Text.translatable("commands.reforged.math.success"), true);
         } 
         return 1;
@@ -377,9 +377,9 @@ public class ReforgedCommand {
                     return 0;
                 }
             }
-            if (!source.getServer().isDedicated()) {
+            /*if (!source.getServer().isDedicated()) {
                 throw ModCommands.TRSM_COMMAND_EXCEPTION_TYPE.create();
-            }
+            }*/
             source.sendFeedback(() -> Text.translatable("commands.reforged.math.success"), true);
         } 
         return 1;
@@ -398,9 +398,9 @@ public class ReforgedCommand {
                     return 0;
                 }
             }
-            if (!source.getServer().isDedicated()) {
+            /*if (!source.getServer().isDedicated()) {
                 throw ModCommands.TRSM_COMMAND_EXCEPTION_TYPE.create();
-            }
+            }*/
             source.sendFeedback(() -> Text.translatable("commands.reforged.math.success"), true);
         }
         return 1;
@@ -419,9 +419,9 @@ public class ReforgedCommand {
                     return 0;
                 }
             }
-            if (!source.getServer().isDedicated()) {
-                throw ModCommands.TRSM_COMMAND_WORONG_BE_INTEGRATED.create();
-            }
+            /*if (!source.getServer().isDedicated()) {
+                throw ModCommands.TRSM_COMMAND_EXCEPTION_TYPE.create();
+            }*/
             source.sendFeedback(() -> Text.translatable("commands.reforged.math.success"), true);   
         }
         return 1;
