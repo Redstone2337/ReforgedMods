@@ -56,17 +56,20 @@ public class ModModlesProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.ICE_DRAGON_SCALES, Models.GENERATED);
         itemModelGenerator.register(ModItems.ICE_DRAGON_KEY, Models.GENERATED);
         itemModelGenerator.register(ModItems.REFORGED_AMETHYST, Models.GENERATED);
-        itemModelGenerator.register(ModItems.COMBO_INGOT, Models.GENERATED);
-        itemModelGenerator.register(ModItems.SECKILL_INGOT, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.REFORGED_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.ERROR_STAFF, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.ICE_SICKLE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.NEXUS_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.AMETHYST_KNIFE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.YUANKAN_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.YUANCI_SWORD, Models.HANDHELD);
         itemModelGenerator.register(ModItems.REFORGED_AMETHYST_SWORD, Models.HANDHELD);
         itemModelGenerator.register(ModItems.ICE_DRAGON_SWORD, Models.HANDHELD);
-        itemModelGenerator.register(ModItems.GOLD_DAGGER, Models.HANDHELD);
         itemModelGenerator.register(ModItems.REFORGED_PICKAXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.REFORGED_AXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.COMBO_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.NEXUS_AXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.SECOND_AXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.REFORGED_SHOVRL, Models.HANDHELD);
         itemModelGenerator.register(ModItems.REFORGED_HOE, Models.HANDHELD);
