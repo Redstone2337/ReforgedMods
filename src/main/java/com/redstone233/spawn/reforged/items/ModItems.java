@@ -10,7 +10,7 @@ import com.redstone233.spawn.reforged.items.custom.IceStaff;
 import com.redstone233.spawn.reforged.items.custom.ModArmorItem;
 import com.redstone233.spawn.reforged.items.custom.Prospectetor;
 import com.redstone233.spawn.reforged.items.custom.VampiricSword;
-import com.redstone233.spawn.reforged.items.custom.YuanciSwordItem;
+//import com.redstone233.spawn.reforged.items.custom.YuanciSwordItem;
 import com.redstone233.spawn.reforged.items.custom.Reforged3dSword;
 import com.redstone233.spawn.reforged.items.custom.SickleItem;
 import com.redstone233.spawn.reforged.items.custom.VampiricAxe;
@@ -123,7 +123,7 @@ public class ModItems {
             new FabricItemSettings().maxDamage(25000)));
             
     public static final Item YUANCI_SWORD = registerItems("yuanci_sword", 
-        new YuanciSwordItem(ModToolMaterial.REFORGED_ITEM, 30, 4.5f, 
+        new SwordItem(ModToolMaterial.REFORGED_ITEM, 30, 4.5f, 
             new FabricItemSettings().maxDamage(25000)));  
     
     public static final Item REFORGED_AMETHYST_SWORD = registerItems("reforged_amethyst_sword", 
