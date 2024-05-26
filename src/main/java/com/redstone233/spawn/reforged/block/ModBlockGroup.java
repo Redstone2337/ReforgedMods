@@ -29,6 +29,9 @@ public class ModBlockGroup {
                     entries.add(ModBlocks.REFORGED_TRAPDOOR);
                     entries.add(ModBlocks.CHANCE_BLOCK);
                     entries.add(ModBlocks.REFORGED_ORE);
+                    entries.add(ModBlocks.REFORGED_BLOCK);
+                    entries.add(ModBlocks.REFORGED_BLOCK1);
+                    entries.add(ModBlocks.FIRE_REFORGED_BLOCK);
                 })
                 .build()
             );
