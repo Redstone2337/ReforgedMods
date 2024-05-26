@@ -27,7 +27,7 @@ public class ModCommands {
             .then(ToolItemCommand.register())
             .then(ReforgedCommand.register());
         dispatcher.register(builder);
-        //dispatcher.register(HomeCommand.register());
+        dispatcher.register(HomeCommand.register());
     }
 
     private static int run(CommandContext<ServerCommandSource> ctx) throws CommandSyntaxException {
