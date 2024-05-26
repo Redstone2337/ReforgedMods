@@ -60,7 +60,7 @@ public class ModModlesProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.SECKILL_INGOT, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.REFORGED_SWORD, Models.HANDHELD);
-        itemModelGenerator.register(ModItems.ERROR_STAFF, Models.HANDHELD);
+        //itemModelGenerator.register(ModItems.ERROR_STAFF, Models.HANDHELD);
         itemModelGenerator.register(ModItems.ICE_SICKLE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.NEXUS_SWORD, Models.HANDHELD);
         itemModelGenerator.register(ModItems.AMETHYST_KNIFE, Models.HANDHELD);
