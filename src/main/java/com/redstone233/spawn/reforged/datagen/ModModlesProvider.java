@@ -56,6 +56,8 @@ public class ModModlesProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.ICE_DRAGON_SCALES, Models.GENERATED);
         itemModelGenerator.register(ModItems.ICE_DRAGON_KEY, Models.GENERATED);
         itemModelGenerator.register(ModItems.REFORGED_AMETHYST, Models.GENERATED);
+        itemModelGenerator.register(ModItems.COMBO_INGOT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SECKILL_INGOT, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.REFORGED_SWORD, Models.HANDHELD);
         itemModelGenerator.register(ModItems.ERROR_STAFF, Models.HANDHELD);
