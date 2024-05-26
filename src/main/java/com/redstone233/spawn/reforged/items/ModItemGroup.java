@@ -24,6 +24,8 @@ public class ModItemGroup {
                     entries.add(ModItems.PROSPECTOR);
                     entries.add(ModItems.REFORGED_COAL);
                     entries.add(ModItems.ICE_DRAGON_ARROW);
+                    entries.add(ModItems.COMBO_INGOT);
+                    entries.add(ModItems.SECKILL_INGOT);
 
                     // entries.add(ModItems.REFORGED_SWORD);
                     // entries.add(ModItems.REFORGED_3D_SWORD);
