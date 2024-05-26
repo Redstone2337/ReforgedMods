@@ -6,10 +6,14 @@ import com.redstone233.spawn.reforged.items.custom.FrozenArrow;
 import com.redstone233.spawn.reforged.items.custom.FrozenBow;
 import com.redstone233.spawn.reforged.items.custom.EnderBow;
 import com.redstone233.spawn.reforged.items.custom.FrozenSword;
+import com.redstone233.spawn.reforged.items.custom.IceStaff;
 import com.redstone233.spawn.reforged.items.custom.ModArmorItem;
 import com.redstone233.spawn.reforged.items.custom.Prospectetor;
 import com.redstone233.spawn.reforged.items.custom.VampiricSword;
+import com.redstone233.spawn.reforged.items.custom.YuanciSwordItem;
 import com.redstone233.spawn.reforged.items.custom.Reforged3dSword;
+import com.redstone233.spawn.reforged.items.custom.SickleItem;
+import com.redstone233.spawn.reforged.items.custom.VampiricAxe;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
@@ -44,14 +48,12 @@ public class ModItems {
     public static final Item REFORGED_AMETHYST = registerItems("reforged_amethyst", 
         new Item(new FabricItemSettings().maxCount(64)));
 
-    public static final Item COMBO_INGOT = registerItems("combo_ingot", 
-        new Item(new FabricItemSettings().maxCount(64)));
-    
-    public static final Item SECKILL_INGOT = registerItems("seckill_ingot", 
-        new Item(new FabricItemSettings().maxCount(64)));
-
     public static final Item PROSPECTOR = registerItems("prospector", 
         new Prospectetor(new FabricItemSettings().maxDamage(1000)));
+
+    public static final Item ERROR_STAFF = registerItems("error_staff", 
+        new IceStaff(new FabricItemSettings().maxDamage(40000)));
+
 
     //public static final Item NEXUS_SWORLD = registerItems("nexus_sword", 
         //new Prospectetor(new FabricItemSettings().maxDamage(3000)));
@@ -78,6 +80,14 @@ public class ModItems {
         new AxeItem(ModToolMaterial.REFORGED_ITEM, 500, -3.5f, 
             new FabricItemSettings().maxDamage(55000)));
 
+    public static final Item ICE_AXE = registerItems("ice_axe", 
+        new AxeItem(ModToolMaterial.REFORGED_ITEM, 40, 2.5f, 
+            new FabricItemSettings().maxDamage(55000)));
+
+    public static final Item NEXUS_AXE = registerItems("nexus_axe", 
+        new VampiricAxe(ModToolMaterial.REFORGED_ITEM, 60, 1.5f, 
+            new FabricItemSettings().maxDamage(70000)));
+
     public static final Item REFORGED_SHOVRL = registerItems("reforged_shovel", 
         new ShovelItem(ModToolMaterial.REFORGED_ITEM, 3, 2.7f, 
             new FabricItemSettings().maxDamage(30000)));    
@@ -94,17 +104,29 @@ public class ModItems {
         new VampiricSword(ModToolMaterial.REFORGED_ITEM, 20, 4.0f, 
             new FabricItemSettings().maxDamage(30000)));
 
+    public static final Item ICE_SICKLE = registerItems("ice_sickle", 
+        new SickleItem(ModToolMaterial.REFORGED_ITEM, 20, 4.0f, 
+            new FabricItemSettings().maxDamage(30000)));
+
     public static final Item ICE_DRAGON_SWORD = registerItems("ice_dragon_sword", 
         new FrozenSword(ModToolMaterial.REFORGED_ITEM, 10, 3.6f, 
             new FabricItemSettings().maxDamage(20000)));
+
+    public static final Item YUANKAN_SWORD = registerItems("yuankan_sword", 
+        new SwordItem(ModToolMaterial.REFORGED_ITEM, 25, 5.5f, 
+            new FabricItemSettings().maxDamage(25000)));
+            
+    public static final Item YUANCI_SWORD = registerItems("yuanci_sword", 
+        new YuanciSwordItem(ModToolMaterial.REFORGED_ITEM, 30, 4.5f, 
+            new FabricItemSettings().maxDamage(25000)));  
     
     public static final Item REFORGED_AMETHYST_SWORD = registerItems("reforged_amethyst_sword", 
         new SwordItem(ModToolMaterial.REFORGED_AMETHYST, 11, 3.0f, 
             new FabricItemSettings().maxDamage(23002)));
 
-    public static final Item GOLD_DAGGER = registerItems("gold_dagger", 
-        new SwordItem(ModToolMaterial.ICE_DRAGON_SCALES, 11, 4.5f, 
-            new FabricItemSettings().maxDamage(24000)));
+    public static final Item AMETHYST_KNIFE = registerItems("amethyst_knife", 
+        new SwordItem(ModToolMaterial.REFORGED_AMETHYST, 15, 6.0f, 
+            new FabricItemSettings().maxDamage(23000)));
 
     public static final Item REFORGED_HOE = registerItems("reforged_hoe", 
         new HoeItem(ModToolMaterial.REFORGED_ITEM, 6, 2.6f, 
