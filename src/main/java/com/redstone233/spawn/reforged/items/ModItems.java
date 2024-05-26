@@ -123,7 +123,7 @@ public class ModItems {
             new FabricItemSettings().maxDamage(25000)));
             
     public static final Item YUANCI_SWORD = registerItems("yuanci_sword", 
-        new SwordItem(ModToolMaterial.REFORGED_ITEM, 30, 4.5f, 
+        new SwordItem(ModToolMaterial.REFORGED_ITEM, 25, 5.5f, 
             new FabricItemSettings().maxDamage(25000)));  
     
     public static final Item REFORGED_AMETHYST_SWORD = registerItems("reforged_amethyst_sword", 
