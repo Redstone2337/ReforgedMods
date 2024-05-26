@@ -59,7 +59,7 @@ public class ModItemGroup {
         Registry.register(Registries.ITEM_GROUP, 
             new Identifier(ReforgeSpawnMod.MOD_ID, "trsm_tool_group"), 
                 FabricItemGroup.builder()
-                    .icon(() -> new ItemStack(ModItems.REFORGED_SWORD))
+                    .icon(() -> new ItemStack(ModItems.REFORGED_PICKAXE))
                     .displayName(Text.translatable("itemGroup.trsm_tool_group"))
                     .entries((context, entries) -> {
                         
