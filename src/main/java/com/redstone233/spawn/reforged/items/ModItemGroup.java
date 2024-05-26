@@ -103,8 +103,8 @@ public class ModItemGroup {
                         entries.add(ModItems.REFORGED_3D_SWORD);
                         entries.add(ModItems.NEXUS_SWORD);
                         entries.add(ModItems.ICE_DRAGON_SWORD);
-                        entries.add(ModItems.YUANCI_SWORD);
-                        entries.add(ModItems.YUANKAN_SWORD);
+                        //entries.add(ModItems.YUANCI_SWORD);
+                        //entries.add(ModItems.YUANKAN_SWORD);
                         entries.add(ModItems.REFORGED_AMETHYST_SWORD);
                         entries.add(ModItems.ICE_SICKLE);
                         entries.add(ModItems.ERROR_STAFF);
