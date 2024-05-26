@@ -72,6 +72,8 @@ public class ModItemGroup {
                         entries.add(ModItems.REFORGED_AXE);
                         entries.add(ModItems.COMBO_AXE);
                         entries.add(ModItems.SECOND_AXE);
+                        entries.add(ModItems.ICE_AXE);
+                        entries.add(ModItems.NEXUS_AXE);
                         entries.add(ModItems.REFORGED_SHOVRL);
                         entries.add(ModItems.REFORGED_HOE);
                         // entries.add(ModItems.ICE_DRAGON_BOW);
@@ -111,6 +113,10 @@ public class ModItemGroup {
                         entries.add(ModItems.COMBO_AXE);
                         entries.add(ModItems.SECOND_AXE);
                         entries.add(ModItems.ICE_AXE);
+                        entries.add(ModItems.NEXUS_AXE);
+                        entries.add(ModItems.AMETHYST_KNIFE);
+                        entries.add(ModItems.YUANCI_SWORD);
+                        entries.add(ModItems.YUANKAN_SWORD);
                         // entries.add(ModItems.REFORGED_SHOVRL);
                         // entries.add(ModItems.REFORGED_HOE);
                         entries.add(ModItems.ICE_DRAGON_BOW);
