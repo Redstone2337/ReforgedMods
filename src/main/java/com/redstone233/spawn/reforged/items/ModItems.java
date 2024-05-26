@@ -6,7 +6,7 @@ import com.redstone233.spawn.reforged.items.custom.FrozenArrow;
 import com.redstone233.spawn.reforged.items.custom.FrozenBow;
 import com.redstone233.spawn.reforged.items.custom.EnderBow;
 import com.redstone233.spawn.reforged.items.custom.FrozenSword;
-import com.redstone233.spawn.reforged.items.custom.IceStaff;
+//import com.redstone233.spawn.reforged.items.custom.IceStaff;
 import com.redstone233.spawn.reforged.items.custom.ModArmorItem;
 import com.redstone233.spawn.reforged.items.custom.Prospectetor;
 import com.redstone233.spawn.reforged.items.custom.VampiricSword;
@@ -57,8 +57,8 @@ public class ModItems {
     public static final Item PROSPECTOR = registerItems("prospector", 
         new Prospectetor(new FabricItemSettings().maxDamage(1000)));
 
-    public static final Item ERROR_STAFF = registerItems("error_staff", 
-        new IceStaff(new FabricItemSettings().maxDamage(40000)));
+    //public static final Item ERROR_STAFF = registerItems("error_staff", 
+        //new IceStaff(new FabricItemSettings().maxDamage(40000)));
 
 
     //public static final Item NEXUS_SWORLD = registerItems("nexus_sword", 
