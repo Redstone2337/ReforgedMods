@@ -156,6 +156,15 @@
     "effect.trsm.better_experience": "经验获取Ⅳ",
     "effect.trsm.best_experience": "经验获取Ⅴ",
 
+    "item.minecraft.potion.effect.fire_on_body": "引火",
+    "item.minecraft.potion.effect.good_fire_on_body": "引火Ⅱ",
+    "item.minecraft.potion.effect.great_fire_on_body": "引火Ⅲ",
+    "item.minecraft.potion.effect.experience": "经验获取Ⅰ",
+    "item.minecraft.potion.effect.good_experience": "经验获取Ⅱ",
+    "item.minecraft.potion.effect.great_experience": "经验获取Ⅲ",
+    "item.minecraft.potion.effect.better_experience": "经验获取Ⅳ",
+    "item.minecraft.potion.effect.best_experience": "经验获取Ⅴ",
+
     "item.minecraft.splash_potion.effect.fire_on_body": "喷溅型引火",
     "item.minecraft.splash_potion.effect.good_fire_on_body": "喷溅型引火Ⅱ",
     "item.minecraft.splash_potion.effect.great_fire_on_body": "喷溅型引火Ⅲ",
