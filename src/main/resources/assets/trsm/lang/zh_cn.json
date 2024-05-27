@@ -146,15 +146,15 @@
     "enchantment.trsm.curse_speed": "加速诅咒",
     "enchantment.trsm.one_push": "一拳诅咒",
 
-    "effect.modpack.fire_on_body": "引火Ⅰ",
-    "effect.modpack.good_fire_on_body": "引火Ⅱ",
-    "effect.modpack.great_fire_on_body": "引火Ⅲ",
+    "effect.trsm.fire_on_body": "引火Ⅰ",
+    "effect.trsm.good_fire_on_body": "引火Ⅱ",
+    "effect.trsm.great_fire_on_body": "引火Ⅲ",
 
-    "effect.modpack.experience": "经验获取Ⅰ",
-    "effect.modpack.good_experience": "经验获取Ⅱ",
-    "effect.modpack.great_experience": "经验获取Ⅲ",
-    "effect.modpack.better_experience": "经验获取Ⅳ",
-    "effect.modpack.best_experience": "经验获取Ⅴ",
+    "effect.trsm.experience": "经验获取Ⅰ",
+    "effect.trsm.good_experience": "经验获取Ⅱ",
+    "effect.trsm.great_experience": "经验获取Ⅲ",
+    "effect.trsm.better_experience": "经验获取Ⅳ",
+    "effect.trsm.best_experience": "经验获取Ⅴ",
 
     "item.minecraft.splash_potion.effect.fire_on_body": "喷溅型引火",
     "item.minecraft.splash_potion.effect.good_fire_on_body": "喷溅型引火Ⅱ",
@@ -178,6 +178,9 @@
     "item.trsm.fire_reforged_block.tooltip": "\u00a76一个好用的垃圾桶",
     "item.trsm.vampirism.tooltip1": "\u00a7a听说这把武器有较强的吸血能力",
     "item.trsm.vampirism.tooltip2": "\u00a7c神话",
+    "item.trsm.vampirism_axe.tooltip1": "\u00a7a听说这把武器有更强的吸血能力",
+    "item.trsm.vampirism_axe.tooltip2": "\u00a7c\u00a7l神话",
+ 
     "item.trsm.frozen.tooltip1": "\u00a7a传说这把武器可以让实体停止一段时间的运动",
     "item.trsm.frozen.tooltip2": "\u00a7c神话",
     "item.trsm.prospector.error": "\u00a74[探矿器/错误]此处未找到任何矿石！",
