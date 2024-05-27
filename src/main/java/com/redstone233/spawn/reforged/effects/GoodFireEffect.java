@@ -23,10 +23,11 @@ public class GoodFireEffect extends StatusEffect{
         super.applyUpdateEffect(entity, amplifier);
     }
 
-    // @Override
-    // public void onApplied(LivingEntity entity, int amplifier) {
-    //     if (entity.isOnFire()) {
-    //         entity.clearStatusEffects();
-    //     }
-    // }
+    @Override
+    public void onApplied(LivingEntity entity, int amplifier) {
+         if (!entity.isOnFire()) {
+             entity.clearStatusEffects();
+         }
+         super.onApplied(entity, amplifier);
+     }
 }
