@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:item/bow",
+  "parent": "trsm:item/ender_bow",
   "textures": {
     "layer0": "trsm:item/ender_bow_pulling_0"
   }

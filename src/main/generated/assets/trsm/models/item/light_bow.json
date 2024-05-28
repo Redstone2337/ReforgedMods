@@ -28,21 +28,21 @@
     "overrides": [
         {
             "predicate": {
-                "pulling": 1
+                "trsm:pulling": 1
             },
             "model": "trsm:item/light_bow_pulling_0"
         },
         {
             "predicate": {
-                "pulling": 1,
-                "pull": 0.65
+                "trsm:pulling": 1,
+                "trsm:pull": 0.65
             },
             "model": "trsm:item/light_bow_pulling_1"
         },
         {
             "predicate": {
-                "pulling": 1,
-                "pull": 0.9
+                "trsm:pulling": 1,
+                "trsm:pull": 0.9
             },
             "model": "trsm:item/light_bow_pulling_2"
         }
