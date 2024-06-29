@@ -114,6 +114,7 @@ public class ModItemGroup {
                         entries.add(ModItems.SECOND_AXE);
                         entries.add(ModItems.ICE_AXE);
                         entries.add(ModItems.NEXUS_AXE);
+                        entries.add(ModItems.REFORGED_HAMMER);
                         entries.add(ModItems.AMETHYST_KNIFE);
                         entries.add(ModItems.YUANCI_SWORD);
                         entries.add(ModItems.YUANKAN_SWORD);
