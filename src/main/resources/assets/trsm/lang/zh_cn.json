@@ -7,6 +7,7 @@
 
     "item.trsm.reforged_sword": "重铸之剑",
     "item.trsm.reforged_3d_sword": "\u00a7e重铸之剑",
+    "item.trsm.reforged_hammer": "\u00a7d普通重锤",
     "item.trsm.reforged_amethyst_sword": "重铸晶刃",
     "item.trsm.nexus_sword": "血纳之剑",
     "item.trsm.ice_dragon_sword": "漪水冰刃",
@@ -189,6 +190,10 @@
     "item.trsm.vampirism.tooltip2": "\u00a7c神话",
     "item.trsm.vampirism_axe.tooltip1": "\u00a7a听说这把武器有更强的吸血能力",
     "item.trsm.vampirism_axe.tooltip2": "\u00a7c\u00a7l神话",
+    "item.trsm.3d.tooltip1": "\u00a7c\u00a7l神话",
+    "item.trsm.3d.tooltip2": "\u00a7a第1把3d武器",
+    "item.trsm.3d.hammer.tooltip1": "\u00a7c\u00a7l神话",
+    "item.trsm.3d.hammer.tooltip2": "\u00a7a第1把3d锤子",
  
     "item.trsm.frozen.tooltip1": "\u00a7a传说这把武器可以让实体停止一段时间的运动",
     "item.trsm.frozen.tooltip2": "\u00a7c神话",
