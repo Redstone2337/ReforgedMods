@@ -1,0 +1,89 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "trsm:block/hammer_body",
+		"1": "trsm:block/hammer_stick",
+		"2": "trsm:block/hammer_tail",
+		"particle": "trsm:item/hammer_body"
+	},
+	"elements": [
+		{
+			"name": "hammer_stick",
+			"from": [8, 6, 8],
+			"to": [10, 18, 10],
+			"rotation": {"angle": 0, "axis": "y", "origin": [6, 5, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#1"},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#1"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#1"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#1"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#1"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#1"}
+			}
+		},
+		{
+			"name": "hammer_body",
+			"from": [6, 0, 4],
+			"to": [12, 6, 14],
+			"rotation": {"angle": 0, "axis": "y", "origin": [6, 3, 8]},
+			"faces": {
+				"north": {"uv": [0.92, 2.32, 16, 16], "texture": "#0"},
+				"east": {"uv": [0.92, 2.32, 16, 16], "texture": "#0"},
+				"south": {"uv": [0.92, 2.32, 16, 16], "texture": "#0"},
+				"west": {"uv": [0.92, 2.32, 16, 16], "texture": "#0"},
+				"up": {"uv": [0.92, 2.32, 16, 16], "texture": "#0"},
+				"down": {"uv": [0.92, 2.32, 16, 16], "texture": "#0"}
+			}
+		},
+		{
+			"name": "hammer_tail",
+			"from": [8, 18, 8],
+			"to": [10, 20, 10],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#2"},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#2"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#2"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#2"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#2"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#2"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [175, 0, 0],
+			"translation": [-1, 2, 0]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [178.75, 0, 0],
+			"translation": [1.25, 1, 0.25]
+		},
+		"firstperson_lefthand": {
+			"rotation": [151.25, 0, 7.75],
+			"translation": [-0.5, 0, 0]
+		},
+		"ground": {
+			"rotation": [-6.57, -3, 168.52],
+			"translation": [2, 6, 0]
+		},
+		"gui": {
+			"translation": [0, -0.5, 0]
+		},
+		"head": {
+			"rotation": [-177.5, 0, 0],
+			"translation": [-1, 4.75, 0]
+		},
+		"fixed": {
+			"rotation": [-180, 89.25, -180],
+			"translation": [0, -2, 0]
+		}
+	},
+	"groups": [
+		{
+			"name": "reforged",
+			"origin": [8, 8, 8],
+			"color": 0,
+			"children": [0, 1, 2]
+		}
+	]
+}
