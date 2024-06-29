@@ -14,6 +14,7 @@ import com.redstone233.spawn.reforged.items.custom.VampiricSword;
 import com.redstone233.spawn.reforged.items.custom.Reforged3dSword;
 import com.redstone233.spawn.reforged.items.custom.SickleItem;
 import com.redstone233.spawn.reforged.items.custom.VampiricAxe;
+import com.redstone233.spawn.reforged.items.custom.Reforged3dHammer;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
@@ -93,6 +94,10 @@ public class ModItems {
     public static final Item NEXUS_AXE = registerItems("nexus_axe", 
         new VampiricAxe(ModToolMaterial.REFORGED_ITEM, 60, 1.5f, 
             new FabricItemSettings().maxDamage(70000)));
+
+    public static final Item REFORGED_HAMMER = registerItems("reforged_hammer", 
+        new Reforged3dHammer(ModToolMaterial.REFORGED_ITEM, 100, -2.5f,
+            new FabricItemSettings().maxDamage(80000)));
 
     public static final Item REFORGED_SHOVRL = registerItems("reforged_shovel", 
         new ShovelItem(ModToolMaterial.REFORGED_ITEM, 3, 2.7f, 
